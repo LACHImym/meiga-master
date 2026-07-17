@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>名画MASTER｜世界の有名絵画クイズ</title>
+  <meta name="description" content="世界の有名絵画クイズ「名画MASTER」に挑戦！「この作品の作者は？」「この作品のタイトルは？」全5問・100点満点。Level 1〜3で何度でも遊べる。">
+  <meta property="og:title" content="名画MASTER｜世界の有名絵画クイズ">
+  <meta property="og:description" content="名画の4択クイズ・全5問100点満点。Level 1〜3。あなたは何点とれる？">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- 公開時にog:imageを絶対URL（https://〜/og-card.png）へ差し替えること -->
+  <meta property="og:image" content="og-card.png">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <h1 class="logo-h1"><img src="logo.png" alt="名画MASTER" class="logo"></h1>
+    <p class="tagline">世界の有名絵画クイズ — 全5問・100点満点</p>
+  </header>
+
+  <main id="app">
+    <!-- 難易度切り替え（ボタンはapp.jsがデータから自動生成。Level 4以降も自動で増える） -->
+    <div class="level-row" id="level-row" role="group" aria-label="レベルをえらぶ"></div>
+
+    <!-- クイズ画面 -->
+    <section id="quiz-screen" hidden>
+      <div class="progress-row">
+        <span id="q-counter">第1問 / 5</span>
+        <div id="score-dots" aria-label="正解状況"></div>
+      </div>
+      <figure class="art-frame">
+        <div class="art-screen">
+          <img id="art-image" src="" alt="出題作品の画像">
+        </div>
+      </figure>
+      <h2 id="question-text"></h2>
+      <div id="choices" class="choices"></div>
+
+      <div id="feedback" class="feedback" hidden>
+        <p id="feedback-head"></p>
+        <div class="work-info">
+          <p id="work-caption"></p>
+          <p id="work-summary"></p>
+        </div>
+        <button id="next-btn" class="primary-btn">次の問題へ</button>
+      </div>
+    </section>
+
+    <!-- 結果画面 -->
+    <section id="result-screen" hidden>
+      <div class="score-dial">
+        <svg viewBox="0 0 240 240" aria-hidden="true">
+          <defs>
+            <linearGradient id="scoreGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#2dd4bf"/>
+              <stop offset="100%" stop-color="#f59e0b"/>
+            </linearGradient>
+          </defs>
+          <circle class="ring-guide" cx="120" cy="120" r="110"/>
+          <circle id="score-arc" class="ring-arc" cx="120" cy="120" r="110"/>
+        </svg>
+        <div class="score-dial-inner">
+          <p class="score-label">YOUR SCORE</p>
+          <p id="result-score"><span id="score-num">0</span><span class="score-unit">点</span></p>
+          <p id="result-sub"></p>
+        </div>
+      </div>
+      <p id="result-message"></p>
+      <div class="result-actions">
+        <a id="share-btn" class="primary-btn" href="#" target="_blank" rel="noopener">
+          𝕏 で結果をシェア
+        </a>
+        <button id="retry-btn" class="secondary-btn">もう一度挑戦</button>
+      </div>
+      <h3 class="recap-title">今回の出題作品</h3>
+      <ol id="recap-list" class="recap-list"></ol>
+    </section>
+
+    <!-- 読み込み中 -->
+    <section id="loading-screen">
+      <p>問題を準備しています…</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>画像出典: Wikimedia Commons（パブリックドメイン）</p>
+    <p id="pool-info"></p>
+  </footer>
+
+  <script src="works.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
