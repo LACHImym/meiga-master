@@ -409,3 +409,10 @@ body {
   padding: 18px 16px 28px;
 }
 .site-footer p { margin: 2px 0; }
+.home-link { margin-top: 10px !important; }
+.home-link a {
+  color: var(--mute);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.home-link a:hover { color: var(--teal-deep); }
