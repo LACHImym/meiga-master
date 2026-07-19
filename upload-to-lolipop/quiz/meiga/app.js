@@ -131,6 +131,7 @@ const $ = id => document.getElementById(id);
 let round = [];
 let current = 0;
 let results = []; // true/false
+let adPushed = false; // 結果画面の広告は1セッションにつき1回だけ読み込む
 
 function startRound() {
   round = buildRound();
@@ -259,6 +260,12 @@ function showResult() {
     list.appendChild(li);
   });
   window.scrollTo({ top: 0, behavior: "smooth" });
+
+  // 広告は初回表示時のみ読み込む（再挑戦のたびにpushすると重複エラーになるため）
+  if (!adPushed) {
+    adPushed = true;
+    try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch (e) {}
+  }
 }
 
 $("next-btn").onclick = () => {
