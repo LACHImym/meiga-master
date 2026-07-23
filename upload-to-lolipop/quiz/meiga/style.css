@@ -27,6 +27,9 @@
 
 * { box-sizing: border-box; }
 
+/* hidden属性は display:flex 等の指定より必ず優先させる */
+[hidden] { display: none !important; }
+
 body {
   margin: 0;
   background: var(--bg);
@@ -109,11 +112,29 @@ body {
   margin: 8px 2px 16px;
 }
 #q-counter {
+  flex: 1;
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.1em;
   color: var(--mute);
 }
+.quiz-home-btn {
+  width: 34px;
+  height: 34px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 12px;
+  background: var(--panel);
+  color: var(--mute);
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: var(--raise-chip);
+  transition: box-shadow 0.15s, color 0.15s;
+}
+.quiz-home-btn:hover { color: var(--teal-deep); }
+.quiz-home-btn:active { box-shadow: var(--inset-chip); }
 #score-dots { display: flex; gap: 8px; }
 .dot {
   width: 26px;
@@ -356,13 +377,15 @@ body {
 /* --- 冒頭の広告枠 --- */
 .ad-top {
   margin: 4px 0 18px;
-  min-height: 90px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
 }
 .ad-top .adsbygoogle { width: 100%; }
+/* 広告が埋まらなかったときは枠ごと畳む（空白のまま場所を取らない） */
+.ad-top.ad-empty { display: none; }
+ins.adsbygoogle[data-ad-status="unfilled"] { display: none !important; }
 
 /* --- ブログ誘導カード（結果画面下部） --- */
 .blog-cta {

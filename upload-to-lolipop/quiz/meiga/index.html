@@ -45,22 +45,26 @@
 
     <div id="play-view">
 
-    <!-- 今日の名画検定（毎日0時更新・全員共通） -->
-    <button id="daily-card" class="daily-card">
-      <span class="daily-kicker">TODAY'S QUIZ</span>
-      <span class="daily-title">今日の名画検定 <span id="daily-num">#1</span></span>
-      <span class="daily-sub" id="daily-sub"></span>
-      <span class="daily-status" id="daily-status">挑戦する →</span>
-    </button>
+    <!-- ホーム（出題中は隠れる） -->
+    <div id="home-menu">
+      <!-- 今日の名画検定（毎日0時更新・全員共通） -->
+      <button id="daily-card" class="daily-card">
+        <span class="daily-kicker">TODAY'S QUIZ</span>
+        <span class="daily-title">今日の名画検定 <span id="daily-num">#1</span></span>
+        <span class="daily-sub" id="daily-sub"></span>
+        <span class="daily-status" id="daily-status">挑戦する →</span>
+      </button>
 
-    <p class="mode-caption">練習モード — レベルをえらんで何度でも</p>
+      <p class="mode-caption">練習モード — レベルをえらんで何度でも</p>
 
-    <!-- 難易度切り替え（ボタンはapp.jsがデータから自動生成。Level 4以降も自動で増える） -->
-    <div class="level-row" id="level-row" role="group" aria-label="レベルをえらぶ"></div>
+      <!-- 難易度切り替え（ボタンはapp.jsがデータから自動生成。Level 4以降も自動で増える） -->
+      <div class="level-row" id="level-row" role="group" aria-label="レベルをえらぶ"></div>
+    </div>
 
     <!-- クイズ画面 -->
     <section id="quiz-screen" hidden>
       <div class="progress-row">
+        <button id="quiz-home-btn" class="quiz-home-btn" aria-label="ホームにもどる">←</button>
         <span id="q-counter">第1問 / 5</span>
         <div id="score-dots" aria-label="正解状況"></div>
       </div>
