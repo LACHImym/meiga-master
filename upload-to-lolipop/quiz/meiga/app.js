@@ -294,3 +294,6 @@ $("pool-info").textContent =
   LEVEL_NUMS.map(n => `Level ${n}: ${lvCount(n)}`).join("・") + "）";
 renderLevelButtons();
 startRound();
+
+// 冒頭の広告を読み込む（常時表示の枠なので初回に1回だけ）
+try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch (e) {}

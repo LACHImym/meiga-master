@@ -1,10 +1,13 @@
 // ============================================================
-// アートクイズ 本体ロジック
-// 5問 × 20点 = 100点満点 / 作者当て・タイトル当ての4択
+// 名画MASTER 本体ロジック
+// ・今日の名画検定（毎日0時更新・全員共通の5問・連続記録🔥）
+// ・練習モード（Level別・何度でも）
+// ・きろく（過去の成績・マスター作品数）… ブラウザ保存(localStorage)
 // ============================================================
 
 const QUESTIONS_PER_ROUND = 5;
 const POINTS_PER_QUESTION = 20;
+const DAILY_EPOCH = "2026-07-19"; // この日が「今日の名画検定 #1」
 
 // レベルは出題データから自動検出（works.jsにlevel:4の作品を足せばボタンも自動で増える）
 const LEVEL_NUMS = [...new Set(WORKS.map(w => w.level))].sort((a, b) => a - b);
@@ -45,13 +48,40 @@ const RESULT_MESSAGES = [
 ];
 
 // ---------- ユーティリティ ----------
-function shuffle(arr) {
+// シード付き乱数（日付から作る＝同じ日は全員同じ問題になる）
+function seededRng(seedStr) {
+  let h = 1779033703 ^ seedStr.length;
+  for (let i = 0; i < seedStr.length; i++) {
+    h = Math.imul(h ^ seedStr.charCodeAt(i), 3432918353);
+    h = (h << 13) | (h >>> 19);
+  }
+  return function () {
+    h = Math.imul(h ^ (h >>> 16), 2246822507);
+    h = Math.imul(h ^ (h >>> 13), 3266489909);
+    h ^= h >>> 16;
+    return (h >>> 0) / 4294967296;
+  };
+}
+
+function shuffle(arr, rnd = Math.random) {
   const a = [...arr];
   for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
+    const j = Math.floor(rnd() * (i + 1));
     [a[i], a[j]] = [a[j], a[i]];
   }
   return a;
+}
+
+function todayStr(offsetDays = 0) {
+  const d = new Date();
+  d.setDate(d.getDate() + offsetDays);
+  const p = n => String(n).padStart(2, "0");
+  return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`;
+}
+
+function dayNumber(dateStr) {
+  const diff = Math.round((new Date(dateStr) - new Date(DAILY_EPOCH)) / 86400000);
+  return Math.max(1, diff + 1);
 }
 
 function eraOf(work) {
@@ -61,7 +91,7 @@ function eraOf(work) {
   return "m19";
 }
 
-// Wikimedia Commonsの縮小版URLを作る（読み込みを軽くする）
+// Wikimedia Commonsの縮小版URLを作る（許可サイズ: 250/330/500/960/1280のみ）
 function thumbUrl(url, width) {
   const m = url.match(/^https:\/\/upload\.wikimedia\.org\/wikipedia\/commons\/(.)\/(..)\/(.+)$/);
   if (!m) return url;
@@ -74,72 +104,129 @@ function tooSimilar(a, b) {
   return a.slice(0, 4) === b.slice(0, 4);
 }
 
+// ---------- きろく（localStorage） ----------
+const store = {
+  get(key, fallback) {
+    try { return JSON.parse(localStorage.getItem(key)) ?? fallback; }
+    catch (e) { return fallback; }
+  },
+  set(key, val) {
+    try { localStorage.setItem(key, JSON.stringify(val)); } catch (e) {}
+  }
+};
+// mmDaily: { last: "YYYY-MM-DD", streak: n, best: n, results: { "YYYY-MM-DD": {score, num} } }
+// mmLog:   [ { d, mode: "daily"|"practice", level, score } ]  最新200件
+// mmMastered: [ 正解したことのある作品タイトル ]
+
+function currentStreak() {
+  const daily = store.get("mmDaily", {});
+  if (!daily.last) return 0;
+  if (daily.last === todayStr() || daily.last === todayStr(-1)) return daily.streak || 0;
+  return 0; // 2日以上あいたら途切れ
+}
+
 // ---------- 出題の組み立て ----------
-function buildRound() {
-  // 出題は選択中の難易度の作品だけから
+function makeQuestion(work, rnd) {
+  const era = eraOf(work);
+  // 作者不詳の作品はタイトル当てのみ。それ以外はランダムに出し分け
+  const type = work.artist === "不詳" ? "title"
+    : rnd() < 0.5 ? "artist" : "title";
+
+  const allByArtist = {};
+  for (const w of WORKS) (allByArtist[w.artist] ??= []).push(w);
+  const datasetArtists = Object.keys(allByArtist).filter(a => a !== "不詳");
+
+  let choices;
+  if (type === "artist") {
+    const sameEra = datasetArtists.filter(a =>
+      a !== work.artist && allByArtist[a].some(w => eraOf(w) === era));
+    const pool = shuffle([...new Set([...sameEra, ...EXTRA_ARTISTS[era]])], rnd)
+      .filter(a => a !== work.artist);
+    // 足りなければ他の時代からも補充
+    const backup = shuffle(datasetArtists.filter(a => a !== work.artist && !pool.includes(a)), rnd);
+    choices = shuffle([work.artist, ...[...pool, ...backup].slice(0, 3)], rnd);
+  } else {
+    const sameEra = WORKS.filter(w =>
+      w.artist !== work.artist && eraOf(w) === era && !tooSimilar(w.title, work.title));
+    const others = WORKS.filter(w =>
+      w.artist !== work.artist && eraOf(w) !== era && !tooSimilar(w.title, work.title));
+    const pool = [...shuffle(sameEra, rnd), ...shuffle(others, rnd)].map(w => w.title);
+    const uniq = [...new Set(pool)];
+    choices = shuffle([work.title, ...uniq.slice(0, 3)], rnd);
+  }
+
+  return {
+    work,
+    type,
+    question: type === "artist" ? "この作品の作者は？" : "この作品のタイトルは？",
+    answer: type === "artist" ? work.artist : work.title,
+    choices
+  };
+}
+
+// 練習モード: 選択中レベルからランダム5問（作家の偏りを防ぐ）
+function buildPracticeRound() {
   const pool = WORKS.filter(w => w.level === currentLevel);
-  // 同じ作家に偏らないよう、作家単位でシャッフルして1人1作品ずつ選ぶ
   const byArtist = {};
   for (const w of pool) (byArtist[w.artist] ??= []).push(w);
   const artists = shuffle(Object.keys(byArtist));
   const picked = artists.slice(0, QUESTIONS_PER_ROUND)
     .map(a => shuffle(byArtist[a])[0]);
+  return picked.map(w => makeQuestion(w, Math.random));
+}
 
-  // ハズレ選択肢は難易度に関係なく全作品・全作家から選ぶ
-  const allByArtist = {};
-  for (const w of WORKS) (allByArtist[w.artist] ??= []).push(w);
-  const datasetArtists = Object.keys(allByArtist).filter(a => a !== "不詳");
-
-  return picked.map(work => {
-    const era = eraOf(work);
-    // 作者不詳の作品はタイトル当てのみ。それ以外はランダムに出し分け
-    const type = work.artist === "不詳" ? "title"
-      : Math.random() < 0.5 ? "artist" : "title";
-
-    let choices;
-    if (type === "artist") {
-      const sameEra = datasetArtists.filter(a =>
-        a !== work.artist && allByArtist[a].some(w => eraOf(w) === era));
-      const pool = shuffle([...new Set([...sameEra, ...EXTRA_ARTISTS[era]])])
-        .filter(a => a !== work.artist);
-      // 足りなければ他の時代からも補充
-      const backup = shuffle(datasetArtists.filter(a => a !== work.artist && !pool.includes(a)));
-      choices = shuffle([work.artist, ...[...pool, ...backup].slice(0, 3)]);
-    } else {
-      const sameEra = WORKS.filter(w =>
-        w.artist !== work.artist && eraOf(w) === era && !tooSimilar(w.title, work.title));
-      const others = WORKS.filter(w =>
-        w.artist !== work.artist && eraOf(w) !== era && !tooSimilar(w.title, work.title));
-      const pool = [...shuffle(sameEra), ...shuffle(others)]
-        .map(w => w.title);
-      const uniq = [...new Set(pool)];
-      choices = shuffle([work.title, ...uniq.slice(0, 3)]);
+// 今日の名画検定: 日付シードで全員同じ5問（Level 1×2 → 2×2 → 3×1 の順）
+function buildDailyRound(dateStr) {
+  const rnd = seededRng("meiga-" + dateStr);
+  const picked = [];
+  const usedArtists = new Set();
+  [[1, 2], [2, 2], [3, 1]].forEach(([lv, count]) => {
+    const pool = shuffle(WORKS.filter(w => w.level === lv), rnd);
+    let taken = 0;
+    for (const w of pool) {
+      if (taken >= count) break;
+      if (usedArtists.has(w.artist) && w.artist !== "不詳") continue;
+      usedArtists.add(w.artist);
+      picked.push(w);
+      taken++;
     }
-
-    return {
-      work,
-      type,
-      question: type === "artist" ? "この作品の作者は？" : "この作品のタイトルは？",
-      answer: type === "artist" ? work.artist : work.title,
-      choices
-    };
   });
+  return picked.map(w => makeQuestion(w, rnd));
 }
 
 // ---------- 画面制御 ----------
 const $ = id => document.getElementById(id);
+let mode = "practice"; // "practice" | "daily"
 let round = [];
 let current = 0;
 let results = []; // true/false
 
-function startRound() {
-  round = buildRound();
+function startRound(newMode) {
+  mode = newMode || "practice";
+  if (mode === "daily") {
+    const played = store.get("mmDaily", {}).results?.[todayStr()];
+    if (played) { showView("records"); return; } // 挑戦済みならきろくへ
+    round = buildDailyRound(todayStr());
+  } else {
+    round = buildPracticeRound();
+  }
   current = 0;
   results = [];
+  showView("play");
   $("result-screen").hidden = true;
   $("loading-screen").hidden = true;
   $("quiz-screen").hidden = false;
   showQuestion();
+  window.scrollTo({ top: 0 });
+}
+
+// あそぶ / きろく の切り替え
+function showView(view) {
+  $("play-view").hidden = view !== "play";
+  $("records-screen").hidden = view !== "records";
+  $("tab-play").classList.toggle("active", view === "play");
+  $("tab-records").classList.toggle("active", view === "records");
+  if (view === "records") renderRecords();
   window.scrollTo({ top: 0 });
 }
 
@@ -159,7 +246,8 @@ function renderDots() {
 
 function showQuestion() {
   const q = round[current];
-  $("q-counter").textContent = `第${current + 1}問 / ${QUESTIONS_PER_ROUND}`;
+  const prefix = mode === "daily" ? `今日の #${dayNumber(todayStr())}・` : "";
+  $("q-counter").textContent = `${prefix}第${current + 1}問 / ${QUESTIONS_PER_ROUND}`;
   renderDots();
 
   const img = $("art-image");
@@ -213,13 +301,44 @@ function answer(btn, choice) {
   renderDots();
 }
 
+// きろくへの保存（1ラウンド終了時）
+function saveRoundRecord(score) {
+  // プレイ履歴
+  const log = store.get("mmLog", []);
+  log.unshift({ d: todayStr(), mode, level: mode === "practice" ? currentLevel : null, score });
+  store.set("mmLog", log.slice(0, 200));
+
+  // マスター作品（一度でも正解した作品）
+  const mastered = new Set(store.get("mmMastered", []));
+  round.forEach((q, i) => { if (results[i]) mastered.add(q.work.title); });
+  store.set("mmMastered", [...mastered]);
+
+  // デイリーの記録と連続日数
+  if (mode === "daily") {
+    const daily = store.get("mmDaily", { results: {} });
+    daily.results = daily.results || {};
+    if (!daily.results[todayStr()]) {
+      daily.results[todayStr()] = { score, num: dayNumber(todayStr()) };
+      daily.streak = (daily.last === todayStr(-1)) ? (daily.streak || 0) + 1 : 1;
+      daily.best = Math.max(daily.best || 0, daily.streak);
+      daily.last = todayStr();
+      store.set("mmDaily", daily);
+    }
+  }
+}
+
 function showResult() {
   const correctCount = results.filter(Boolean).length;
   const score = correctCount * POINTS_PER_QUESTION;
+  saveRoundRecord(score);
+  renderDailyCard();
+
   $("quiz-screen").hidden = true;
   $("result-screen").hidden = false;
   $("score-num").textContent = score;
-  $("result-sub").textContent = `${QUESTIONS_PER_ROUND}問中${correctCount}問正解`;
+  $("result-sub").textContent = mode === "daily"
+    ? `今日の名画検定 #${dayNumber(todayStr())}`
+    : `${QUESTIONS_PER_ROUND}問中${correctCount}問正解`;
   $("result-message").textContent =
     RESULT_MESSAGES.find(m => score >= m.min).msg;
 
@@ -231,12 +350,22 @@ function showResult() {
   arc.getBoundingClientRect(); // 一度レイアウトを確定させ、0%→得点率へCSS遷移で伸ばす
   arc.style.strokeDashoffset = circumference * (1 - score / 100);
 
-  const text = `🎨名画MASTER Level ${currentLevel}で${score}点（100点満点）でした！あなたも名画に挑戦してみて✨ #名画MASTER`;
+  const streak = currentStreak();
+  const text = mode === "daily"
+    ? `🎨名画検定 #${dayNumber(todayStr())} ${score}点${streak >= 2 ? ` 🔥${streak}日連続` : ""} #名画MASTER`
+    : `🎨名画MASTER Level ${currentLevel}で${score}点（100点満点）でした！あなたも名画に挑戦してみて✨ #名画MASTER`;
   const url = location.origin.startsWith("http")
     ? location.origin + location.pathname : "";
   $("share-btn").href =
     "https://twitter.com/intent/tweet?text=" + encodeURIComponent(text) +
     (url ? "&url=" + encodeURIComponent(url) : "");
+
+  // デイリー完走メッセージ
+  $("daily-done-note").hidden = mode !== "daily";
+  if (mode === "daily") {
+    $("daily-done-note").textContent =
+      `🔥${streak}日連続！ 明日の0時に #${dayNumber(todayStr()) + 1} が届きます`;
+  }
 
   const list = $("recap-list");
   list.innerHTML = "";
@@ -261,12 +390,79 @@ function showResult() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
+// ---------- 今日の名画検定カード ----------
+function renderDailyCard() {
+  const num = dayNumber(todayStr());
+  const played = store.get("mmDaily", {}).results?.[todayStr()];
+  const streak = currentStreak();
+  $("daily-num").textContent = `#${num}`;
+  const md = todayStr().slice(5).replace("-", "/");
+  if (played) {
+    $("daily-sub").textContent = `✓ 挑戦済み ${played.score}点` +
+      (streak >= 1 ? `・🔥${streak}日連続` : "");
+    $("daily-status").textContent = "きろくを見る →";
+  } else {
+    $("daily-sub").textContent = `${md}の5問・全員共通・毎日0時に更新` +
+      (streak >= 1 ? `・🔥${streak}日連続中` : "");
+    $("daily-status").textContent = "挑戦する →";
+  }
+}
+
+// ---------- きろく画面 ----------
+function renderRecords() {
+  const daily = store.get("mmDaily", { results: {} });
+  const log = store.get("mmLog", []);
+  const mastered = store.get("mmMastered", []);
+
+  $("rec-streak").textContent = currentStreak();
+  $("rec-best").textContent = daily.best || 0;
+  $("rec-plays").textContent = log.length;
+  $("rec-avg").textContent = log.length
+    ? Math.round(log.reduce((s, e) => s + e.score, 0) / log.length) : 0;
+
+  $("rec-mastered-num").textContent = `${mastered.length} / ${WORKS.length}`;
+  $("rec-mastered-bar").style.width =
+    Math.min(100, Math.round(mastered.length / WORKS.length * 100)) + "%";
+
+  // デイリー履歴（新しい順に14件）
+  const dl = $("rec-daily-list");
+  dl.innerHTML = "";
+  const dailyEntries = Object.entries(daily.results || {})
+    .sort((a, b) => b[0].localeCompare(a[0])).slice(0, 14);
+  if (!dailyEntries.length) {
+    dl.innerHTML = '<li class="rec-empty">まだ挑戦していません。今日の名画検定からどうぞ！</li>';
+  }
+  dailyEntries.forEach(([date, r]) => {
+    const li = document.createElement("li");
+    li.innerHTML = `<span class="rec-tag">#${r.num}</span><span>${date.slice(5).replace("-", "/")}</span><strong>${r.score}点</strong>`;
+    dl.appendChild(li);
+  });
+
+  // 練習履歴（新しい順に10件）
+  const pl = $("rec-practice-list");
+  pl.innerHTML = "";
+  const practice = log.filter(e => e.mode === "practice").slice(0, 10);
+  if (!practice.length) {
+    pl.innerHTML = '<li class="rec-empty">まだ記録がありません</li>';
+  }
+  practice.forEach(e => {
+    const li = document.createElement("li");
+    li.innerHTML = `<span class="rec-tag">Lv${e.level}</span><span>${e.d.slice(5).replace("-", "/")}</span><strong>${e.score}点</strong>`;
+    pl.appendChild(li);
+  });
+}
+
+// ---------- 初期化 ----------
 $("next-btn").onclick = () => {
   current++;
   if (current < QUESTIONS_PER_ROUND) showQuestion();
   else showResult();
 };
-$("retry-btn").onclick = startRound;
+$("retry-btn").onclick = () => startRound("practice");
+$("daily-card").onclick = () => startRound("daily");
+$("tab-play").onclick = () => showView("play");
+$("tab-records").onclick = () => showView("records");
+$("rec-back-btn").onclick = () => showView("play");
 
 // レベルボタン（データにあるレベルぶんだけ自動生成）
 function renderLevelButtons() {
@@ -282,7 +478,7 @@ function renderLevelButtons() {
       currentLevel = n;
       localStorage.setItem("artQuizLevel", n);
       renderLevelButtons();
-      startRound();
+      startRound("practice");
     };
     row.appendChild(b);
   });
@@ -293,7 +489,8 @@ $("pool-info").textContent =
   `出題プール: ${WORKS.length}作品（` +
   LEVEL_NUMS.map(n => `Level ${n}: ${lvCount(n)}`).join("・") + "）";
 renderLevelButtons();
-startRound();
+renderDailyCard();
+startRound("practice");
 
 // 冒頭の広告を読み込む（常時表示の枠なので初回に1回だけ）
 try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch (e) {}

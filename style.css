@@ -466,3 +466,215 @@ body {
   text-underline-offset: 2px;
 }
 .home-link a:hover { color: var(--teal-deep); }
+
+/* ============================================================
+   デイリー化（今日の名画検定・タブ・きろく）
+   ============================================================ */
+
+/* --- あそぶ / きろく タブ --- */
+.top-tabs {
+  display: flex;
+  gap: 12px;
+  margin: 0 0 14px;
+}
+.top-tab {
+  flex: 1;
+  padding: 10px 6px;
+  border: none;
+  border-radius: 14px;
+  background: var(--panel);
+  color: var(--mute);
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  cursor: pointer;
+  box-shadow: var(--raise-chip);
+  transition: box-shadow 0.15s, color 0.15s;
+}
+.top-tab.active {
+  box-shadow: var(--inset-chip);
+  color: var(--teal-deep);
+}
+
+/* --- 今日の名画検定カード --- */
+.daily-card {
+  display: block;
+  width: 100%;
+  margin: 0 0 20px;
+  padding: 18px 16px;
+  border: none;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #2dd4bf, #0d9488);
+  color: #fff;
+  font-family: inherit;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 10px 24px -6px rgba(13, 148, 136, 0.5);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.daily-card:hover { transform: translateY(-2px); }
+.daily-card:active { transform: none; box-shadow: 0 5px 12px -6px rgba(13, 148, 136, 0.5); }
+.daily-kicker {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  opacity: 0.85;
+}
+.daily-title {
+  display: block;
+  margin-top: 4px;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.daily-sub {
+  display: block;
+  margin-top: 4px;
+  font-size: 11px;
+  opacity: 0.92;
+}
+.daily-status {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 22px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--teal-deep);
+  font-size: 13px;
+  font-weight: 700;
+}
+.mode-caption {
+  margin: 0 2px 8px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--mute);
+}
+
+/* --- デイリー完走メッセージ（結果画面） --- */
+.daily-done-note {
+  margin: 4px 0 14px;
+  padding: 10px 14px;
+  border-radius: 14px;
+  display: inline-block;
+  background: var(--teal-soft);
+  color: var(--teal-deep);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* --- クイズ広場リンク（結果画面下部） --- */
+.portal-link-row { margin: 14px 0 0; text-align: center; }
+.portal-link {
+  color: var(--mute);
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.portal-link:hover { color: var(--teal-deep); }
+
+/* --- きろく画面 --- */
+#records-screen { padding-top: 4px; }
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+@media (max-width: 500px) {
+  .stat-grid { grid-template-columns: repeat(2, 1fr); }
+}
+.stat-tile {
+  padding: 14px 6px;
+  border-radius: 18px;
+  background: var(--panel);
+  box-shadow: var(--raise-tile);
+  text-align: center;
+}
+.stat-num {
+  display: block;
+  font-size: 26px;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+.stat-label {
+  display: block;
+  margin-top: 2px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--mute);
+}
+.mastered-panel {
+  margin-top: 14px;
+  padding: 16px;
+  border-radius: 18px;
+  background: var(--panel);
+  box-shadow: var(--raise-tile);
+}
+.mastered-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink);
+}
+.mastered-head strong { color: var(--teal-deep); }
+.mastered-track {
+  margin-top: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background: var(--panel);
+  box-shadow: var(--inset-chip);
+  overflow: hidden;
+}
+.mastered-bar {
+  height: 100%;
+  width: 0%;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #2dd4bf, #0d9488);
+  transition: width 0.6s ease;
+}
+.rec-h {
+  margin: 22px 2px 8px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  color: var(--mute);
+}
+.rec-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.rec-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  margin-bottom: 8px;
+  border-radius: 14px;
+  background: var(--panel);
+  box-shadow: var(--raise-chip);
+  font-size: 12px;
+  color: var(--ink);
+}
+.rec-list li strong { margin-left: auto; font-weight: 700; }
+.rec-tag {
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--teal-soft);
+  color: var(--teal-deep);
+  font-size: 11px;
+  font-weight: 700;
+}
+.rec-empty {
+  justify-content: center;
+  color: var(--mute) !important;
+  box-shadow: var(--inset-chip) !important;
+}
+#rec-back-btn { margin-top: 20px; }

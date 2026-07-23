@@ -353,6 +353,17 @@ body {
   margin: 0;
   text-align: left;
 }
+/* --- 冒頭の広告枠 --- */
+.ad-top {
+  margin: 4px 0 18px;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.ad-top .adsbygoogle { width: 100%; }
+
 /* --- ブログ誘導カード（結果画面下部） --- */
 .blog-cta {
   display: block;

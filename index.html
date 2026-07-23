@@ -37,6 +37,24 @@
            data-full-width-responsive="true"></ins>
     </div>
 
+    <!-- あそぶ / きろく タブ -->
+    <nav class="top-tabs" aria-label="画面切り替え">
+      <button id="tab-play" class="top-tab active">あそぶ</button>
+      <button id="tab-records" class="top-tab">きろく</button>
+    </nav>
+
+    <div id="play-view">
+
+    <!-- 今日の名画検定（毎日0時更新・全員共通） -->
+    <button id="daily-card" class="daily-card">
+      <span class="daily-kicker">TODAY'S QUIZ</span>
+      <span class="daily-title">今日の名画検定 <span id="daily-num">#1</span></span>
+      <span class="daily-sub" id="daily-sub"></span>
+      <span class="daily-status" id="daily-status">挑戦する →</span>
+    </button>
+
+    <p class="mode-caption">練習モード — レベルをえらんで何度でも</p>
+
     <!-- 難易度切り替え（ボタンはapp.jsがデータから自動生成。Level 4以降も自動で増える） -->
     <div class="level-row" id="level-row" role="group" aria-label="レベルをえらぶ"></div>
 
@@ -84,6 +102,7 @@
         </div>
       </div>
       <p id="result-message"></p>
+      <p id="daily-done-note" class="daily-done-note" hidden></p>
       <div class="result-actions">
         <a id="share-btn" class="primary-btn" href="#" target="_blank" rel="noopener">
           𝕏 で結果をシェア
@@ -98,11 +117,37 @@
         <span class="blog-cta-title">名画の魅力を、もっと言葉で。</span>
         <span class="blog-cta-action">らちまゆみのブログを読む →</span>
       </a>
+      <p class="portal-link-row"><a class="portal-link" href="../">🎨 クイズ広場 — ほかのクイズであそぶ →</a></p>
     </section>
 
     <!-- 読み込み中 -->
     <section id="loading-screen">
       <p>問題を準備しています…</p>
+    </section>
+
+    </div><!-- /#play-view -->
+
+    <!-- きろく画面 -->
+    <section id="records-screen" hidden>
+      <div class="stat-grid">
+        <div class="stat-tile"><span class="stat-num" id="rec-streak">0</span><span class="stat-label">🔥 連続日数</span></div>
+        <div class="stat-tile"><span class="stat-num" id="rec-best">0</span><span class="stat-label">最高連続</span></div>
+        <div class="stat-tile"><span class="stat-num" id="rec-plays">0</span><span class="stat-label">プレイ回数</span></div>
+        <div class="stat-tile"><span class="stat-num" id="rec-avg">0</span><span class="stat-label">平均点</span></div>
+      </div>
+
+      <div class="mastered-panel">
+        <div class="mastered-head"><span>マスターした作品</span><strong id="rec-mastered-num">0 / 109</strong></div>
+        <div class="mastered-track"><div class="mastered-bar" id="rec-mastered-bar"></div></div>
+      </div>
+
+      <h3 class="rec-h">今日の名画検定</h3>
+      <ol id="rec-daily-list" class="rec-list"></ol>
+
+      <h3 class="rec-h">練習モード</h3>
+      <ol id="rec-practice-list" class="rec-list"></ol>
+
+      <button id="rec-back-btn" class="secondary-btn">あそぶにもどる</button>
     </section>
   </main>
 
