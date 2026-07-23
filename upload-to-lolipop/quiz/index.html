@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>クイズ広場｜LACHIART QUIZ</title>
+  <meta name="description" content="アートテラー・らちまゆみのクイズ広場。名画MASTER（世界の有名絵画クイズ）、色目クイズなど、美術をあそんで学べるクイズを集めました。">
+  <meta property="og:title" content="クイズ広場｜LACHIART QUIZ">
+  <meta property="og:description" content="美術をあそんで学べるクイズがここに集合。毎日0時に「今日の名画検定」更新中。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lachiart.com/quiz/">
+  <meta property="og:image" content="https://lachiart.com/quiz/meiga/og-card.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="meiga/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #e6e9ef;
+      --panel: #eef1f6;
+      --shadow-d: #c5cad3;
+      --shadow-l: #ffffff;
+      --ink: #2a3142;
+      --mute: #7a8294;
+      --teal: #2dd4bf;
+      --teal-deep: #0d9488;
+      --teal-soft: #d4f1eb;
+      --raise-panel: 12px 12px 28px var(--shadow-d), -12px -12px 28px var(--shadow-l);
+      --raise-tile: 8px 8px 18px var(--shadow-d), -8px -8px 18px var(--shadow-l);
+      --inset-chip: inset 3px 3px 6px var(--shadow-d), inset -3px -3px 6px var(--shadow-l);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Inter", -apple-system, BlinkMacSystemFont,
+        "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", sans-serif;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    .site-header { text-align: center; padding: 40px 16px 10px; }
+    .kicker {
+      margin: 0;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.24em;
+      color: var(--teal-deep);
+    }
+    h1 {
+      margin: 4px 0 0;
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+    .tagline { margin: 6px 0 0; color: var(--mute); font-size: 12px; }
+    main { max-width: 560px; margin: 0 auto; padding: 22px 22px 40px; }
+    .quiz-card {
+      display: block;
+      margin-bottom: 22px;
+      padding: 24px 20px;
+      border-radius: 24px;
+      background: var(--panel);
+      box-shadow: var(--raise-panel);
+      text-decoration: none;
+      color: var(--ink);
+      text-align: center;
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .quiz-card:hover { transform: translateY(-3px); }
+    .quiz-card img.q-logo { width: 190px; max-width: 70%; height: auto; }
+    .q-name { display: block; margin-top: 8px; font-size: 17px; font-weight: 700; }
+    .q-desc { display: block; margin-top: 4px; font-size: 12px; color: var(--mute); }
+    .q-badge {
+      display: inline-block;
+      margin-top: 6px;
+      padding: 4px 12px;
+      border-radius: 999px;
+      background: var(--teal-soft);
+      color: var(--teal-deep);
+      font-size: 11px;
+      font-weight: 700;
+    }
+    .q-action {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 11px 30px;
+      border-radius: 999px;
+      background: var(--teal);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      box-shadow: 0 6px 14px -2px rgba(45, 212, 191, 0.4);
+    }
+    .quiz-card.soon {
+      cursor: default;
+      opacity: 0.75;
+    }
+    .quiz-card.soon:hover { transform: none; }
+    .quiz-card.soon .q-action {
+      background: var(--panel);
+      color: var(--mute);
+      box-shadow: var(--inset-chip);
+    }
+    .q-emoji { font-size: 44px; line-height: 1; display: block; }
+    .site-footer {
+      text-align: center;
+      color: var(--mute);
+      font-size: 10px;
+      padding: 10px 16px 30px;
+    }
+    .site-footer a {
+      color: var(--mute);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .site-footer a:hover { color: var(--teal-deep); }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <p class="kicker">LACHIART QUIZ</p>
+    <h1>クイズ広場</h1>
+    <p class="tagline">美術を、あそんで学ぶ。アートテラー・らちまゆみのクイズ集</p>
+  </header>
+
+  <main>
+    <a class="quiz-card" href="meiga/">
+      <img class="q-logo" src="meiga/logo.png" alt="名画MASTER">
+      <span class="q-desc">世界の有名絵画クイズ — 全5問・100点満点・Level 1〜3</span>
+      <span class="q-badge">毎日0時に「今日の名画検定」更新</span><br>
+      <span class="q-action">あそぶ →</span>
+    </a>
+
+    <!-- 色目クイズ（リンク先が決まったら href を差し替えて class="soon" を外す） -->
+    <a class="quiz-card soon">
+      <span class="q-emoji">🎨</span>
+      <span class="q-name">色目クイズ</span>
+      <span class="q-desc">日本の伝統色をあてるクイズ</span><br>
+      <span class="q-action">近日公開</span>
+    </a>
+  </main>
+
+  <footer class="site-footer">
+    <p><a href="https://lachiart.com/">LACHIART</a></p>
+  </footer>
+
+</body>
+</html>

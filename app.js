@@ -205,27 +205,28 @@ function startRound(newMode) {
   mode = newMode || "practice";
   if (mode === "daily") {
     const played = store.get("mmDaily", {}).results?.[todayStr()];
-    if (played) { showView("records"); return; } // 挑戦済みならきろくへ
+    if (played) { setView("records"); return; } // 挑戦済みならきろくへ
     round = buildDailyRound(todayStr());
   } else {
     round = buildPracticeRound();
   }
   current = 0;
   results = [];
-  showView("play");
-  $("result-screen").hidden = true;
-  $("loading-screen").hidden = true;
-  $("quiz-screen").hidden = false;
+  setView("quiz");
   showQuestion();
-  window.scrollTo({ top: 0 });
 }
 
-// あそぶ / きろく の切り替え
-function showView(view) {
-  $("play-view").hidden = view !== "play";
+// 画面の切り替え（home=カードとレベル選択 / quiz=出題に集中 / result / records）
+function setView(view) {
+  document.querySelector(".top-tabs").hidden = view === "quiz"; // 出題中は上部もすっきり
+  $("home-menu").hidden = view !== "home";
+  $("quiz-screen").hidden = view !== "quiz";
+  $("result-screen").hidden = view !== "result";
   $("records-screen").hidden = view !== "records";
-  $("tab-play").classList.toggle("active", view === "play");
+  $("loading-screen").hidden = true;
+  $("tab-play").classList.toggle("active", view !== "records");
   $("tab-records").classList.toggle("active", view === "records");
+  if (view === "home") renderDailyCard();
   if (view === "records") renderRecords();
   window.scrollTo({ top: 0 });
 }
@@ -333,8 +334,7 @@ function showResult() {
   saveRoundRecord(score);
   renderDailyCard();
 
-  $("quiz-screen").hidden = true;
-  $("result-screen").hidden = false;
+  setView("result");
   $("score-num").textContent = score;
   $("result-sub").textContent = mode === "daily"
     ? `今日の名画検定 #${dayNumber(todayStr())}`
@@ -360,8 +360,9 @@ function showResult() {
     "https://twitter.com/intent/tweet?text=" + encodeURIComponent(text) +
     (url ? "&url=" + encodeURIComponent(url) : "");
 
-  // デイリー完走メッセージ
+  // デイリー完走メッセージ（デイリーは1日1回なので再挑戦ボタンは練習へ誘導）
   $("daily-done-note").hidden = mode !== "daily";
+  $("retry-btn").textContent = mode === "daily" ? "練習モードであそぶ" : "もう一度挑戦";
   if (mode === "daily") {
     $("daily-done-note").textContent =
       `🔥${streak}日連続！ 明日の0時に #${dayNumber(todayStr()) + 1} が届きます`;
@@ -460,9 +461,10 @@ $("next-btn").onclick = () => {
 };
 $("retry-btn").onclick = () => startRound("practice");
 $("daily-card").onclick = () => startRound("daily");
-$("tab-play").onclick = () => showView("play");
-$("tab-records").onclick = () => showView("records");
-$("rec-back-btn").onclick = () => showView("play");
+$("quiz-home-btn").onclick = () => setView("home");
+$("tab-play").onclick = () => setView("home");
+$("tab-records").onclick = () => setView("records");
+$("rec-back-btn").onclick = () => setView("home");
 
 // レベルボタン（データにあるレベルぶんだけ自動生成）
 function renderLevelButtons() {
@@ -489,8 +491,15 @@ $("pool-info").textContent =
   `出題プール: ${WORKS.length}作品（` +
   LEVEL_NUMS.map(n => `Level ${n}: ${lvCount(n)}`).join("・") + "）";
 renderLevelButtons();
-renderDailyCard();
-startRound("practice");
+setView("home"); // 最初はホーム（今日の名画検定カード＋レベル選択）
 
 // 冒頭の広告を読み込む（常時表示の枠なので初回に1回だけ）
 try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch (e) {}
+
+// 数秒たっても広告が入らなければ枠を畳む（空白で場所を取らないため）
+setTimeout(() => {
+  const ins = document.querySelector(".ad-top ins.adsbygoogle");
+  if (ins && !ins.querySelector("iframe")) {
+    document.querySelector(".ad-top").classList.add("ad-empty");
+  }
+}, 4000);
