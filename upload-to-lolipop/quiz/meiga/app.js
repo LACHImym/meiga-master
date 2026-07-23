@@ -362,7 +362,7 @@ function showResult() {
 
   // デイリー完走メッセージ（デイリーは1日1回なので再挑戦ボタンは練習へ誘導）
   $("daily-done-note").hidden = mode !== "daily";
-  $("retry-btn").textContent = mode === "daily" ? "練習モードであそぶ" : "もう一度挑戦";
+  $("retry-btn").textContent = mode === "daily" ? "レベル別問題であそぶ" : "もう一度挑戦";
   if (mode === "daily") {
     $("daily-done-note").textContent =
       `🔥${streak}日連続！ 明日の0時に #${dayNumber(todayStr()) + 1} が届きます`;
@@ -464,7 +464,6 @@ $("daily-card").onclick = () => startRound("daily");
 $("quiz-home-btn").onclick = () => setView("home");
 $("tab-play").onclick = () => setView("home");
 $("tab-records").onclick = () => setView("records");
-$("rec-back-btn").onclick = () => setView("home");
 
 // レベルボタン（データにあるレベルぶんだけ自動生成）
 function renderLevelButtons() {

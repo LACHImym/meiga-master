@@ -387,45 +387,6 @@ body {
 .ad-top.ad-empty { display: none; }
 ins.adsbygoogle[data-ad-status="unfilled"] { display: none !important; }
 
-/* --- ブログ誘導カード（結果画面下部） --- */
-.blog-cta {
-  display: block;
-  margin-top: 26px;
-  padding: 20px 18px;
-  border-radius: 22px;
-  background: var(--panel);
-  box-shadow: var(--raise-panel);
-  text-decoration: none;
-  text-align: center;
-  transition: transform 0.15s, box-shadow 0.15s;
-}
-.blog-cta:hover { transform: translateY(-2px); }
-.blog-cta:active { box-shadow: var(--inset-chip); transform: none; }
-.blog-cta-kicker {
-  display: block;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.2em;
-  color: var(--mute);
-}
-.blog-cta-title {
-  display: block;
-  margin-top: 6px;
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--ink);
-}
-.blog-cta-action {
-  display: inline-block;
-  margin-top: 12px;
-  padding: 9px 20px;
-  border-radius: 999px;
-  background: var(--teal);
-  color: #fff;
-  font-size: 13px;
-  font-weight: 600;
-  box-shadow: 0 6px 14px -2px rgba(45, 212, 191, 0.4);
-}
 .recap-list li {
   display: flex;
   align-items: center;
@@ -700,4 +661,3 @@ ins.adsbygoogle[data-ad-status="unfilled"] { display: none !important; }
   color: var(--mute) !important;
   box-shadow: var(--inset-chip) !important;
 }
-#rec-back-btn { margin-top: 20px; }
