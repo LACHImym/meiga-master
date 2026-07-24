@@ -16,6 +16,8 @@
 
 **公開時に index.html の og:image を絶対URL（https://〜/og-card.png）に差し替える**。
 
+⚠️ **ロリポップは静的ファイルに7日キャッシュ（max-age=604800）を付ける**。そのため index.html は `style.css?v=YYYYMMDD` / `app.js?v=…` / `works.js?v=…` とバージョン番号付きで参照している。**CSS・JS・データを更新したら、index.html内の3つの `?v=` の日付を全部同じ新しい日付に変えること**。これで全訪問者が待ち時間なく新版を取得する（index.html自体は長期キャッシュされないので即伝播）。
+
 ## ファイル構成
 
 | ファイル | 役割 |

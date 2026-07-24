@@ -314,6 +314,11 @@ function saveRoundRecord(score) {
   round.forEach((q, i) => { if (results[i]) mastered.add(q.work.title); });
   store.set("mmMastered", [...mastered]);
 
+  // 1問ごとの履歴（新しい順・最大50問）
+  const entries = round.map((q, i) => ({ t: q.work.title, type: q.type, ok: !!results[i] }));
+  store.set("mmQuestions",
+    [...entries.reverse(), ...store.get("mmQuestions", [])].slice(0, 50));
+
   // デイリーの記録と連続日数
   if (mode === "daily") {
     const daily = store.get("mmDaily", { results: {} });
@@ -424,6 +429,32 @@ function renderRecords() {
   $("rec-mastered-num").textContent = `${mastered.length} / ${WORKS.length}`;
   $("rec-mastered-bar").style.width =
     Math.min(100, Math.round(mastered.length / WORKS.length * 100)) + "%";
+
+  // 直近にあそんだ問題（新しい順に10問・作品画像と○×つき）
+  const ql = $("rec-questions-list");
+  ql.innerHTML = "";
+  const qs = store.get("mmQuestions", []).slice(0, 10);
+  if (!qs.length) {
+    ql.innerHTML = '<li class="rec-empty">まだ問題をあそんでいません</li>';
+  }
+  qs.forEach(e => {
+    const w = WORKS.find(x => x.title === e.t);
+    if (!w) return; // データ更新で作品名が変わった場合はスキップ
+    const li = document.createElement("li");
+    const img = document.createElement("img");
+    img.src = thumbUrl(w.image, 250);
+    img.onerror = () => { img.onerror = null; img.src = w.image; };
+    img.alt = w.title;
+    const meta = document.createElement("div");
+    meta.className = "meta";
+    meta.innerHTML = `<strong>《${w.title}》</strong>` +
+      `<span>${w.artist}・${e.type === "artist" ? "作者あて" : "タイトルあて"}</span>`;
+    const mark = document.createElement("span");
+    mark.className = "recap-mark " + (e.ok ? "ok" : "ng");
+    mark.textContent = e.ok ? "○" : "×";
+    li.append(img, meta, mark);
+    ql.appendChild(li);
+  });
 
   // デイリー履歴（新しい順に14件）
   const dl = $("rec-daily-list");
