@@ -164,34 +164,65 @@ function makeQuestion(work, rnd) {
   };
 }
 
-// 練習モード: 選択中レベルからランダム5問（作家の偏りを防ぐ）
+// ---------- リリース設計（毎日5作品ずつ解放されていく） ----------
+// 定数シードで全作品を「易2・中2・難1」の並びに固定 → デイリーはここから順に出題。
+// 今日の #N の5作品は翌日から「レベル別問題」に加わる（＝毎日ストックが増える）。
+function buildReleaseOrder() {
+  const decks = {
+    1: shuffle(WORKS.filter(w => w.level === 1), seededRng("meiga-rel-1")),
+    2: shuffle(WORKS.filter(w => w.level === 2), seededRng("meiga-rel-2")),
+    3: shuffle(WORKS.filter(w => w.level === 3), seededRng("meiga-rel-3"))
+  };
+  const pattern = [1, 1, 2, 2, 3]; // 1日分（易2・中2・難1）
+  const order = [];
+  let i = 0;
+  while (decks[1].length || decks[2].length || decks[3].length) {
+    const want = pattern[i % pattern.length];
+    const lv = decks[want].length ? want : [1, 2, 3].find(l => decks[l].length);
+    order.push(decks[lv].shift());
+    i++;
+  }
+  return order;
+}
+const RELEASE_ORDER = buildReleaseOrder();
+
+function wrappedSlice(arr, start, count) {
+  const out = [];
+  for (let i = 0; i < count; i++) out.push(arr[((start + i) % arr.length + arr.length) % arr.length]);
+  return out;
+}
+// 前日までに解放された作品数（今日の分は含めない＝翌日から加わる）
+function releasedCount(dayN) {
+  return Math.min(RELEASE_ORDER.length, Math.max(0, (dayN - 1) * QUESTIONS_PER_ROUND));
+}
+function releasedWorks() {
+  return RELEASE_ORDER.slice(0, releasedCount(dayNumber(todayStr())));
+}
+function releasedByLevel(level) {
+  return releasedWorks().filter(w => w.level === level);
+}
+
+// レベル別問題: そのレベルで解放済みの作品から5問（作家の偏りを防ぐ）
 function buildPracticeRound() {
-  const pool = WORKS.filter(w => w.level === currentLevel);
+  const pool = releasedByLevel(currentLevel);
   const byArtist = {};
   for (const w of pool) (byArtist[w.artist] ??= []).push(w);
   const artists = shuffle(Object.keys(byArtist));
-  const picked = artists.slice(0, QUESTIONS_PER_ROUND)
-    .map(a => shuffle(byArtist[a])[0]);
+  let picked = artists.slice(0, QUESTIONS_PER_ROUND).map(a => shuffle(byArtist[a])[0]);
+  // 作家がそろわず5問に満たなければ、同じ解放プールから補充して必ず5問にする
+  if (picked.length < QUESTIONS_PER_ROUND) {
+    const more = shuffle(pool.filter(w => !picked.includes(w)));
+    picked = picked.concat(more.slice(0, QUESTIONS_PER_ROUND - picked.length));
+  }
   return picked.map(w => makeQuestion(w, Math.random));
 }
 
-// 今日の名画検定: 日付シードで全員同じ5問（Level 1×2 → 2×2 → 3×1 の順）
+// 今日の名画検定 #N: リリース順から今日の5作品（全員共通・易→難）
 function buildDailyRound(dateStr) {
   const rnd = seededRng("meiga-" + dateStr);
-  const picked = [];
-  const usedArtists = new Set();
-  [[1, 2], [2, 2], [3, 1]].forEach(([lv, count]) => {
-    const pool = shuffle(WORKS.filter(w => w.level === lv), rnd);
-    let taken = 0;
-    for (const w of pool) {
-      if (taken >= count) break;
-      if (usedArtists.has(w.artist) && w.artist !== "不詳") continue;
-      usedArtists.add(w.artist);
-      picked.push(w);
-      taken++;
-    }
-  });
-  return picked.map(w => makeQuestion(w, rnd));
+  const batch = wrappedSlice(RELEASE_ORDER, (dayNumber(dateStr) - 1) * QUESTIONS_PER_ROUND, QUESTIONS_PER_ROUND)
+    .slice().sort((a, b) => a.level - b.level);
+  return batch.map(w => makeQuestion(w, rnd));
 }
 
 // ---------- 画面制御 ----------
@@ -496,30 +527,44 @@ $("quiz-home-btn").onclick = () => setView("home");
 $("tab-play").onclick = () => setView("home");
 $("tab-records").onclick = () => setView("records");
 
-// レベルボタン（データにあるレベルぶんだけ自動生成）
+// レベルボタン（データにあるレベルぶんだけ自動生成。解放数と🔒を表示）
 function renderLevelButtons() {
   const row = $("level-row");
   row.innerHTML = "";
   LEVEL_NUMS.forEach(n => {
+    const rel = releasedByLevel(n).length;
+    const total = WORKS.filter(w => w.level === n).length;
+    const locked = rel < QUESTIONS_PER_ROUND; // 5問そろうまではロック
     const b = document.createElement("button");
-    b.className = "level-btn" + (n === currentLevel ? " active" : "");
+    b.className = "level-btn" + (n === currentLevel && !locked ? " active" : "") +
+      (locked ? " locked" : "");
     b.innerHTML =
       `<span class="lv-label">LEVEL ${n}</span>` +
-      `<span class="lv-stars">${"★".repeat(n)}</span>`;
-    b.onclick = () => {
-      currentLevel = n;
-      localStorage.setItem("artQuizLevel", n);
-      renderLevelButtons();
-      startRound("practice");
-    };
+      `<span class="lv-stars">${"★".repeat(n)}</span>` +
+      `<span class="lv-count">${locked ? "🔒 あと" + (QUESTIONS_PER_ROUND - rel) + "問" : rel + " / " + total + "問"}</span>`;
+    if (!locked) {
+      b.onclick = () => {
+        currentLevel = n;
+        localStorage.setItem("artQuizLevel", n);
+        renderLevelButtons();
+        startRound("practice");
+      };
+    }
     row.appendChild(b);
   });
+
+  // 解放進捗
+  const relTotal = releasedWorks().length;
+  const all = RELEASE_ORDER.length;
+  const nextN = dayNumber(todayStr()) + 1;
+  $("release-note").textContent = relTotal >= all
+    ? `全 ${all} 作品が解放済み 🎉`
+    : `解放済み ${relTotal} / ${all} 作品 ・ 明日 #${nextN} を解くと +5`;
 }
 
-const lvCount = l => WORKS.filter(w => w.level === l).length;
 $("pool-info").textContent =
-  `出題プール: ${WORKS.length}作品（` +
-  LEVEL_NUMS.map(n => `Level ${n}: ${lvCount(n)}`).join("・") + "）";
+  `全 ${WORKS.length} 作品（` +
+  LEVEL_NUMS.map(n => `Level ${n}: ${WORKS.filter(w => w.level === n).length}`).join("・") + "）";
 renderLevelButtons();
 setView("home"); // 最初はホーム（今日の名画検定カード＋レベル選択）
 
