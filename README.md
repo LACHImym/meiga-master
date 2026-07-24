@@ -27,7 +27,16 @@
 | `app.js` | クイズのロジック（出題・採点・シェア） |
 | `works.js` | 出題データ（Notion「DB作品リスト」から書き出したコピー） |
 
-## 出題データの更新方法
+## 出題データの自動更新（完全自動パイプライン）
+
+本番サイト（lachiart.com/quiz/meiga/）は **works.js を GitHub Pages から読み込む**（index.html のローダー参照。読めなければ同梱 works.js にフォールバック）。よって**データ更新はロリポップへのアップロード不要**——GitHubに push すれば最大10分以内に全員へ反映される。
+
+- `scripts/generate-works.mjs` … Notion「DB作品リスト」から新作を取り込み works.js に追記（既存作品のレベル・解説は保持／新作は暫定 level:2／安全検証つき）。要 `NOTION_TOKEN`。
+- `.github/workflows/update-works.yml` … 毎朝5時JST（cron `0 20 * * *`）にGitHubのクラウドが自動実行→変更あればコミット→Pages再配信。手動実行も可（`gh workflow run "出題データ自動更新（毎日）"`）。
+- **一度だけ必要な設定**: リポジトリのGitHub Secretに `NOTION_TOKEN`（Notion内部インテグレーションのトークン）を登録し、DB作品リストをそのインテグレーションに共有。以降は無人で回る。
+- 新作の暫定レベルは2。適宜「レベルを見直して」で再調整する。
+
+## 出題データの手動更新方法（従来）
 
 Notionの「DB作品リスト」が正本。クイズには **PD=可・PD画像URLがWikimedia Commons直リンク・作家名とタイトルあり** の作品だけを書き出している。
 

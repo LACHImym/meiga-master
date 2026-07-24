@@ -158,8 +158,20 @@
     <p class="home-link"><a href="https://lachiart.com/">LACHIART</a></p>
   </footer>
 
-  <!-- ?v= はキャッシュ対策。デザインやロジックを更新したらこの日付を変えると全員が新版を即取得 -->
-  <script src="works.js?v=20260724c"></script>
-  <script src="app.js?v=20260724c"></script>
+  <!-- 出題データは GitHub Pages から読み込む（自動更新の要）。
+       works.js の更新はロリポップへのアップロード不要、GitHub push だけで最大10分以内に全員へ反映される。
+       GitHubが読めない時は同梱の works.js にフォールバック。works.js が確実に読めてから app.js を起動する。 -->
+  <script>
+    (function () {
+      function run(src, ok, ng) {
+        var s = document.createElement("script");
+        s.src = src; s.onload = ok; s.onerror = ng;
+        document.head.appendChild(s);
+      }
+      function startApp() { run("app.js?v=20260724c"); }
+      run("https://lachimym.github.io/meiga-master/works.js", startApp,
+        function () { run("works.js?v=20260724c", startApp, startApp); });
+    })();
+  </script>
 </body>
 </html>
