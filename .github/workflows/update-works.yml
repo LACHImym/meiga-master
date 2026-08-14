@@ -16,19 +16,34 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-
-      - name: works.js を再生成（Notionから新作を取り込み）
+      - name: 接続キー（NOTION_TOKEN）の有無を確認
+        id: guard
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
-          RUN_DATE: ${{ github.run_started_at }}
+        run: |
+          if [ -z "$NOTION_TOKEN" ]; then
+            echo "::warning title=NOTION_TOKEN 未登録::Notionの接続キーが未登録のため、今回の自動更新はスキップしました。GitHubの Settings > Secrets and variables > Actions で NOTION_TOKEN を登録すると自動更新が始まります。"
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/checkout@v4
+        if: steps.guard.outputs.ready == 'true'
+
+      - uses: actions/setup-node@v4
+        if: steps.guard.outputs.ready == 'true'
+        with:
+          node-version: "22"
+
+      - name: works.js を再生成（Notionから新作を取り込み）
+        if: steps.guard.outputs.ready == 'true'
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
         run: node scripts/generate-works.mjs
 
       - name: 変更があればコミット
+        if: steps.guard.outputs.ready == 'true'
         run: |
           if git diff --quiet -- works.js; then
             echo "新作なし。更新しません。"
