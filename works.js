@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-08-20（全155作品／今回の新規 0）
+// 最終更新: 2026-08-21（全157作品／今回の新規 2）
 // ============================================================
 
 const WORKS = [
@@ -1871,6 +1871,30 @@ const WORKS = [
     ],
     "summary": "カンディンスキーが1923年にバウハウス期に制作した抽象絵画。水平線を軸に幾何学的形態と色彩を配し、音楽的リズムと空間的な緊張を表現。バウハウスでの教育活動と理論的探究が反映された作品。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/4c/%D0%9F%D0%BE%D0%BF%D0%B5%D1%80%D0%B5%D1%87%D0%BD%D0%B0%D1%8F_%D0%BB%D0%B8%D0%BD%D0%B8%D1%8F.jpg",
+    "level": 2
+  },
+  {
+    "title": "イワン雷帝とその息子イワン",
+    "artist": "イリヤ・レーピン",
+    "year": "1885年",
+    "museum": "トレチャコフ美術館（モスクワ）",
+    "themes": [
+      "写実主義"
+    ],
+    "summary": "レーピンが1885年に発表したロシア写実主義の代表作。イワン雷帝が激怒して息子イワンを杖で毃打ちし、致命噱を与えた直後の瞬間を描く。息子を抱きしめて慣哭する父の姿に圧倒的な感情表現が込められ、ロシア絵画史上最も衝撃的な作品の一つ。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Iv_Terrible.jpg/1280px-Iv_Terrible.jpg",
+    "level": 2
+  },
+  {
+    "title": "レディ・ジェーン・グレイの処刑",
+    "artist": "ポール・ドラローシュ",
+    "year": "1833年",
+    "museum": "ナショナル・ギャラリー（ロンドン）",
+    "themes": [
+      "ロマン主義"
+    ],
+    "summary": "ドラローシュが1833年に描いたロマン主義の傑作。わずか16歳で斬首台に臨んだイングランド女王レディ・ジェーン・グレイの最期を白衣の少女として描き、その無垂さと悲劇性が観る者を圧倒する。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/PAUL_DELAROCHE_-_Ejecuci%C3%B3n_de_Lady_Jane_Grey_%28National_Gallery_de_Londres%2C_1834%29.jpg/960px-PAUL_DELAROCHE_-_Ejecuci%C3%B3n_de_Lady_Jane_Grey_%28National_Gallery_de_Londres%2C_1834%29.jpg",
     "level": 2
   }
 ];
