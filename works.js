@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-09-07（全157作品／今回の新規 0）
+// 最終更新: 2026-09-08（全164作品／今回の新規 7）
 // ============================================================
 
 const WORKS = [
@@ -1895,6 +1895,90 @@ const WORKS = [
     ],
     "summary": "ドラローシュが1833年に描いたロマン主義の傑作。わずか16歳で斬首台に臨んだイングランド女王レディ・ジェーン・グレイの最期を白衣の少女として描き、その無垂さと悲劇性が観る者を圧倒する。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/PAUL_DELAROCHE_-_Ejecuci%C3%B3n_de_Lady_Jane_Grey_%28National_Gallery_de_Londres%2C_1834%29.jpg/960px-PAUL_DELAROCHE_-_Ejecuci%C3%B3n_de_Lady_Jane_Grey_%28National_Gallery_de_Londres%2C_1834%29.jpg",
+    "level": 2
+  },
+  {
+    "title": "アルカディアにも我あり",
+    "artist": "ニコラ・プッサン",
+    "year": "1637〜1638年頃",
+    "museum": "ルーヴル美術館（パリ）",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "三人の羊飼いと一人の女性が石の墓碑に刻まれた「Et in Arcadia ego（アルカディアにも我あり）」という碑文を読み解く場面。「我」とは死そのものを指し、理想郷・楽園であるアルカディアにおいてさえ死は存在するという、無常と記憶をめぐるメメント・モリの哲学的主題を静謐な古典的構図で表現した。プッサンの代表作にして17世紀フランス絵画の頂点のひとつ。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Nicolas_Poussin_-_Et_in_Arcadia_ego.jpg",
+    "level": 2
+  },
+  {
+    "title": "マリー・ド・メディシスの戴冠式",
+    "artist": "ピーテル・パウル・ルーベンス",
+    "year": "1622〜1625年",
+    "museum": "ルーヴル美術館（パリ）",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "フランス王妃マリー・ド・メディシスの注文で制作された「メディシスの生涯」連作（全24点）の中核をなす大作（394×727cm）。ノートルダム大聖堂でのナポレオン戴冠式より197年前にサン＝ドニ大聖堂で行われた戴冠式を描く。ルーベンスは歴史的事実に神話的寓意を巧みに混ぜ合わせ、宗教戦争で分断されたフランスの王権を正当化するプロパガンダ的傑作として仕上げた。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/67/Peter_Paul_Rubens_-_The_Coronation_of_Marie_de%27_Medici_%28from_the_Marie_de%27_Medici_cycle%29_-_WGA20286.jpg",
+    "level": 2
+  },
+  {
+    "title": "沐浴するバテシバ",
+    "artist": "レンブラント・ファン・レイン",
+    "year": "1654年",
+    "museum": "ルーヴル美術館（パリ）",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "旧約聖書のバテシバがダビデ王から召喚の手紙を受け取り、侍女に足を洗わせながら思案に沈む場面（142×142cm）。当時のレンブラントの内縁の妻ヘンドリキェ・ストッフェルスをモデルに描かれ、裸婦の肌の光と影の表現は西洋絵画史上最高の素描力のひとつと称される。宗教的主題に人間の心理的葛藤を重ねた晩年の傑作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Rembrandt_Harmensz._van_Rijn_-_Bathsheba_at_Her_Bath_-_WGA19072.jpg",
+    "level": 2
+  },
+  {
+    "title": "田園の合奏",
+    "artist": "ジョルジョーネ（またはティツィアーノ）",
+    "year": "1509〜1510年頃",
+    "museum": "ルーヴル美術館（パリ）",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "二人の服を着た男性（一方はリュートを弾く）と二人の裸体の女性がヴェネツィア郊外の緑の野で憩う神秘的な情景（105×137cm）。制作者をジョルジョーネかティツィアーノかで美術史家の意見は今も分かれるが、豊かな色調とポエジア（詩的絵画）の概念を体現した作品として、マネ「草上の昼食」へ直接の影響を与えたルネサンスの名作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Giorgione_%28Titian%29_-_Pastoral_Concert_-_Louvre.jpg",
+    "level": 2
+  },
+  {
+    "title": "ラ・ベル・ジャルディニエール",
+    "artist": "ラファエロ・サンツィオ",
+    "year": "1507〜1508年",
+    "museum": "ルーヴル美術館（パリ）",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "ラファエロがフィレンツェ修行期（1504〜08年）に描いた聖母子画の傑作。緑の野原で聖母マリアが幼いイエスと洗礼者ヨハネを慈しむ場面を、安定した三角構図と柔和な色彩で表現。「美しい庭師の女」の別称が示すように、聖母は農民女性のような親しみやすさで描かれる。レオナルドの影響を受けながらも独自の優美さを確立したラファエロの円熟を示す。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/Raffael_060.jpg",
+    "level": 2
+  },
+  {
+    "title": "聖セバスティアヌスの殉教",
+    "artist": "アンドレア・マンテーニャ",
+    "year": "1480年頃",
+    "museum": "ルーヴル美術館（パリ）",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "矢で射られ柱に縛られながらも信仰を保つ聖セバスティアヌスを描いた縦長大作（255×140cm）。ローマ凱旋門の廃墟を背景に、古代ローマ彫刻のような筋肉の精密な解剖学的描写と、石の如き堅固さで殉教の瞬間を表現。マンテーニャが生涯にわたって描いた聖セバスティアヌス三作品のうち中期の傑作で、古代への深い学識と北イタリア・ルネサンスの人文主義精神を体現する。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/04/Mantegna_Andrea_-_Saint_Sebastian_-_Louvre.jpg",
+    "level": 2
+  },
+  {
+    "title": "ホラティウス兄弟の誓い",
+    "artist": "ジャック＝ルイ・ダヴィッド",
+    "year": "1784〜1785年",
+    "museum": "ルーヴル美術館（パリ）",
+    "themes": [
+      "新古典主義"
+    ],
+    "summary": "古代ローマとアルバ・ロンガの紛争解決のために選ばれたホラティウス家の三兄弟が、老いた父の掲げる剣に誓いを立てる場面（3.27×4.25m）。国家への犠牲と市民的徳義を讃えたこの大作は1785年のサロンで大反響を呼び、フランス革命の精神を予告する新古典主義の宣言として西洋美術史に刻まれた。ダヴィッドがローマで構想し完成させた生涯最重要作のひとつ。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/35/Jacques-Louis_David%2C_The_Oath_of_the_Horatii%2C_1784%2C_mus%C3%A9e_du_Louvre.jpg",
     "level": 2
   }
 ];
