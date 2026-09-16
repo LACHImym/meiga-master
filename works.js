@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-09-16（全172作品／今回の新規 5）
+// 最終更新: 2026-09-16（全177作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -2075,6 +2075,66 @@ const WORKS = [
     ],
     "summary": "初代教皇聖ペテロが自ら逆さツリ砾を望んだ伝承に基づいた作品。グイド・レーニ特有の優雅で源やかな身体表現と理想化された人物描写で、バロック絵画の古典主義的潮流を代表する傑作。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Guido_Reni%2C_Crocifissione_di_San_Pietro%2C_1604-05_-FG.jpg",
+    "level": 2
+  },
+  {
+    "title": "モーセの遺言と死",
+    "artist": "ルカ・シニョレッリ",
+    "year": "1481-1482年",
+    "museum": "バチカン美術館",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "システィーナ礼拝堂壁面を飾るシニョレッリの大作。解剖学的に正確な裸体表現と動的な身体描写は後のミケランジェロに直接影響を与えたとされ、ルネサンス芸術の連鎖的革新を体現する重要な一点。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/75/Signorelli%2C_Luca_-_Moses's_Testament_and_Death_-_1481-82.jpg",
+    "level": 2
+  },
+  {
+    "title": "シクストゥス4世とプラティナ",
+    "artist": "メロッツォ・ダ・フォルリ",
+    "year": "1477年",
+    "museum": "バチカン美術館",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "教皇シクストゥス4世がバチカン図書館初代館長プラティナを任命する場面を描いた歴史的フレスコ画。透視法を大胆に活用した建築空間表現で、15世紀ローマにおけるルネサンス絵画の頂点を示す。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/56/Melozzo_da_Forl%C3%AC_001.jpg",
+    "level": 2
+  },
+  {
+    "title": "ステファネスキ三連祭壇画",
+    "artist": "ジョット・ディ・ボンドーネ",
+    "year": "1315-1320年頃",
+    "museum": "バチカン美術館",
+    "themes": [
+      "古代・中世"
+    ],
+    "summary": "教皇の甥ジャコモ・ステファネスキ枢機卿の依頼で制作された豪華な両面三連画。ビザンティン様式を超えた人物の量感と表情の革新で、イタリア・ルネサンス絵画の夜明けを告げる記念碑的作品。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Polittico_stefaneschi%2C_retro.jpg",
+    "level": 2
+  },
+  {
+    "title": "取り物主人（フェルメール）",
+    "artist": "ヨハネス・フェルメール",
+    "year": "1656年",
+    "museum": "ドレスデン国立美術館（アルテ・マイスター絵画館）",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "フェルメールの現存作中もっとも早い日付入り作品（1656年）。左端の黒服の男性がフェルメール自身の自画像とも言われ、売春仲介業者（プロキュアレス）の場面を描きながら017世紀オランダ絵画の転換点となった一枚。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Johannes_Vermeer_-_The_Procuress_-_Google_Art_Project.jpg",
+    "level": 2
+  },
+  {
+    "title": "ドレスデン三連祭壇画",
+    "artist": "ヤン・ファン・エイク",
+    "year": "1437年",
+    "museum": "ドレスデン国立美術館（アルテ・マイスター絵画館）",
+    "themes": [
+      "北方ルネサンス"
+    ],
+    "summary": "ヤン・ファン・エイクが生涯最晴年に完成させた唯一の携帯式三連祭壇画。中央パネルに聖母子、両羼に大天使ミカエルと洗礼者ヨハネを配置し、閉じると外側に旅人を守護する「受胎告知」が現れる旅のための礼拝具だった。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Jan_van_Eyck_-_Triptych_of_Mary_and_Child%2C_St._Michael%2C_and_the_Catherine_-_Google_Art_Project.jpg",
     "level": 2
   }
 ];
