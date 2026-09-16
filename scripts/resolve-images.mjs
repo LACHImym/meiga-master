@@ -10,7 +10,7 @@
 //
 // 使い方:  NOTION_TOKEN=... node scripts/resolve-images.mjs [--limit N] [--scan N] [--dry-run]
 //   --limit N   1回に付与する最大件数（既定 20）
-//   --scan N    1回に調べる最大件数（既定 limit×5。見つからない作品を毎晩調べ直さないための上限）
+//   --scan N    1回に調べる最大件数（既定 limit×5）。調べ始める位置は日付で毎晩ずらし、数晩で全件を一巡する
 //   --dry-run   Notion に書き込まず、結果だけ表示（動作確認用）
 //   --test "作家名|名前|原題|wikiURL|制作年|所蔵"  Notionを使わず1件だけ判定を試す（ローカル確認用）
 // ============================================================
@@ -269,7 +269,10 @@ console.log(`対象（画像URL未付与・PD=可）: ${targets.length} 件 / �
 
 let done = 0, miss = 0, scanned = 0;
 const missed = [];
-for (const row of targets) {
+// 調べ始める位置を日付でずらす（見つからない作品ばかり毎晩調べ直さないため）
+const offset = targets.length ? (Math.floor(Date.now() / 86400000) * SCAN) % targets.length : 0;
+const order = targets.slice(offset).concat(targets.slice(0, offset));
+for (const row of order) {
   if (done >= LIMIT || scanned >= SCAN) break;
   scanned++;
   let hit = null;
@@ -279,7 +282,7 @@ for (const row of targets) {
   const { base, thumb } = commonsUrls(hit.file);
   if (!(await headOk(base))) { miss++; missed.push(`${row.artist}《${row.title}》(URL不達)`); continue; }
 
-  const note = `Wikimedia Commons／パブリックドメイン（File:${hit.file}）`;
+  const note = `Wikimedia Commons／パブリックドメイン（File:${hit.file}／Wikidata:${hit.qid}）`;
   let license = row.license;
   if (!license) license = note;
   else if (!/Commons/i.test(license)) license = `${license}／${note}`;

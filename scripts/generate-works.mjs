@@ -8,7 +8,11 @@ import { readFileSync, writeFileSync } from "node:fs";
 
 const TOKEN = process.env.NOTION_TOKEN;
 const DB_ID = "142ffcba-f9f0-80ae-8e36-cab4961ccafb"; // DB作品リスト
-const DEFAULT_LEVEL = 2; // 新作の暫定レベル（後で見直し可）
+const DEFAULT_LEVEL = 2; // 新作の暫定レベル（Wikidataで判定できないときの既定）
+// 知名度の目安 = Wikipedia記事のある言語数（Wikidata sitelinks）。
+// 例: モナ・リザ 150超／真珠の耳飾りの少女 約90／ひわ 約30／テンダの聖母 約10
+const LEVEL_RULE = [[45, 1], [15, 2]]; // [この言語数以上, レベル]。それ未満は3
+const UA = "meiga-master-generator/1.0 (https://lachiart.com/quiz/meiga/; mym.lachi@gmail.com)";
 // 1回に足す新作の上限（毎日5作品ずつ増やす運用。環境変数 ADD_LIMIT で変更可・0=無制限）
 const ADD_LIMIT = process.env.ADD_LIMIT === undefined ? 5 : Number(process.env.ADD_LIMIT);
 
@@ -50,6 +54,21 @@ async function queryAll() {
   return rows;
 }
 
+// 出典欄に resolve-images.mjs が残した「Wikidata:Q…」からレベルを推定
+async function levelFor(licenseText) {
+  const m = (licenseText || "").match(/Wikidata:(Q\d+)/);
+  if (!m) return DEFAULT_LEVEL;
+  try {
+    const res = await fetch(`https://www.wikidata.org/w/api.php?action=wbgetentities&ids=${m[1]}&props=sitelinks&format=json`,
+      { headers: { "User-Agent": UA } });
+    if (!res.ok) return DEFAULT_LEVEL;
+    const data = await res.json();
+    const links = Object.keys(data.entities?.[m[1]]?.sitelinks || {}).filter(k => k.endsWith("wiki") && k !== "commonswiki").length;
+    for (const [min, lv] of LEVEL_RULE) if (links >= min) return lv;
+    return 3;
+  } catch { return DEFAULT_LEVEL; }
+}
+
 // 既存 works.js を読み込み（レベル・解説を保持するため）
 const existingText = readFileSync("works.js", "utf8");
 const EXISTING = new Function(existingText + "\n; return WORKS;")();
@@ -77,12 +96,14 @@ for (const row of rows) {
     themes: Array.isArray(themes) ? themes : (themes ? [themes] : []),
     summary: plain(p["概要"]),
     image,
-    level: DEFAULT_LEVEL
+    level: DEFAULT_LEVEL,
+    _license: plain(p["出典・ライセンス"])
   });
   existingTitles.add(title);
 }
 // 上限まで（Notionの返却順＝作成が古い順）。残りは翌日以降に持ち越す
 added.push(...(ADD_LIMIT > 0 ? candidates.slice(0, ADD_LIMIT) : candidates));
+for (const w of added) { w.level = await levelFor(w._license); delete w._license; }
 
 if (added.length === 0) {
   console.log(`完了: 新作なし（全 ${EXISTING.length} 作品）。works.js は変更しません。`);
@@ -111,4 +132,4 @@ const header = `// ============================================================
 writeFileSync("works.js", header + "\nconst WORKS = " + JSON.stringify(merged, null, 2) + ";\n");
 
 console.log(`完了: 全 ${merged.length} 作品（新規 ${added.length}／持ち越し ${candidates.length - added.length}）`);
-if (added.length) console.log("新規追加:", added.map(w => w.title).join(" / "));
+if (added.length) console.log("新規追加:", added.map(w => `${w.title}(Lv${w.level})`).join(" / "));
