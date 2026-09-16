@@ -9,6 +9,8 @@ import { readFileSync, writeFileSync } from "node:fs";
 const TOKEN = process.env.NOTION_TOKEN;
 const DB_ID = "142ffcba-f9f0-80ae-8e36-cab4961ccafb"; // DB作品リスト
 const DEFAULT_LEVEL = 2; // 新作の暫定レベル（後で見直し可）
+// 1回に足す新作の上限（毎日5作品ずつ増やす運用。環境変数 ADD_LIMIT で変更可・0=無制限）
+const ADD_LIMIT = process.env.ADD_LIMIT === undefined ? 5 : Number(process.env.ADD_LIMIT);
 
 if (!TOKEN) { console.error("NOTION_TOKEN が未設定です"); process.exit(1); }
 
@@ -55,6 +57,7 @@ const existingTitles = new Set(EXISTING.map(w => w.title));
 
 const rows = await queryAll();
 const added = [];
+const candidates = [];
 for (const row of rows) {
   const p = row.properties || {};
   const title = plain(p["名前"]);
@@ -67,7 +70,7 @@ for (const row of rows) {
   if (!/^https:\/\/upload\.wikimedia\.org\//.test(image)) continue;
   if (existingTitles.has(title)) continue; // 既存はそのまま（キュレーション保持）
   const themes = plain(p["テーマ"]);
-  added.push({
+  candidates.push({
     title, artist,
     year: plain(p["制作年"]),
     museum: plain(p["所蔵"]),
@@ -77,6 +80,13 @@ for (const row of rows) {
     level: DEFAULT_LEVEL
   });
   existingTitles.add(title);
+}
+// 上限まで（Notionの返却順＝作成が古い順）。残りは翌日以降に持ち越す
+added.push(...(ADD_LIMIT > 0 ? candidates.slice(0, ADD_LIMIT) : candidates));
+
+if (added.length === 0) {
+  console.log(`完了: 新作なし（全 ${EXISTING.length} 作品）。works.js は変更しません。`);
+  process.exit(0);
 }
 
 const merged = EXISTING.concat(added);
@@ -100,5 +110,5 @@ const header = `// ============================================================
 `;
 writeFileSync("works.js", header + "\nconst WORKS = " + JSON.stringify(merged, null, 2) + ";\n");
 
-console.log(`完了: 全 ${merged.length} 作品（新規 ${added.length}）`);
+console.log(`完了: 全 ${merged.length} 作品（新規 ${added.length}／持ち越し ${candidates.length - added.length}）`);
 if (added.length) console.log("新規追加:", added.map(w => w.title).join(" / "));

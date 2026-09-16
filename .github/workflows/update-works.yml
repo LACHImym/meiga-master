@@ -3,7 +3,17 @@ name: 出題データ自動更新（毎日）
 on:
   schedule:
     - cron: "0 20 * * *"   # 毎日 05:00 JST（UTC 20:00）
-  workflow_dispatch: {}     # 手動でも実行可（テスト用）
+  workflow_dispatch:        # 手動でも実行可（初回の一括処理・テスト用）
+    inputs:
+      image_limit:
+        description: "画像URLを付ける最大件数（Notion側）"
+        default: "30"
+      image_scan:
+        description: "画像URL付与で調べる最大件数"
+        default: "150"
+      add_limit:
+        description: "クイズに足す新作の最大件数（0=無制限）"
+        default: "5"
 
 permissions:
   contents: write
@@ -36,10 +46,25 @@ jobs:
         with:
           node-version: "22"
 
+      # STEP 1: Notionの作品に画像URL（Wikimedia Commons直リンク）を自動で付ける
+      #   夜間の司書エージェントが作ったページは画像URLが空。ここで Wikidata から作品画像を確定して埋める。
+      #   失敗しても次のSTEPは続行（既に画像がある作品だけでクイズを更新する）。
+      - name: Notionの作品に画像URLを付与
+        if: steps.guard.outputs.ready == 'true'
+        continue-on-error: true
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+        run: |
+          node scripts/resolve-images.mjs \
+            --limit "${{ github.event.inputs.image_limit || '30' }}" \
+            --scan  "${{ github.event.inputs.image_scan  || '150' }}"
+
+      # STEP 2: 画像URLの付いた作品から、1日あたり ADD_LIMIT 件を works.js に追記
       - name: works.js を再生成（Notionから新作を取り込み）
         if: steps.guard.outputs.ready == 'true'
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          ADD_LIMIT: ${{ github.event.inputs.add_limit || '5' }}
         run: node scripts/generate-works.mjs
 
       - name: 変更があればコミット
