@@ -73,6 +73,7 @@ async function levelFor(licenseText) {
 const existingText = readFileSync("works.js", "utf8");
 const EXISTING = new Function(existingText + "\n; return WORKS;")();
 const existingTitles = new Set(EXISTING.map(w => w.title));
+const existingImages = new Set(EXISTING.map(w => w.image)); // 同じ画像＝同じ作品（Notionに重複ページがあっても二重出題しない）
 
 const rows = await queryAll();
 const added = [];
@@ -88,6 +89,7 @@ for (const row of rows) {
   if (pd !== "可") continue;
   if (!/^https:\/\/upload\.wikimedia\.org\//.test(image)) continue;
   if (existingTitles.has(title)) continue; // 既存はそのまま（キュレーション保持）
+  if (existingImages.has(image)) continue;  // 画像が同じ＝重複ページ（例: 取り物主人／取り持ち女）はスキップ
   const themes = plain(p["テーマ"]);
   candidates.push({
     title, artist,
@@ -100,6 +102,7 @@ for (const row of rows) {
     _license: plain(p["出典・ライセンス"])
   });
   existingTitles.add(title);
+  existingImages.add(image);
 }
 // 上限まで（Notionの返却順＝作成が古い順）。残りは翌日以降に持ち越す
 added.push(...(ADD_LIMIT > 0 ? candidates.slice(0, ADD_LIMIT) : candidates));
