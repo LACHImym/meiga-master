@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-09-15（全164作品／今回の新規 0）
+// 最終更新: 2026-09-16（全169作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -1979,6 +1979,66 @@ const WORKS = [
     ],
     "summary": "古代ローマとアルバ・ロンガの紛争解決のために選ばれたホラティウス家の三兄弟が、老いた父の掲げる剣に誓いを立てる場面（3.27×4.25m）。国家への犠牲と市民的徳義を讃えたこの大作は1785年のサロンで大反響を呼び、フランス革命の精神を予告する新古典主義の宣言として西洋美術史に刻まれた。ダヴィッドがローマで構想し完成させた生涯最重要作のひとつ。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/3/35/Jacques-Louis_David%2C_The_Oath_of_the_Horatii%2C_1784%2C_mus%C3%A9e_du_Louvre.jpg",
+    "level": 2
+  },
+  {
+    "title": "追放されるハガルとイシュマエル",
+    "artist": "アドリアーン・ファン・デル・ウェルフ",
+    "year": "c.1699",
+    "museum": "ドレスデン絵画館（アルテ・マイスター）",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "オランダ後期バロックの画家ファン・デル・ウェルフによる旧約聖書創世記21章の場面。滑らかなエナメル状の表面処理と古典的な人体が特徴。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/08/Adriaen_van_der_Werff_-_The_Expulsion_of_Hagar_and_Ishmael_-_59.063_-_Rhode_Island_School_of_Design_Museum.jpg",
+    "level": 2
+  },
+  {
+    "title": "モーセの試練",
+    "artist": "サンドロ・ボッティチェリ",
+    "year": "1481-1482年",
+    "museum": "バチカン美術館",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "ボッティチェリがシスティーナ礼拝堂南側壁に描いたフレスコ。モーセの若き日から荷片脱出までの複数のエピソードを一画面に凝縮した連続構成で、山山を背景に特彵的な空気流を散りばめるりんだリンダとした対革的色彩が潐な。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/77/Eventos_de_la_vida_de_Mois%C3%A9s_(Sandro_Botticelli).jpg",
+    "level": 2
+  },
+  {
+    "title": "ボルゴの火事",
+    "artist": "ラファエロ・サンティ（工房）",
+    "year": "1514-1517年",
+    "museum": "バチカン美術館",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "ラファエロ設計・工房制作の壁画。867年に聖ベテロ広場で起きた火災を教皇レオ4世が祝福で麎めたという故事を描き、山美な建築的規模感と古代彫刻を参照する嵇務感満いる特徴的な結構を持つ。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Raphael_-_Fire_in_the_Borgo.jpg",
+    "level": 2
+  },
+  {
+    "title": "神学の論議",
+    "artist": "ラファエロ・サンティ",
+    "year": "1509-1510年",
+    "museum": "バチカン美術館",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "ラファエロがヴァチカン宮殿「署名の間」に描いた壁画で、《アテネの学堂》と対をなす神学の集大成。天国の三位一体と地上の聖餐式をめぐる議論を二層構造で表現し、知識と信仰の対話をルネサンス的に昇華させた。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Raphaels_Disputation_of_the_Holy_Sacrament.jpg",
+    "level": 2
+  },
+  {
+    "title": "自画像（63歳）",
+    "artist": "レンブラント・ファン・レイン",
+    "year": "1669",
+    "museum": "マウリッツハイス美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "63歳で世を去ったレンブラントが死の直前に描いたとされる自画像のひとつ。皺と疲労が刻まれた顔に揺れるような目の光が宿り、老境に達した芸術家が己の内面を正直に見つめた晩年の傑作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Rembrandt_-_Clowes_self-portrait%2C_1629.png",
     "level": 2
   }
 ];
