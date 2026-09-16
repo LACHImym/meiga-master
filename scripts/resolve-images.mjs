@@ -12,7 +12,7 @@
 //   --limit N   1回に付与する最大件数（既定 20）
 //   --scan N    1回に調べる最大件数（既定 limit×5。見つからない作品を毎晩調べ直さないための上限）
 //   --dry-run   Notion に書き込まず、結果だけ表示（動作確認用）
-//   --test "作家名|名前|原題|wikiURL"  Notionを使わず1件だけ判定を試す（ローカル確認用）
+//   --test "作家名|名前|原題|wikiURL|制作年|所蔵"  Notionを使わず1件だけ判定を試す（ローカル確認用）
 // ============================================================
 import { createHash } from "node:crypto";
 
@@ -81,6 +81,8 @@ async function fetchTargets() {
         id: r.id, title,
         artist: plain(p["作家名"]),
         original: plain(p["原題"]),
+        year: plain(p["制作年"]),
+        museum: plain(p["所蔵"]),
         wiki: plain(p["wiki"]),
         oldImage: image,
         license: plain(p["出典・ライセンス"])
@@ -155,6 +157,35 @@ async function artistQids(name) {
   return humans;
 }
 
+// Wikidata の制作年（P571）を西暦の数値で
+function inceptionYear(e) {
+  const t = e?.claims?.P571?.[0]?.mainsnak?.datavalue?.value?.time; // 例 "+1669-00-00T00:00:00Z"
+  const m = t && t.match(/^([+-])(\d{4})/);
+  return m ? Number(m[2]) * (m[1] === "-" ? -1 : 1) : null;
+}
+const notionYear = s => { const m = (s || "").match(/(\d{4})/); return m ? Number(m[1]) : null; };
+// Notionの制作年とWikidataの制作年が両方あって食い違う（±5年超）なら別作品とみなす
+function yearConflict(row, e) {
+  const a = notionYear(row.year), b = inceptionYear(e);
+  return a !== null && b !== null && Math.abs(a - b) > 5;
+}
+
+// 所蔵館の照合: Notionの「所蔵」と Wikidata の所蔵館(P195)ラベルが噛み合わなければ別バージョンとみなす
+const normMuseum = s => (s || "").toLowerCase()
+  .replace(/[（(].*?[)）]/g, "")
+  .replace(/美術館|博物館|絵画館|国立|市立|王立|ギャラリー|コレクション|museum|gallery|of|the|art|arts|national|royal|collection|fine|\s|・|,|\.|-/g, "");
+async function museumConflict(row, e) {
+  const target = normMuseum(row.museum);
+  const ids = claimIds(e, "P195");
+  if (!target || target.length < 2 || !ids.length) return false;
+  for (const id of ids) {
+    const m = await getEntity(id);
+    const labels = Object.values(m?.labels || {}).map(l => normMuseum(l.value)).filter(Boolean);
+    if (labels.some(l => l.includes(target) || target.includes(l))) return false;
+  }
+  return true; // 所蔵館が1つも一致しない
+}
+
 // 作品項目として妥当か: 人物でない・制作者(P170)あり・画像(P18)あり
 function artworkImage(e, artistIds) {
   if (!e) return null;
@@ -192,28 +223,44 @@ async function resolve(row) {
   if (row.wiki) {
     const qid = await qidFromWiki(row.wiki).catch(() => null);
     if (qid) {
-      const hit = artworkImage(await getEntity(qid), artistIds);
-      if (hit) return { ...hit, route: "wiki", qid };
+      const e = await getEntity(qid);
+      const hit = artworkImage(e, artistIds);
+      if (hit && !yearConflict(row, e) && !(await museumConflict(row, e))) return { ...hit, route: "wiki", qid };
     }
   }
   // ルートB: 原題／名前で検索（作家一致が必須）
   if (!artistIds.length) return null;
+  // 同名作品（自画像・ピエタ・聖母子など）が多いので、候補を全部集めてから絞る:
+  //   制作年が分かれば一致するものだけ残す → それでも候補が1つに絞れなければ見送り
   const queries = [["en", row.original], ["ja", row.title]].filter(([, q]) => q);
+  const cands = new Map();
   for (const [lang, q] of queries) {
-    const data = await getJson(`https://www.wikidata.org/w/api.php?action=wbsearchentities&search=${encodeURIComponent(q)}&language=${lang}&type=item&limit=7&format=json`);
+    const data = await getJson(`https://www.wikidata.org/w/api.php?action=wbsearchentities&search=${encodeURIComponent(q)}&language=${lang}&type=item&limit=20&format=json`);
     for (const s of data.search || []) {
-      const hit = artworkImage(await getEntity(s.id), artistIds);
-      if (hit && hit.creatorMatched) return { ...hit, route: `search-${lang}`, qid: s.id };
+      if (cands.has(s.id)) continue;
+      const e = await getEntity(s.id);
+      const hit = artworkImage(e, artistIds);
+      if (hit && hit.creatorMatched) cands.set(s.id, { e, hit, lang });
     }
     await sleep(200);
   }
-  return null;
+  let list = [];
+  for (const [id, c] of cands) if (!(await museumConflict(row, c.e))) list.push([id, c]);
+  const ny = notionYear(row.year);
+  if (ny !== null) {
+    const byYear = list.filter(([, c]) => { const y = inceptionYear(c.e); return y !== null && Math.abs(y - ny) <= 5; });
+    if (byYear.length) list = byYear;
+    else if (list.some(([, c]) => inceptionYear(c.e) !== null)) return null; // 年が分かるのに一致なし＝別作品
+  }
+  if (list.length !== 1) return null; // 候補が複数＝どれか確定できないので見送り
+  const [qid, c] = list[0];
+  return { ...c.hit, route: `search-${c.lang}`, qid };
 }
 
 // ---------- main ----------
 if (TEST) {
-  const [artist, title, original, wiki] = TEST.split("|");
-  const hit = await resolve({ artist, title, original: original || "", wiki: wiki || "" });
+  const [artist, title, original, wiki, year, museum] = TEST.split("|");
+  const hit = await resolve({ artist, title, original: original || "", wiki: wiki || "", year: year || "", museum: museum || "" });
   console.log(hit ? { ...hit, ...commonsUrls(hit.file) } : "見送り（作品項目が確定できず）");
   process.exit(0);
 }
