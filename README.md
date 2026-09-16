@@ -31,10 +31,12 @@
 
 本番サイト（lachiart.com/quiz/meiga/）は **works.js を GitHub Pages から読み込む**（index.html のローダー参照。読めなければ同梱 works.js にフォールバック）。よって**データ更新はロリポップへのアップロード不要**——GitHubに push すれば最大10分以内に全員へ反映される。
 
-- `scripts/generate-works.mjs` … Notion「DB作品リスト」から新作を取り込み works.js に追記（既存作品のレベル・解説は保持／新作は暫定 level:2／安全検証つき）。要 `NOTION_TOKEN`。
-- `.github/workflows/update-works.yml` … 毎朝5時JST（cron `0 20 * * *`）にGitHubのクラウドが自動実行→変更あればコミット→Pages再配信。手動実行も可（`gh workflow run "出題データ自動更新（毎日）"`）。
-- **一度だけ必要な設定**: リポジトリのGitHub Secretに `NOTION_TOKEN`（Notion内部インテグレーションのトークン）を登録し、DB作品リストをそのインテグレーションに共有。以降は無人で回る。
-- 新作の暫定レベルは2。適宜「レベルを見直して」で再調整する。
+- `scripts/resolve-images.mjs` … **STEP1** Notionの「PD=可なのに画像URLが無い作品」に、Wikidataの作品項目から Wikimedia Commons 直リンクとカバーを付ける。作家ページの肖像を貼らないよう「制作者(P170)が作家名と一致」「制作年(P571)・所蔵館(P195)が矛盾しない」「候補が1件に確定」のときだけ採用し、確定できなければ見送る（=空のまま。らちさんがローカル「図書室に画像を貼って」で個別対応）。出典欄に `File:…／Wikidata:Q…` を残す。ローカル確認は `node scripts/resolve-images.mjs --test "作家名|名前|原題|wikiURL|制作年|所蔵"`。
+- `scripts/generate-works.mjs` … **STEP2** 画像URLの付いた作品を **1日 `ADD_LIMIT` 件（既定5）** works.js に追記（既存作品のレベル・解説は保持／安全検証つき）。新作のレベルは Wikipedia の言語数（Wikidata sitelinks）で自動判定: 45以上=Level1・15以上=Level2・それ未満=Level3。要 `NOTION_TOKEN`。
+- `.github/workflows/update-works.yml` … 毎朝5時JST（cron `0 20 * * *`）にGitHubのクラウドが自動実行→新作があればコミット→Pages再配信。手動実行も可（`gh workflow run "出題データ自動更新（毎日）" -f image_limit=30 -f image_scan=150 -f add_limit=5`）。
+- **一度だけ必要な設定**: リポジトリのGitHub Secretに `NOTION_TOKEN`（Notion内部インテグレーションのトークン）を登録し、DB作品リストをそのインテグレーションに共有（2026-08-14登録済み）。以降は無人で回る。
+- ⚠️ Actionは「追記」しかしない。誤った画像が付いた作品を直すときは、Notionの PD画像URL を空に戻す＋works.js からその作品を消す（次回は新しい判定で再挑戦）。
+- ⚠️ 本番 lachiart.com の index.html はロリポップに手動アップロードしたもの。index.html を変えたら `upload-to-lolipop/meiga.zip` を作り直して再アップロードしないと本番に届かない（2026-09-16、7/20版のまま同梱109件を表示していた）。
 
 ## 出題データの手動更新方法（従来）
 
