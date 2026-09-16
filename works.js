@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-09-16（全177作品／今回の新規 5）
+// 最終更新: 2026-09-16（全182作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -2135,6 +2135,66 @@ const WORKS = [
     ],
     "summary": "ヤン・ファン・エイクが生涯最晴年に完成させた唯一の携帯式三連祭壇画。中央パネルに聖母子、両羼に大天使ミカエルと洗礼者ヨハネを配置し、閉じると外側に旅人を守護する「受胎告知」が現れる旅のための礼拝具だった。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Jan_van_Eyck_-_Triptych_of_Mary_and_Child%2C_St._Michael%2C_and_the_Catherine_-_Google_Art_Project.jpg",
+    "level": 2
+  },
+  {
+    "title": "テンダの聖母",
+    "artist": "ラファエロ・サンツィオ",
+    "year": "1515-1516年頃",
+    "museum": "ミュンヘン・アルテ・ピナコテーク",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "ラファエロ最晩年を近い作品。カーテン（テンダ）を背景に聖母子と幼いヨハネが親密に寄り添う構図は、円熟した優雅さと温かみを放つ。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Raffael_-_Madonna_della_Tenda_(Alte_Pinakothek).jpg",
+    "level": 2
+  },
+  {
+    "title": "チョコレートガール",
+    "artist": "ジャン＝エティエンヌ・リオタール",
+    "year": "1743年頃",
+    "museum": "ドレスデン国立絵画館（アルテ・マイスター絵画館）",
+    "themes": [
+      "ロココ"
+    ],
+    "summary": "ウィーンの宮廷でチョコレートを運ぶ少女を描いたパステル画。リオタールの精緻な質感描写が光り、19世紀以降はチョコレートブランドの商標としても世界中に広まった。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Jean-Etienne_Liotard_-_The_Chocolate_Girl_-_Google_Art_Project.jpg",
+    "level": 2
+  },
+  {
+    "title": "システィーナの聖母",
+    "artist": "ラファエロ・サンツィオ",
+    "year": "1512年",
+    "museum": "ドレスデン国立絵画館（アルテ・マイスター絵画館）",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "ラファエロが1512年に描いた聖母子像。画面下部の2人の天使（プット）は独立したモチーフとして現代でも世界中に広まっている。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/05/Raphael_-_The_Sistine_Madonna_-_Google_Arts_%26_Culture.jpg",
+    "level": 2
+  },
+  {
+    "title": "フローラの王国",
+    "artist": "ニコラ・プッサン",
+    "year": "1631年頃",
+    "museum": "ドレスデン国立古典絵画館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "オウィディウス『変身物語』から採られた複数のエピソードを一画面に凝縮し、死後に花となった神話の人物たちがフローラの園に集う場面を描いた傑作。アデオニス、ヒュアキントス、ナルキッソスらが幾何学的に整理された構図の中で共存し、プッサン流「理性のバロック」の宣言書ともなっている。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Nicolas_Poussin_-_L'Empire_de_Flore.jpg",
+    "level": 2
+  },
+  {
+    "title": "フォリー・ベルジェールのバー",
+    "artist": "エドゥアール・マネ",
+    "year": "1882年",
+    "museum": "コートールド美術館（ロンドン）",
+    "themes": [
+      "写実主義"
+    ],
+    "summary": "マネ晩年の傑作にして、近代絵画史を象徴する一枚。パリの人気酒場フォリー・ベルジェールの女給スュゾンを正面から描きながら、背後の鏡に映し出される不整合な反射が見る者を迷宮へと誘う。「誰が何に映っているのか」という謎は今も美術史家の論争を呼ぶ、コートールド美術館の至宝。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/13/Un_bar_aux_Folies-Berg%C3%A8re_d'E._Manet_(Fondation_Vuitton%2C_Paris)_(33539037428).jpg",
     "level": 2
   }
 ];
