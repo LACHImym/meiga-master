@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-09-16（全167作品／誤付与2件を除去）
+// 最終更新: 2026-09-16（全172作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -2015,6 +2015,66 @@ const WORKS = [
     ],
     "summary": "ラファエロがヴァチカン宮殿「署名の間」に描いた壁画で、《アテネの学堂》と対をなす神学の集大成。天国の三位一体と地上の聖餐式をめぐる議論を二層構造で表現し、知識と信仰の対話をルネサンス的に昇華させた。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Raphaels_Disputation_of_the_Holy_Sacrament.jpg",
+    "level": 2
+  },
+  {
+    "title": "ひわ",
+    "artist": "カレル・ファブリティウス",
+    "year": "1654",
+    "museum": "マウリッツハイス美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "縦33×横22cmの小品ながら、世界で最も愛される17世紀オランダ絵画のひとつ。制作直後にデルフト火薬庫爆発事故が発生し画家自身も命を落とした。ドナ・タートの同名小説でも有名。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Carel_Fabritius_-_The_Goldfinch_-_605_-_Mauritshuis.jpg",
+    "level": 2
+  },
+  {
+    "title": "ロバート・チェズマンの肖像",
+    "artist": "ハンス・ホルバイン（子）",
+    "year": "1533",
+    "museum": "マウリッツハイス美術館",
+    "themes": [
+      "北方ルネサンス"
+    ],
+    "summary": "ヘンリー8世の鷹匠ロバート・チェズマンを描いた肖像画。腕にとまらせたハヤブサが権力と地位の象徴として描かれ、ホルバイン特有の精密な写実性と鷹匠の誇り高い視線が印象的。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/03/Hans_Holbein_de_Jonge_-_Portrait_of_Robert_Cheseman_(1485-1547)_-_276_-_Mauritshuis.jpg",
+    "level": 2
+  },
+  {
+    "title": "陽気な家族",
+    "artist": "ヤン・ステーン",
+    "year": "1668",
+    "museum": "マウリッツハイス美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "食卓を囲む家族が飲み歌い踊る喧騒の場面を描いたオランダ黄金時代の風俗画。ステーンならではのユーモアと隠れた道徳的寓意が込められ、「楽しいことを子供に見せるな」という17世紀の教訓を反転させて描く。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/72/Jan_Havicksz._Steen_-_Het_vrolijke_huisgezin_-_Google_Art_Project.jpg",
+    "level": 2
+  },
+  {
+    "title": "テュルプ博士の解剖学講義",
+    "artist": "レンブラント・ファン・レイン",
+    "year": "1632",
+    "museum": "マウリッツハイス美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "レンブラント26歳の集団肖像画。外科医ギルドの依頼で、解剖学者テュルプ博士が遺体を解剖する場に居並ぶ7人の医学生を臨場感豊かに描く。劇的な照明効果と各人物の表情の違いが見どころ。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Rembrandt_-_The_Anatomy_Lesson_of_Dr_Nicolaes_Tulp.jpg",
+    "level": 2
+  },
+  {
+    "title": "聖ペテロの磕刑（グイド・レーニ）",
+    "artist": "グイド・レーニ",
+    "year": "1604-1605年頃",
+    "museum": "バチカン美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "初代教皇聖ペテロが自ら逆さツリ砾を望んだ伝承に基づいた作品。グイド・レーニ特有の優雅で源やかな身体表現と理想化された人物描写で、バロック絵画の古典主義的潮流を代表する傑作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Guido_Reni%2C_Crocifissione_di_San_Pietro%2C_1604-05_-FG.jpg",
     "level": 2
   }
 ];
