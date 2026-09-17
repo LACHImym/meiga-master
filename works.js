@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-09-16（全182作品／今回の新規 5）
+// 最終更新: 2026-09-17（全187作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -2195,6 +2195,66 @@ const WORKS = [
     ],
     "summary": "マネ晩年の傑作にして、近代絵画史を象徴する一枚。パリの人気酒場フォリー・ベルジェールの女給スュゾンを正面から描きながら、背後の鏡に映し出される不整合な反射が見る者を迷宮へと誘う。「誰が何に映っているのか」という謎は今も美術史家の論争を呼ぶ、コートールド美術館の至宝。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/13/Un_bar_aux_Folies-Berg%C3%A8re_d'E._Manet_(Fondation_Vuitton%2C_Paris)_(33539037428).jpg",
+    "level": 2
+  },
+  {
+    "title": "秋冬山水図",
+    "artist": "雪舟等楊",
+    "year": "室町時代（15世紀末頃）",
+    "museum": "東京国立博物館",
+    "themes": [
+      "古代・中世"
+    ],
+    "summary": "雪舟等楊が晩年に描いた水墨山水画の重要文化財。秋景と冬景の二幅で、中国宋元画の技法に日本的な詩情を融合させた室町水墨画の精華。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cf/SesshuToyo.jpg",
+    "level": 3
+  },
+  {
+    "title": "舟橋蒔絵硯箱",
+    "artist": "本阿弥光悦",
+    "year": "江戸時代初期（17世紀初頭）",
+    "museum": "東京国立博物館",
+    "themes": [
+      "日本画・江戸絵画"
+    ],
+    "summary": "本阿弥光悦が手がけた江戸初期を代表する蒔絵硯箱の国宝。葦の橋と舟を金銀蒔絵で表現し、蓋上に鉛の短冊を嵌め込んで和歌を刻む独創的な構成で知られる。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Writing_Box_with_Pontoon_Bridge_2007-06-11.jpg",
+    "level": 3
+  },
+  {
+    "title": "日傘の女（右向き）",
+    "artist": "クロード・モネ",
+    "year": "1886",
+    "museum": "オルセー美術館",
+    "themes": [
+      "印象派"
+    ],
+    "summary": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Femme_%C3%A0_l'ombrelle_tourn%C3%A9e_vers_la_droite_-_Claude_Monnet_-_Mus%C3%A9e_d'Orsay_RF_2620.jpg",
+    "level": 3
+  },
+  {
+    "title": "セザンヌへのオマージュ",
+    "artist": "モーリス・ドニ",
+    "year": "1900",
+    "museum": "オルセー美術館",
+    "themes": [
+      "象徴主義"
+    ],
+    "summary": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/23/Maurice_Denis_Homage_to_Cezanne_1900.jpg",
+    "level": 3
+  },
+  {
+    "title": "ダンスの授業",
+    "artist": "エドガー・ドガ",
+    "year": "1874年",
+    "museum": "オルセー美術館",
+    "themes": [
+      "印象派"
+    ],
+    "summary": "パリ・オペラ座のレッスン室で老バレエマスターの指導を受ける少女たちを描いたドガの代表的踊り子シリーズの傑作。「練習」という舞台裏を美術史上初めて主題化した革命的作品。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/81/Edgar_Degas_-_The_Ballet_Class_-_Google_Art_Project.jpg",
     "level": 2
   }
 ];
