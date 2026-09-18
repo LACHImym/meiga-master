@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-09-17（全187作品／今回の新規 5）
+// 最終更新: 2026-09-18（全192作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -2256,5 +2256,65 @@ const WORKS = [
     "summary": "パリ・オペラ座のレッスン室で老バレエマスターの指導を受ける少女たちを描いたドガの代表的踊り子シリーズの傑作。「練習」という舞台裏を美術史上初めて主題化した革命的作品。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/8/81/Edgar_Degas_-_The_Ballet_Class_-_Google_Art_Project.jpg",
     "level": 2
+  },
+  {
+    "title": "白馬",
+    "artist": "ポール・ゴーガン",
+    "year": "1898年",
+    "museum": "オルセー美術館",
+    "themes": [
+      "ポスト印象派"
+    ],
+    "summary": "ゴーガンがタヒチで描いた晩年の傑作。白馬と裸の人物が神話的空間に佇み、タヒチの自然と精神性を融合させた象徴的名作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/de/Paul_Gauguin_-_The_White_Horse_-_Google_Art_Project.jpg",
+    "level": 2
+  },
+  {
+    "title": "春",
+    "artist": "ジャン＝フランソワ・ミレー",
+    "year": "1868年〜1873年",
+    "museum": "オルセー美術館",
+    "themes": [
+      "写実主義"
+    ],
+    "summary": "バルビゾン派の巨匠ミレーが晩年に描いた「四季」連作の一点。虹がかかるノルマンディーの牧草地に降り注ぐ雨上がりの光と生命の息吹を、圧倒的なスケールで表現した傑作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/52/Jean-Fran%C3%A7ois_Millet_(II)_-_Spring_-_WGA15693.jpg",
+    "level": 2
+  },
+  {
+    "title": "ニシンの網",
+    "artist": "ウィンスロー・ホーマー",
+    "year": "1885年",
+    "museum": "シカゴ美術館",
+    "themes": [
+      "写実主義"
+    ],
+    "summary": "ホーマーがメイン州またはカナダの㬯海〉2人の漁師が泡穽つ局に尲を引く場面を大躯な構図で描いた、アメリカ写実主義絵画の代表作。開いた海と広大な空の小さな二人の漁師が考わす弱小化は、自然と小さな人間の対比を髨えがたっている。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Winslow_Homer_-_The_Herring_Net_-_Google_Art_Project.jpg",
+    "level": 3
+  },
+  {
+    "title": "なぜ怒るの？",
+    "artist": "ポール・ゴーギャン",
+    "year": "1896年",
+    "museum": "シカゴ美術館",
+    "themes": [
+      "ポスト印象派"
+    ],
+    "summary": "ゴーギャンが第二次タヒチ渡航中の1896年に制作した、タヒチ岊の女性たちを描いた大画面作。タヒチ語の原題が謎めかしく投げかける問いと対比するように山高い女性は異駈なに経験を詰めない顔で目をやろう。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/29/Paul_Gauguin%2C_No_te_aha_oe_riri_(Why_Are_You_Angry%3F)%2C_1896%2C_1933.1119%2C_Art_Institute_of_Chicago.jpg",
+    "level": 3
+  },
+  {
+    "title": "滹",
+    "artist": "アンリ・ルソー",
+    "year": "1910年",
+    "museum": "シカゴ美術館",
+    "themes": [
+      "ポスト印象派"
+    ],
+    "summary": "孙稓孫皊の「雘税征収官」ルソーが死の年に完成させた熱帯雨林の大作。筵文で平締な辺りに离れた衣衙も地図もない奥深くから涁れ落ちる溝の水は、素朴派（ナイーブ・アート）の羽山を示す。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/de/Henri_Rousseau_-_The_Waterfall_-_Google_Art_Project.jpg",
+    "level": 3
   }
 ];
