@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-09-18（全192作品／今回の新規 5）
+// 最終更新: 2026-09-19（全197作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -2316,5 +2316,65 @@ const WORKS = [
     "summary": "孙稓孫皊の「雘税征収官」ルソーが死の年に完成させた熱帯雨林の大作。筵文で平締な辺りに离れた衣衙も地図もない奥深くから涁れ落ちる溝の水は、素朴派（ナイーブ・アート）の羽山を示す。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/d/de/Henri_Rousseau_-_The_Waterfall_-_Google_Art_Project.jpg",
     "level": 3
+  },
+  {
+    "title": "テラスにて",
+    "artist": "ピエール＝オーギュスト・ルノワール",
+    "year": "1881年",
+    "museum": "シカゴ美術館",
+    "themes": [
+      "印象派"
+    ],
+    "summary": "シャトゥーのレストラン・テラスで憩う若い母子を描いた、ルノワールの典型的な幸福感あふれる作品。光と影が溶け合う印象派の筆触と、温かみのある色彩で人物の柔らかさを描き出した傑作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Pierre-Auguste_Renoir_-_Two_Sisters_(On_the_Terrace)_-_1933.455_-_Art_Institute_of_Chicago.jpg",
+    "level": 2
+  },
+  {
+    "title": "聖母被昇天",
+    "artist": "エル・グレコ",
+    "year": "1577-79年",
+    "museum": "シカゴ美術館",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "エル・グレコがスペイン・トレドに渡って最初期に制作した高さ4メートルを超える大祭壇画。縦に引き伸ばされた人物と、螺旋状に渦巻く色彩がマニエリスムの頂点を示し、17世紀バロックへの橋渡しとなった。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Domenikos_Theotok%C3%B3poulos%2C_called_El_Greco_-_The_Assumption_of_the_Virgin_-_Google_Art_Project.jpg",
+    "level": 3
+  },
+  {
+    "title": "アメリカン・ゴシック",
+    "artist": "グラント・ウッド",
+    "year": "1930年",
+    "museum": "シカゴ美術館",
+    "themes": [
+      "写実主義"
+    ],
+    "summary": "グラント・ウッドが1930年に描いた、農夫と娘（実際はモデルは妹と歯科医）を主題とするアメリカ地域主義絵画の代名詞。ピッチフォークを持つ厳格な二人の図像はアメリカン・アイコンとなり、パロディ・引用は数えきれないほど生まれた。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Grant_Wood_-_American_Gothic_(1930).jpg",
+    "level": 2
+  },
+  {
+    "title": "子供の入浴",
+    "artist": "メアリー・カサット",
+    "year": "1893年",
+    "museum": "シカゴ美術館",
+    "themes": [
+      "印象派"
+    ],
+    "summary": "メアリー・カサットが1893年に描いた、母親が子供の足を洗う親密な日常のひとこま。浮世絵の影響を受けた大胆な俯瞰構図と装飾的な平面性が印象派の革新性を示す傑作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f5/The_Child's_Bath_by_Mary_Cassatt_1893.jpg",
+    "level": 2
+  },
+  {
+    "title": "汚の中の犬（黒い絵）",
+    "artist": "フランシスコ・デ・ゴヤ",
+    "year": "1820嘀1823年",
+    "museum": "プラド美術館",
+    "themes": [
+      "ロマン主義"
+    ],
+    "summary": "大きな黄色の汚に首だけが浮かび、何かを見上げる犬。ゴヤ標準の「黒い絵」シリーズの末期、絶望と孤独を極限の簡潔さで表現した超現実主義的先駆作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/38/Goya_Dog.jpg",
+    "level": 2
   }
 ];
