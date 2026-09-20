@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-09-19（全197作品／今回の新規 5）
+// 最終更新: 2026-09-20（全202作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -2375,6 +2375,66 @@ const WORKS = [
     ],
     "summary": "大きな黄色の汚に首だけが浮かび、何かを見上げる犬。ゴヤ標準の「黒い絵」シリーズの末期、絶望と孤独を極限の簡潔さで表現した超現実主義的先駆作。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/3/38/Goya_Dog.jpg",
+    "level": 2
+  },
+  {
+    "title": "ヴルカヌスの鍛冶場",
+    "artist": "ディエゴ・ベラスケス",
+    "year": "1630年",
+    "museum": "プラド美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "アポロンがヴルカヌスの鍛冶場を訪れ、マルスとヴィーナスの密通を告げる神話の場面。ベラスケスのローマ留学中に描かれた初期傑作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Vel%C3%A1zquez_-_La_Fragua_de_Vulcano_(Museo_del_Prado%2C_1630).jpg",
+    "level": 2
+  },
+  {
+    "title": "犬を持つ少年（ムリーリョ）",
+    "artist": "バルトロメ・エステバン・ムリーリョ",
+    "year": "c.1650-1660年頃",
+    "museum": "エルミタージュ美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "セビリアの少年が腐に犬を抑え、笑顔でこちらを振り返る场面。宗教画で名を馳せたムリーリヨが帶びた脾民の子どもを自然体に描いた風信画の傑作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Bartolom%C3%A9_Esteban_Perez_Murillo_-_Boy_with_a_Dog_-_WGA16362.jpg",
+    "level": 3
+  },
+  {
+    "title": "ダナエ（ティツィアーノ）",
+    "artist": "ティツィアーノ・ヴェチェッリオ",
+    "year": "c.1553-1554年頃",
+    "museum": "エルミタージュ美術館",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "ゼウスが黄金の雨に変身してダナエのもとへ降り注ぐ神話の場面。ティツィアーノ晩年の色彩主義の頂点を示す傑作で、レンブラントら後世の画家へ絶大な影響を与えた。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/78/Tizian_011.jpg",
+    "level": 2
+  },
+  {
+    "title": "ワトソンとサメ",
+    "artist": "ジョン・シングルトン・コプリー",
+    "year": "1778年",
+    "museum": "ボストン美術館",
+    "themes": [
+      "新古典主義"
+    ],
+    "summary": "1749年ハバナ港で少年ブルック・ワトソンがサメに襲われた実話を描いた劇的な海洋歴史画。同構図が3点制作され、ボストン美術館版はワトソン家旧蔵。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Watsonandtheshark-original.jpg",
+    "level": 2
+  },
+  {
+    "title": "エドワード・ダーリー・ボイトの娘たち",
+    "artist": "ジョン・シンガー・サージェント",
+    "year": "1882年",
+    "museum": "ボストン美術館",
+    "themes": [
+      "写実主義"
+    ],
+    "summary": "サージェントがボイト家の4姉妹をパリのアパルトマンに配した縦2.2mの群像肖像。ベラスケス《ラス・メニーナス》を強く意識した空間構成で知られる。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/12/John_Singer_Sargent_001.jpg",
     "level": 2
   }
 ];
