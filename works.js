@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-09-20（全202作品／今回の新規 5）
+// 最終更新: 2026-09-21（全207作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -2436,5 +2436,65 @@ const WORKS = [
     "summary": "サージェントがボイト家の4姉妹をパリのアパルトマンに配した縦2.2mの群像肖像。ベラスケス《ラス・メニーナス》を強く意識した空間構成で知られる。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/12/John_Singer_Sargent_001.jpg",
     "level": 2
+  },
+  {
+    "title": "ブージヴァルのダンス",
+    "artist": "ピエール＝オーギュスト・ルノワール",
+    "year": "1883年",
+    "museum": "ボストン美術館",
+    "themes": [
+      "印象派"
+    ],
+    "summary": "パリ郊外セーヌ河畔の行楽地ブージヴァルで踊るカップルを縦1.8mの縦長画面に捉えた、ルノワール中期の踊りシリーズ3部作の一つ。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Dance-At-Bougival.jpg",
+    "level": 2
+  },
+  {
+    "title": "ポール・リヴィアの肖像",
+    "artist": "ジョン・シングルトン・コプリー",
+    "year": "1768年頃",
+    "museum": "ボストン美術館",
+    "themes": [
+      "新古典主義"
+    ],
+    "summary": "アメリカ独立革命の英雄として知られる銀細工師ポール・リヴィアを、職人の作業着姿で描いた異例の肖像画。手にはティーポットと彫金道具。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6e/J_S_Copley_-_Paul_Revere.jpg",
+    "level": 3
+  },
+  {
+    "title": "霧の警告",
+    "artist": "ウィンスロー・ホーマー",
+    "year": "1885年",
+    "museum": "ボストン美術館",
+    "themes": [
+      "写実主義"
+    ],
+    "summary": "北大西洋の漁船から離れて一人でオヒョウを積んだ小舟に乗る漁師が、迫る霧に振り返る緊張の瞬間を描いた、アメリカン・リアリズムの代表作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/17/Winslow_Homer_-_The_Fog_Warning_-_Google_Art_Project.jpg",
+    "level": 3
+  },
+  {
+    "title": "積みわら（日没、雪の効果）",
+    "artist": "クロード・モネ",
+    "year": "1891年",
+    "museum": "ボストン美術館",
+    "themes": [
+      "印象派"
+    ],
+    "summary": "モネがジヴェルニーの自宅近くの畑で1890-91年に制作した「積みわら」連作25点のうちの一点。夕陽と雪の反射で赤紫に染まる瞬間を捉える。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Claude_Monet_-_Haystacks%2C_end_of_Summer_-_Google_Art_Project.jpg",
+    "level": 2
+  },
+  {
+    "title": "奴隷船",
+    "artist": "ジョゼフ・マロード・ウィリアム・ターナー",
+    "year": "1840年",
+    "museum": "ボストン美術館",
+    "themes": [
+      "ロマン主義"
+    ],
+    "summary": "1781年ゾング号事件（保険金目当てに奴隷が海に投げ込まれた実話）に着想を得た、燃える海と沈む鎖の腕を描いたターナーの代表作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/26/Slave-ship.jpg",
+    "level": 3
   }
 ];
