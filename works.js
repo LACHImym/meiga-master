@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-09-21（全207作品／今回の新規 5）
+// 最終更新: 2026-09-22（全212作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -2496,5 +2496,65 @@ const WORKS = [
     "summary": "1781年ゾング号事件（保険金目当てに奴隷が海に投げ込まれた実話）に着想を得た、燃える海と沈む鎖の腕を描いたターナーの代表作。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/2/26/Slave-ship.jpg",
     "level": 3
+  },
+  {
+    "title": "アトリエの画家",
+    "artist": "レンブラント・ファン・レイン",
+    "year": "1628年頃",
+    "museum": "ボストン美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "20代前半のレンブラントが、殺風景なアトリエの奥から巨大なイーゼルを見つめる自身の姿を描いた小さな板絵。制作行為の内省を主題化した最初期作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/24/Rembrandt_The_Artist_in_his_studio.jpg",
+    "level": 3
+  },
+  {
+    "title": "刈入れ人たちの休息（ルツとボアズ）",
+    "artist": "ジャン＝フランソワ・ミレー",
+    "year": "1850〜1853年",
+    "museum": "ボストン美術館",
+    "themes": [
+      "写実主義"
+    ],
+    "summary": "旧約聖書「ルツ記」の場面を19世紀フランスの農民風景に翻訳した野心作。1853年サロンで2等賞を獲得し、ミレーの写実主義画家としての地位を確定した。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/HarvestersRestingRuthBoazMillet.jpg",
+    "level": 3
+  },
+  {
+    "title": "エレオノーラ・ゴンザーガの肖像",
+    "artist": "ティツィアーノ・ヴェチェッリオ",
+    "year": "1536-38年頃",
+    "museum": "ウフィツィ美術館",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "ウルビーノ公爵奈となったエレオノーラ・ゴンザーガの肖像。豌富な黒衣と微細なアクセサリー、背景の風景登般がウルビーノ公爵疵とともに描かれ、ティツィアーノの宮廷肖像画の頂点を示す。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/10/Tizian_-_Portr%C3%A4t_der_Eleonora_Gonzaga.jpg",
+    "level": 3
+  },
+  {
+    "title": "ハルピュイアイの聖母",
+    "artist": "アンドレア・デル・サルト",
+    "year": "1517年",
+    "museum": "ウフィツィ美術館",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "由通しアーチを背に罎壇上に立つ聖母マリアと幼子キリストを描いたフィレンツェ盘期ルネサンスの傑作。キリストをアディュトゥムに罎えた微細な表現と坐台のコニナンドル（ハルピュイアイの彫刻）が名前の由来。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/Andrea_del_Sarto_-_Virgin_and_Child_between_St_Francis_of_Assisi_and_St_John_the_Evangelist_('Madonna_of_the_Harpies')%2C_1517%2C_1890_no.1577.jpg",
+    "level": 3
+  },
+  {
+    "title": "バッカス",
+    "artist": "カラヴァッジョ",
+    "year": "1598年頃",
+    "museum": "ウフィツィ美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "酒神バッカスに扮した若者が腐りかけの果物とワインを差し出す。超写実的な表現と官能性の融合がカラヴァッジョ様式の革命を体現し、ウフィツィのコレクションにおける初期バロックの頂点を示す。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/96/Baco%2C_por_Caravaggio.jpg",
+    "level": 2
   }
 ];
