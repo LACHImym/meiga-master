@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-09-22（全212作品／今回の新規 5）
+// 最終更新: 2026-09-23（全217作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -2555,6 +2555,66 @@ const WORKS = [
     ],
     "summary": "酒神バッカスに扮した若者が腐りかけの果物とワインを差し出す。超写実的な表現と官能性の融合がカラヴァッジョ様式の革命を体現し、ウフィツィのコレクションにおける初期バロックの頂点を示す。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/9/96/Baco%2C_por_Caravaggio.jpg",
+    "level": 2
+  },
+  {
+    "title": "耳に包帯をした自画像",
+    "artist": "フィンセント・ファン・ゴッホ",
+    "year": "1889年1月",
+    "museum": "コートールド美術館（ロンドン）",
+    "themes": [
+      "ポスト印象派"
+    ],
+    "summary": "アルルでゴーギャンとの共同生活が破綻した直後、自ら左耳を切り落としたゴッホが、包帯を巻いた姿で描いた自画像。背景に日本の浮世絵が飾られ、パイプをくわえた毅然とした表情が痛ましい事件の直後とは思えない静けさをたたえる。コートールド美術館が誇る至宝。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Self-Portrait_with_a_Bandaged_Ear_-_Vincent_van_Gogh.jpg",
+    "level": 3
+  },
+  {
+    "title": "ネヴァーモア",
+    "artist": "ポール・ゴーギャン",
+    "year": "1897年",
+    "museum": "コートールド美術館（ロンドン）",
+    "themes": [
+      "ポスト印象派"
+    ],
+    "summary": "第二次タヒチ滞在中に描いた傑作。横たわるタヒチ女性の裸体と背後の烏は、エドガー・アラン・ポーの詩「大鴉」の一語「Nevermore（二度とない）」に由来する。楽園の官能美と死の予感が共存する、象徴主義とポスト印象派を橋渡しする傑作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/77/Nevermore_de_Paul_Gauguin_(Fondation_Vuitton%2C_Paris)_(32480723757).jpg",
+    "level": 3
+  },
+  {
+    "title": "化粧する女（ポウダーを塗る女）",
+    "artist": "ジョルジュ・スーラ",
+    "year": "1890年頃",
+    "museum": "コートールド美術館（ロンドン）",
+    "themes": [
+      "ポスト印象派"
+    ],
+    "summary": "スーラがポアンティリズム（点描法）で描いた、愛人マドレーヌ・クノブロックが化粧台に向かう姿の唯一の室内画。当初は鏡に自分の顔を描いたが、友人の指摘で花瓶に変えたという逸話で知られる。装飾的な壁紙とコルセット姿が象徴主義の時代を感じさせる。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/38/Young_Woman_Powdering_Herself_Georges_Seurat.jpg",
+    "level": 3
+  },
+  {
+    "title": "病女",
+    "artist": "ヤン・ステーン",
+    "year": "c.1663-1666",
+    "museum": "アムステルダム国立美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "恋煩いで患う若い女性を描いたステーンの風俗画。ユーモアと道徳的メッセージが込められた作品で、17世紀オランダ絵画の多層的な語り口を体現している。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/81/Steen_Doctor_and_His_Patient.jpg",
+    "level": 3
+  },
+  {
+    "title": "手紙を読む青衣の女",
+    "artist": "ヨハネス・フェルメール",
+    "year": "c.1663",
+    "museum": "アムステルダム国立美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "窓からの光を受けながら手紙を読む女性を描いたフェルメール作品。青い衣服と柔らかな光の表現が印象的で、静謐な室内の空気感が凝縮されている。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/db/Vermeer%2C_Johannes_-_Woman_reading_a_letter_-_ca._1662-1663.jpg",
     "level": 2
   }
 ];
