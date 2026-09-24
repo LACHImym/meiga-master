@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-09-23（全217作品／今回の新規 5）
+// 最終更新: 2026-09-24（全222作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -2615,6 +2615,66 @@ const WORKS = [
     ],
     "summary": "窓からの光を受けながら手紙を読む女性を描いたフェルメール作品。青い衣服と柔らかな光の表現が印象的で、静謐な室内の空気感が凝縮されている。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/d/db/Vermeer%2C_Johannes_-_Woman_reading_a_letter_-_ca._1662-1663.jpg",
+    "level": 2
+  },
+  {
+    "title": "ユディトとホロフェルネス（ナポリ版）",
+    "artist": "アルテミジア・ジェンティレスキ",
+    "year": "1612〜1613年頃",
+    "museum": "ナポリ・カポディモンテ美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "女性画家アルテミジアが初期に描いたユディトの首切り場面。ウフィツィ版（1614-20年頃）より荒々しいタッチで、カラヴァッジョの劇的明暗法を女性の視点から昇華させた初期傑作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Artemisia_Gentileschi_-_Judith_Beheading_Holofernes_-_WGA8563.jpg",
+    "level": 2
+  },
+  {
+    "title": "大公の聖母",
+    "artist": "ラファエロ・サンツィオ",
+    "year": "1504年頃",
+    "museum": "パラティーナ美術館（ピッティ宮殿、フィレンツェ）",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "ラファエロが20代前半に描いた聖母子像。後にトスカーナ大公コジモ3世が旅にも手放さず持ち歩いたことから「大公の聖母」の名が付いた。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Raffaello_(1483-1520)_-_La_Madonna_del_Granduca_-_178_-_Galleria_Palatina.jpg",
+    "level": 2
+  },
+  {
+    "title": "人生の三時代",
+    "artist": "ジョルジョーネ",
+    "year": "1500-1501年頃",
+    "museum": "パラティーナ美術館（ピッティ宮殿、フィレンツェ）",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "楽器と楽譜をめぐって少年・壮年・老年の三者が向き合う謎めいた作品。音楽を通じた人生の師弟関係と時間の流れを詩情豊かに表現する。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/56/Giorgione%2C_Three_Ages.jpg",
+    "level": 3
+  },
+  {
+    "title": "眠れるキューピッド",
+    "artist": "カラヴァッジョ",
+    "year": "1608年",
+    "museum": "パラティーナ美術館（ピッティ宮殿、フィレンツェ）",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "マルタ島流浪中に描かれた地に横たわるキューピッド。通常の可憐な愛の神像とは異なり、写実的な幼児の肉体で描かれ、放棄された弓矢が「眠れる愛」を暗示する。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Sleeping_Cupid-Caravaggio_(1608).jpg",
+    "level": 3
+  },
+  {
+    "title": "ヴェールの女",
+    "artist": "ラファエロ・サンツィオ",
+    "year": "1515-1516年頃",
+    "museum": "パラティーナ美術館（ピッティ宮殿、フィレンツェ）",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "薄絹のヴェールに包まれた若い女性の肖像。ラファエロの恋人フォルナリーナがモデルとの説が有力で、絹の質感表現と柔らかな光の扱いが頂点を示す。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0d/La_velada%2C_por_Rafael.jpg",
     "level": 2
   }
 ];
