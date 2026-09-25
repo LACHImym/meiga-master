@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-09-24（全222作品／今回の新規 5）
+// 最終更新: 2026-09-25（全227作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -2675,6 +2675,66 @@ const WORKS = [
     ],
     "summary": "薄絹のヴェールに包まれた若い女性の肖像。ラファエロの恋人フォルナリーナがモデルとの説が有力で、絹の質感表現と柔らかな光の扱いが頂点を示す。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/0d/La_velada%2C_por_Rafael.jpg",
+    "level": 2
+  },
+  {
+    "title": "椅子の聖母",
+    "artist": "ラファエロ・サンツィオ",
+    "year": "1513-1514年頃",
+    "museum": "パラティーナ美術館（ピッティ宮殿、フィレンツェ）",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "円形（トンド）の画面に聖母・幼キリスト・幼い洗礼者ヨハネを収めた円熟期の傑作。丸い画面と三者の曲線的な構成が見事に呼応する。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/09/Raphael_Madonna_della_seggiola.jpg",
+    "level": 2
+  },
+  {
+    "title": "コンチェルト",
+    "artist": "ティツィアーノ・ヴェチェッリオ",
+    "year": "1510-1511年頃",
+    "museum": "パラティーナ美術館（ピッティ宮殿、フィレンツェ）",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "鍵盤楽器を弾く若者・歌を歌う修道士・後方の男の三者を描く謎めいた作品。ジョルジョーネとティツィアーノ二人の関係と影響が議論される美術史的重要作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Tiziano_Vecellio_(Pieve_di_Cadore_1490_ca_-_Venezia_1576)_-_Il_Concerto_-_185_-_Galleria_Palatina.jpg",
+    "level": 2
+  },
+  {
+    "title": "ダナエ（コレッジョ）",
+    "artist": "アントーニオ・アレッグリ（コレッジョ）",
+    "year": "c.1531-1532年",
+    "museum": "ボルゲーゼ美術館（ローマ）",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "ゼウスが黄金の雨に変身してダナエを訪れる神話場面を描いたコレッジョの官能的作品。溶けるような光の表現がバロックへの道を適いた。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Correggio_008.jpg",
+    "level": 2
+  },
+  {
+    "title": "聖なる愛と俗なる愛",
+    "artist": "ティツィアーノ・ヴェチェッリオ",
+    "year": "c.1514年",
+    "museum": "ボルゲーゼ美術館（ローマ）",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "裸体の女性（神聖な愛）と衣を繑った女性（世俗の愛）が泉の縁に座る謎めいた二人像。ティツィアーノ初期の傑作で、色彩と謎のシンボルが500年以上議論を呼んでいる。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Tiziano_-_Amor_Sacro_y_Amor_Profano_(Galer%C3%ADa_Borghese%2C_Roma%2C_1514)FXD.jpg",
+    "level": 2
+  },
+  {
+    "title": "聖母と燭台（クリヴェッリ）",
+    "artist": "カルロ・クリヴェッリ",
+    "year": "1490年頃",
+    "museum": "ピナコテーカ・ディ・ブレラ（ミラノ）",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "ゴシックの装飾性とルネサンスの空間表現を独自に融合させたクリヴェッリの傑作。果物・花・宝石が織り成す豪奢な境界枠は工芸品のような完成度で、19世紀のラファエル前派が熱狂的に崇拝したことでも知られる。現在はミラノのブレラ美術館所蔵。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Carlo_Crivelli_-_Madonna_della_Candeletta_-_WGA5785.jpg",
     "level": 2
   }
 ];
