@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-09-25（全227作品／今回の新規 5）
+// 最終更新: 2026-09-26（全232作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -2735,6 +2735,69 @@ const WORKS = [
     ],
     "summary": "ゴシックの装飾性とルネサンスの空間表現を独自に融合させたクリヴェッリの傑作。果物・花・宝石が織り成す豪奢な境界枠は工芸品のような完成度で、19世紀のラファエル前派が熱狂的に崇拝したことでも知られる。現在はミラノのブレラ美術館所蔵。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Carlo_Crivelli_-_Madonna_della_Candeletta_-_WGA5785.jpg",
+    "level": 2
+  },
+  {
+    "title": "死せるキリスト（マンテーニャ）",
+    "artist": "アンドレア・マンテーニャ",
+    "year": "1480年頃",
+    "museum": "ピナコテーカ・ディ・ブレラ（ミラノ）",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "マンテーニャが1480年頃に描いたルネサンス絵画の傑作。足元からの極端な短縮法（フォルショルテゥング）でキリストの死を見せ、見る者に圧倒的な衝撃を与える。現在はミラノのブレラ美術館所蔵。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/26/Lamentaci%C3%B3n_sobre_Cristo_muerto%2C_por_Andrea_Mantegna.jpg",
+    "level": 2
+  },
+  {
+    "title": "ダヴィデ（ベルニーニ）",
+    "artist": "ジャン・ロレンツォ・ベルニーニ",
+    "year": "1623-1624年",
+    "museum": "ボルゲーゼ美術館（ローマ）",
+    "themes": [
+      "バロック",
+      "彫刻"
+    ],
+    "summary": "石を放つ直前のダヴィデを捉えたベルニーニの大理石彫刻。ミケランジェロの静的な《ダヴィデ》と対照的に、投石の瞬間を切り取った動的表現がバロックの特質を示す。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/92/Bernini's_David_02.jpg",
+    "level": 2
+  },
+  {
+    "title": "果物籠を持つ少年",
+    "artist": "ミケランジェロ・メリシ・ダ・カラヴァッジョ",
+    "year": "c.1593-1594年",
+    "museum": "ボルゲーゼ美術館（ローマ）",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "熟れた果物の入った籠を持つ若者を描いたカラヴァッジョの初期作品。腐りかけた果物と瑞々しい肌の対比が、バロック絵画の写実主義の原点を示す。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/64/Boy_with_a_Basket_of_Fruit-Caravaggio_(1593).jpg",
+    "level": 2
+  },
+  {
+    "title": "プロセルピナの略奪",
+    "artist": "ジャン・ロレンツォ・ベルニーニ",
+    "year": "1621-1622年",
+    "museum": "ボルゲーゼ美術館（ローマ）",
+    "themes": [
+      "バロック",
+      "彫刻"
+    ],
+    "summary": "冥府の王プルートがプロセルピナをさらう場面を描いたベルニーニの大理石彫刻。指が食い込む女神の腿の肉の質感が圧倒的で、「石の柔らかさ」と称される。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c5/The_Rape_of_Proserpina_(Rome).jpg",
+    "level": 2
+  },
+  {
+    "title": "アポロとダフネ",
+    "artist": "ジャン・ロレンツォ・ベルニーニ",
+    "year": "1622-1625年",
+    "museum": "ボルゲーゼ美術館（ローマ）",
+    "themes": [
+      "バロック",
+      "彫刻"
+    ],
+    "summary": "ローマ神話のアポロとダフネの変身場面を、大理石一塊から彫りあげたバロック彫刻の傑作。ダフネの指先が月桂樹の葉に変わる瞬間を捉えた表現は、彫刻の不可能を可能にした。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Apollo_and_Daphne_(Bernini)_(cropped).jpg",
     "level": 2
   }
 ];
