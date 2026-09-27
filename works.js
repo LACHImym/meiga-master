@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-09-26（全232作品／今回の新規 5）
+// 最終更新: 2026-09-27（全237作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -2799,5 +2799,65 @@ const WORKS = [
     "summary": "ローマ神話のアポロとダフネの変身場面を、大理石一塊から彫りあげたバロック彫刻の傑作。ダフネの指先が月桂樹の葉に変わる瞬間を捉えた表現は、彫刻の不可能を可能にした。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Apollo_and_Daphne_(Bernini)_(cropped).jpg",
     "level": 2
+  },
+  {
+    "title": "月を見上げる二人の男",
+    "artist": "カスパー・ダーヴィト・フリードリヒ",
+    "year": "1819-1820頃",
+    "museum": "ドレスデン国立古典絵画館",
+    "themes": [
+      "ロマン主義"
+    ],
+    "summary": "夜のオーク林の中で月を見上げる二人の男性をシルエットで描いたフリードリヒの代表作のひとつ。孤独な人間と広大な自然の関係というロマン主義の核心テーマを、「リュッケンフィギュール（背面人物像）」という革新的構図で表現する。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Caspar_David_Friedrich_-_Two_Men_Contemplating_the_Moon_-_Google_Art_Project.jpg",
+    "level": 2
+  },
+  {
+    "title": "ディアナとニンフたち",
+    "artist": "ヨハネス・フェルメール",
+    "year": "1653-1656年頃",
+    "museum": "マウリッツハイス美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "フェルメールの現存最古の作品のひとつ。神話上の月の女神ディアナが侍女に足を洗われる情景を描き、後年の室内画へ通じる静謐な光の雰囲気がすでに宿る稀有な神話作品。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/68/Johannes_Vermeer_-_Diana_and_her_Nymphs_-_406_-_Mauritshuis.jpg",
+    "level": 2
+  },
+  {
+    "title": "サウルとダビデ",
+    "artist": "レンブラント・ファン・レイン",
+    "year": "1655-1660年頃",
+    "museum": "マウリッツハイス美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "竪琴を弾くダビデの音楽に耳を傾けながら、嫉妬と悲しみでカーテンを目に押し当て泣くサウル王を描く。晩年のレンブラントの心理描写の深さが凝縮された、宗教的人間劇の傑作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Rembrandt_Saul_and_David.jpg",
+    "level": 3
+  },
+  {
+    "title": "アタランテとヒッポメネス",
+    "artist": "グイド・レーニ",
+    "year": "1615-25年頃",
+    "museum": "ナポリ・カポディモンテ美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "黄金のりんごを抾ってアタランテを追い抉くヒッポメネス。レーニの倒映的な优雅さが燿eを極限まで計算された構図の中で軸を猟らすように展開する、イタリア・バロック絵画の最高傅作の一つ。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Guido_Reni_-_Atalanta_and_Hippomenes_-_Google_Art_Project.jpg",
+    "level": 3
+  },
+  {
+    "title": "ピエタ（アンニーバレ・カラッチ）",
+    "artist": "アンニーバレ・カラッチ",
+    "year": "1599-1600年頃",
+    "museum": "ナポリ・カポディモンテ美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "ピエタ（偀愔）の伝統をバロック積上と直接性で才蔟に協和させたカラッチの僑作。年輪的なイデアリズムと自然な悲しみの表現が精妙に融合し、後のイタリア・バロック絵画の展開を予告する展定右。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Annibale_Carracci_1560-1609_Pieta.jpg",
+    "level": 3
   }
 ];
