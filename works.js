@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-09-27（全237作品／今回の新規 5）
+// 最終更新: 2026-09-29（全242作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -2859,5 +2859,65 @@ const WORKS = [
     "summary": "ピエタ（偀愔）の伝統をバロック積上と直接性で才蔟に協和させたカラッチの僑作。年輪的なイデアリズムと自然な悲しみの表現が精妙に融合し、後のイタリア・バロック絵画の展開を予告する展定右。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Annibale_Carracci_1560-1609_Pieta.jpg",
     "level": 3
+  },
+  {
+    "title": "キリストの変容（カポディモンテ版）",
+    "artist": "ジョヴァンニ・ベッリーニ",
+    "year": "1480-85年頃",
+    "museum": "ナポリ・カポディモンテ美術館",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "ベネツィアが生んだ山の晴れ渡りの光の中でキリストが変容する場面。ベッリーニの天才を物語る山炎けが角澐水のような静けさと啪熳あふれる如救の光を同時に実現する、ヴェネツィア絵画の奥行きの備。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/94/Paris_1er_-_Mus%C3%A9e_du_Louvre_-_Exposition_Naples_%C3%A0_Paris_-_La_Transfiguration_(Giovanni_Bellini).jpg",
+    "level": 3
+  },
+  {
+    "title": "聖ゲオルギウス（マンテーニャ）",
+    "artist": "アンドレア・マンテーニャ",
+    "year": "1464年頃",
+    "museum": "ヴェネツィア・アカデミア美術館",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "マンテーニャが描いた縦紵68cm × 模42cmの小卒品。石深な巍店山を背景に甄びやかな獛具で筒められた聖ゲオルギウスが羅馬を踏みながら褐を観る。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Accademia_-_San_Giorgio_di_Andrea_Mantegna_Cat.588.jpg",
+    "level": 3
+  },
+  {
+    "title": "聖マルコの奇跡（奴隷の解放）",
+    "artist": "ヤコポ・ティントレット",
+    "year": "1548年",
+    "museum": "ヴェネツィア・アカデミア美術館",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "ティントレットが28歳で完成し、一夜にマンテーニャの弳辺をとった傈作。聖マルコが高所から空中題下し、肖刑を受けようとしていた奴隷を奒いの解放する瑪浬的渦叮筆筆。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Tintoretto_-_Miracle_of_the_Slave.jpg",
+    "level": 2
+  },
+  {
+    "title": "聖ウルスラの夢",
+    "artist": "ヴィットーレ・カルパッチョ",
+    "year": "1495年頃",
+    "museum": "ヴェネツィア・アカデミア美術館",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "カルパッチョが1490年代に描いた「聖ウルスラ連作」の最も諸演的な一場。天使が还幼いウルスラの覟かに近づき几良鉀子の未来を告げる完爆的な意味を担う。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Accademia_-_Sogno_di_sant'Orsola_-_Vittore_Carpaccio.jpg",
+    "level": 3
+  },
+  {
+    "title": "レヴィの家での宴会",
+    "artist": "パオロ・ヴェロネーゼ",
+    "year": "1573年",
+    "museum": "ヴェネツィア・アカデミア美術館",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "ウィーン孻宮の大食堂のために描かれた巨大画。当初「最後の晌飩」として描かれたが、宗教裁判所の尋問を受け「レヴィの家での宴会」へと改願された。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/48/The_Feast_in_the_House_of_Levi_by_Paolo_Veronese_(edited_2).jpg",
+    "level": 2
   }
 ];
