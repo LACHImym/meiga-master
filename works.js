@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-09-29（全242作品／今回の新規 5）
+// 最終更新: 2026-09-29（全247作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -2919,5 +2919,66 @@ const WORKS = [
     "summary": "ウィーン孻宮の大食堂のために描かれた巨大画。当初「最後の晌飩」として描かれたが、宗教裁判所の尋問を受け「レヴィの家での宴会」へと改願された。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/48/The_Feast_in_the_House_of_Levi_by_Paolo_Veronese_(edited_2).jpg",
     "level": 2
+  },
+  {
+    "title": "布地商組合の幹部たち",
+    "artist": "レンブラント・ファン・レイン",
+    "year": "1662",
+    "museum": "アムステルダム国立美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "アムステルダム布地商組合の幹部5名と従者を描いたグループ肖像画。レンブラント晩年の集団肖像画の傑作であり、各人物の個性と視線の鋭さが印象的。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/95/Rembrandt_-_De_Staalmeesters-_het_college_van_staalmeesters_(waardijns)_van_het_Amsterdamse_lakenbereidersgilde_-_Google_Art_Project.jpg",
+    "level": 2
+  },
+  {
+    "title": "ヘリオドロスの追放",
+    "artist": "ラファエロ・サンティ",
+    "year": "1511-1514年",
+    "museum": "バチカン美術館",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "バチカン宮殿ラファエロの間（第2室）を飾るフレスコ画。エルサレム神殿の財宝を奉じようとしたヘリオドロスが天の使者に打ち倒される場面で、奖当な光と運動感あふれる群像が空間を圧倒的な迫力で満たすルネサンス絵画の傑作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Raphael_Heliodorus.jpg",
+    "level": 2
+  },
+  {
+    "title": "アポロン・ベルヴェデーレ",
+    "artist": "作者不明（レオカレス原作、ローマ時代模刻）",
+    "year": "後130-140年頃（原作：紀元前330-325年頃）",
+    "museum": "バチカン美術館",
+    "themes": [
+      "古代・中世",
+      "彫刻"
+    ],
+    "summary": "バチカン美術館ベルヴェデーレ庭園に展示される古代ローマ時代の大理石彫刻。紀元前330年頃のギリシャ彫刻家レオカレスの原作の模刻で、18世紀まで「世界で最も美しい彫刻」と称えられたヨーロッパ美術の絶対的な規範。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/19/Apollo_of_the_Belvedere.jpg",
+    "level": 2
+  },
+  {
+    "title": "アルジャントゥイユの秋の効果",
+    "artist": "クロード・モネ",
+    "year": "1873年",
+    "museum": "コートールド美術館",
+    "themes": [
+      "印象派"
+    ],
+    "summary": "セーヌ川沿いの小都市アルジャントゥイユで描かれた、モネの“光と水の反射”の探求の原点。空と指が水面に象形的に映り込んで、投影と実在が溶け合う印象派的停頂。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/47/Monet_-_Herbst_in_Argentueil.jpg",
+    "level": 3
+  },
+  {
+    "title": "ローシップ・レーン駅、ダリッジ",
+    "artist": "カミーユ・ピサロ",
+    "year": "1871年",
+    "museum": "コートールド美術館",
+    "themes": [
+      "印象派"
+    ],
+    "summary": "普仏戦争を逃れロンドンに滞在中のピサロが南ロンドンで描いた近代蔑語的都市絵画。蒸気機鉄車が噴き出す白い煙の表現は、後のモネの「サン‑ラザール駅」連作を先取りする。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/43/Pissarro_-_Lordship_Lane_Station%2C_Dulwich_(1871).jpg",
+    "level": 3
   }
 ];
