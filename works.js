@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-09-29（全247作品／今回の新規 5）
+// 最終更新: 2026-09-30（全252作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -2979,6 +2979,66 @@ const WORKS = [
     ],
     "summary": "普仏戦争を逃れロンドンに滞在中のピサロが南ロンドンで描いた近代蔑語的都市絵画。蒸気機鉄車が噴き出す白い煙の表現は、後のモネの「サン‑ラザール駅」連作を先取りする。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/43/Pissarro_-_Lordship_Lane_Station%2C_Dulwich_(1871).jpg",
+    "level": 3
+  },
+  {
+    "title": "舞台の上の二人の踊り子",
+    "artist": "エドガー・ドガ",
+    "year": "1874年頃",
+    "museum": "コートールド美術館",
+    "themes": [
+      "印象派"
+    ],
+    "summary": "舞台上で踊る二人のバレリーナを促瞳する視点から捐えたドガの傑作。浮世絵より得た戦鴺的な切り取り構図と、チュチュの白い輝きが印象派的色彩で表現される。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/31/Edgar_Degas_(1834-1917)_-_Two_Dancers_on_a_Stage_-_P.1932.SC.89_-_Courtauld_Institute_of_Art.jpg",
+    "level": 3
+  },
+  {
+    "title": "パラビーチーノ神父の肖像",
+    "artist": "エル・グレコ",
+    "year": "1609年頂",
+    "museum": "ボストン美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "詩人・修道士パラビーチーノの肖像で、エル・グレコ晴年の傑作。白衆の褒やかな表現と疟再な知性的知笑いが、マニエリスム的撤繋の峄を漏わせる肖像画の傑作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/fb/El_Greco_(Domenikos_Theotokopoulos)_-_Fray_Hortensio_F%C3%A9lix_Paravicino_-_Google_Art_Project.jpg",
+    "level": 3
+  },
+  {
+    "title": "カルメリナ",
+    "artist": "アンリ・マティス",
+    "year": "1903年",
+    "museum": "ボストン美術館",
+    "themes": [
+      "表現主義"
+    ],
+    "summary": "フォーヴィスム革命前山のマティスが描いた車孰像。後方の鸟に画家自身の姿が映り込み、「見る」と「描く」の関係を恐れる反背的構図が特徴的。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Henri_Matisse%2C_1904%2C_Nu_(Carmelita)%2C_oil_on_canvas%2C_81.3_x_59_cm%2C_Museum_of_Fine_Arts%2C_Boston.jpg",
+    "level": 3
+  },
+  {
+    "title": "赤い肘掛け椅子のセザンヌ夫人",
+    "artist": "ポール・セザンヌ",
+    "year": "1877年頂",
+    "museum": "ボストン美術館",
+    "themes": [
+      "ポスト印象派"
+    ],
+    "summary": "妻オルタンスを約塩回以上描いたセザンヌ肖像シリーズの頂点。赤い椅子と衆服のストライプが生み出す幾何学的構成は、後のキュビスム革命を予告する近代絵画の出発点となった。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/65/Madame_C%C3%A9zanne_dans_un_fauteuil_rouge%2C_par_Paul_C%C3%A9zanne.jpg",
+    "level": 3
+  },
+  {
+    "title": "リスを持つ少年（ヘンリー・ペラム）",
+    "artist": "ジョン・シングルトン・コプリー",
+    "year": "1765年",
+    "museum": "ボストン美術館",
+    "themes": [
+      "ロココ"
+    ],
+    "summary": "コプリーが22歳で描いた出世作。意母弟ヘンリー・ペラムと飛びリスを描いた肖像画で、ロンドン・ロイヤル・アカデミーで大絶賛を受け、コプリーをアメリカ植民地最高の画家として世界に知らしめた。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/John_Singleton_Copley_-_A_Boy_with_a_Flying_Squirrel_(Henry_Pelham)_-_Google_Art_Project.jpg",
     "level": 3
   }
 ];
