@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-09-30（全252作品／今回の新規 5）
+// 最終更新: 2026-10-01（全257作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -3040,5 +3040,65 @@ const WORKS = [
     "summary": "コプリーが22歳で描いた出世作。意母弟ヘンリー・ペラムと飛びリスを描いた肖像画で、ロンドン・ロイヤル・アカデミーで大絶賛を受け、コプリーをアメリカ植民地最高の画家として世界に知らしめた。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/John_Singleton_Copley_-_A_Boy_with_a_Flying_Squirrel_(Henry_Pelham)_-_Google_Art_Project.jpg",
     "level": 3
+  },
+  {
+    "title": "ピエタ（ティツィアーノ）",
+    "artist": "ティツィアーノ・ヴェチェッリオ",
+    "year": "c.1575-76年",
+    "museum": "ヴェネツィア・アカデミア美術館",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "ティツィアーノが死の直前まで筆を執り続けた最後の作品。自らの墓を飾るために描き、没後に弟子パルマ・イル・ジョーヴァネが完成させた。画家の自画像とされる老人が跪く姿に、死と向き合う魂の告白が込められている。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/59/Accademia_-_Piet%C3%A0_by_Titian.jpg",
+    "level": 2
+  },
+  {
+    "title": "ウォルター・ローリーの少年時代",
+    "artist": "ジョン・エヴァレット・ミレイ",
+    "year": "1870年",
+    "museum": "テート・ブリテン（ロンドン）",
+    "themes": [
+      "写実主義"
+    ],
+    "summary": "少年時代のウォルター・ローリー逃が海の男から大海原の隣語を聞く。帝国主義時代の英国で広く感動を呼んだ、海への憧桯を体現する名作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f0/John_Everett_Millais_(1829-1896)_-_The_Boyhood_of_Raleigh_-_N01691_-_National_Gallery.jpg",
+    "level": 2
+  },
+  {
+    "title": "目覚めの良心",
+    "artist": "ウィリアム・ホルマン・ハント",
+    "year": "1853年",
+    "museum": "テート・ブリテン（ロンドン）",
+    "themes": [
+      "ラファエル前派"
+    ],
+    "summary": "愛人の膝から立ち上がる瞬間の女性の内面変化を写実的に描く。ヴィクトリア朝の道徳観と象徴的細部が圧縮された問題作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/83/William_Holman_Hunt_-_The_Awakening_Conscience_-_Google_Art_Project.jpg",
+    "level": 2
+  },
+  {
+    "title": "ノーハム城、日の出",
+    "artist": "J・M・W・ターナー",
+    "year": "1845年頃",
+    "museum": "テート・ブリテン（ロンドン）",
+    "themes": [
+      "ロマン主義"
+    ],
+    "summary": "ターナーが30年以上繰り返し描いた故地。紘と光の中に浮かぶ廣崂、笆艉になる寓の浮かび——晚年の印象主義的筆致が頂点に達した傳説的作品。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/33/Joseph_Mallord_William_Turner_-_Norham_Castle%2C_Sunrise_-_WGA23182.jpg",
+    "level": 2
+  },
+  {
+    "title": "希望",
+    "artist": "ジョージ・フレデリック・ワッツ",
+    "year": "1886年",
+    "museum": "テート・ブリテン（ロンドン）",
+    "themes": [
+      "象徴主義"
+    ],
+    "summary": "目隠しの女神が地球儀の最後の一弦を奏でる。バラク・オバマ大統領が就任演説で引用、世界的に知られる象徴主義の傑作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Assistants_and_George_Frederic_Watts_-_Hope_-_Google_Art_Project.jpg",
+    "level": 2
   }
 ];
