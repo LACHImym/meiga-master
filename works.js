@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-10-01（全257作品／今回の新規 5）
+// 最終更新: 2026-10-02（全262作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -3100,5 +3100,65 @@ const WORKS = [
     "summary": "目隠しの女神が地球儀の最後の一弦を奏でる。バラク・オバマ大統領が就任演説で引用、世界的に知られる象徴主義の傑作。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Assistants_and_George_Frederic_Watts_-_Hope_-_Google_Art_Project.jpg",
     "level": 2
+  },
+  {
+    "title": "ルッカのマドンナ",
+    "artist": "ヤン・ファン・エイク",
+    "year": "1437年頃",
+    "museum": "シュテーデル美術館（フランクフルト・アム・マイン）",
+    "themes": [
+      "北方ルネサンス"
+    ],
+    "summary": "フランクフルト・シュテーデル美術館が誇るファン・エイク傑作。光と陰影で神聖な親密さを表現した北方ルネサンス油彩の極致。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Lucca_Madonna_(SM_944).png",
+    "level": 2
+  },
+  {
+    "title": "ゲーテとローマの野原",
+    "artist": "ヨハン・ハインリッヒ・ヴィルヘルム・ティッシュバイン",
+    "year": "1787年",
+    "museum": "シュテーデル美術館（フランクフルト・アム・マイン）",
+    "themes": [
+      "ロマン主義"
+    ],
+    "summary": "ドイツ最大の文豪ゲーテのイタリア旅行中を描いた最も有名な肖像。古代ローマの遺跡を背景に白いマントで横たわる姿は、古典主義と自然への憧憬を体現するロマン主義絵画の傑作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/69/Goethe_in_the_Roman_Campagna_(SM_1157).png",
+    "level": 3
+  },
+  {
+    "title": "オペラ槟敟にて",
+    "artist": "メアリー・カサット",
+    "year": "1878年",
+    "museum": "ボストン美術館",
+    "themes": [
+      "印象派"
+    ],
+    "summary": "双眼鏡でステージを見つめる女性と、背後の槟敟から彼女を見る男性の視線が交差する。「見る女性」を主体に据えた近代フェミニスト的印象派の傑作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/87/Mary_Stevenson_Cassatt_-_In_the_Loge_-_Google_Art_Project.jpg",
+    "level": 3
+  },
+  {
+    "title": "ザ・ブルーボート",
+    "artist": "ウィンスロー・ホーマー",
+    "year": "1892年",
+    "museum": "ボストン美術館",
+    "themes": [
+      "写実主義"
+    ],
+    "summary": "ホーマー晴年の水彩画傑作。二人の人物が青いボートで湖上を行く稿漢な情景を、光と色彩の名手が幹やかに描いたアメリカ水彩画の傑作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/18/Winslow_Homer_-_The_Blue_Boat_-_Google_Art_Project.jpg",
+    "level": 3
+  },
+  {
+    "title": "ジョージ・ワシントン肖像（アセネウム型）",
+    "artist": "ギルバート・スチュアート",
+    "year": "1796年",
+    "museum": "ボストン美術館",
+    "themes": [
+      "新古典主義"
+    ],
+    "summary": "アメリカ初代大統領ワシントンの未完の公式肖像。1ドル紙幣の元図として世界一流通した肖像画で、ボストン美術館とワシントン・ナショナル・ポートレート・ギャラリーが共同所蔵する。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Gilbert_Stuart_-_George_Washington_(The_Athenaeum_Portrait)_-_Google_Art_Project.jpg",
+    "level": 3
   }
 ];
