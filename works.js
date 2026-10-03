@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-10-02（全262作品／今回の新規 5）
+// 最終更新: 2026-10-03（全267作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -3159,6 +3159,66 @@ const WORKS = [
     ],
     "summary": "アメリカ初代大統領ワシントンの未完の公式肖像。1ドル紙幣の元図として世界一流通した肖像画で、ボストン美術館とワシントン・ナショナル・ポートレート・ギャラリーが共同所蔵する。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Gilbert_Stuart_-_George_Washington_(The_Athenaeum_Portrait)_-_Google_Art_Project.jpg",
+    "level": 3
+  },
+  {
+    "title": "聖母子と二人の天使",
+    "artist": "フィリッポ・リッピ",
+    "year": "1465年頃",
+    "museum": "ウフィツィ美術館",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "窓外の風景を背景に聖母・幼子キリスト・二人の天使が配された初期ルネサンスの名作。振り返る天使の自然な表情と三次元空間の表現は、修道士でありながら世俗的な人物描写に優れたリッピの真骨頂。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/42/Madonna_and_Child_with_two_Angels_(by_Filippo_Lippi)_%E2%80%93_Galleria_degli_Uffizi%2C_Florence.jpg",
+    "level": 3
+  },
+  {
+    "title": "見返り美人図",
+    "artist": "菱川師宣",
+    "year": "1690年代",
+    "museum": "東京国立博物館",
+    "themes": [
+      "浮世絵"
+    ],
+    "summary": "菱川師宣による肉筆浮世絵の傑作。振り返る美人の一瞬を捉えた構図は後世の浮世絵に決定的な影響を与えた国宝。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/81/Hishikawa_Moronobu_-_Beauty_Looking_Back_-_Google_Art_Project.jpg",
+    "level": 2
+  },
+  {
+    "title": "地球と水の結合（ルーベンス）",
+    "artist": "ペーテル・パウル・ルーベンス",
+    "year": "1618年頃",
+    "museum": "エルミタージュ美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "ルーベンスが1618年頃に描いた寓意画。大地の女神ケレスと海の神ネプトゥヌスが抜撹する場面を通じて、アントワープの繁栄と水路の重要性を象徴した政治的メッセージを持つ。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Rubens%2C_de_vereniging_van_aarde_en_water_Gallerix.jpg",
+    "level": 3
+  },
+  {
+    "title": "エデンの記念（ゴッホ）",
+    "artist": "フィンセント・ファン・ゴッホ",
+    "year": "1888年",
+    "museum": "エルミタージュ美術館",
+    "themes": [
+      "ポスト印象派"
+    ],
+    "summary": "ゴッホがアルル滞在中の1888年に、故郷エッテンの庭の記憶を題材に描いた幻想的な作品。ゴーギャンの提唱した「想像から描く」アプローチに挑み、装飾的な平面構成を実験した。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Vincent_Willem_van_Gogh_098.jpg",
+    "level": 2
+  },
+  {
+    "title": "ライラック（ゴッホ）",
+    "artist": "フィンセント・ファン・ゴッホ",
+    "year": "1887年",
+    "museum": "エルミタージュ美術館",
+    "themes": [
+      "ポスト印象派"
+    ],
+    "summary": "ゴッホがパリ滞在中の1887年に描いたライラックの茂み。印象派の色彩感覚を吸収しつつ、激しい筆触が固有の表現スタイルへの移行を示す転換期の傑作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/75/Vincent_Willem_van_Gogh_044.jpg",
     "level": 3
   }
 ];
