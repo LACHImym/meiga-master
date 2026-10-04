@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-10-03（全267作品／今回の新規 5）
+// 最終更新: 2026-10-04（全272作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -3220,5 +3220,65 @@ const WORKS = [
     "summary": "ゴッホがパリ滞在中の1887年に描いたライラックの茂み。印象派の色彩感覚を吸収しつつ、激しい筆触が固有の表現スタイルへの移行を示す転換期の傑作。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/7/75/Vincent_Willem_van_Gogh_044.jpg",
     "level": 3
+  },
+  {
+    "title": "コネスタービレの聖母",
+    "artist": "ラファエロ・サンティ",
+    "year": "1502-1504年頃",
+    "museum": "エルミタージュ美術館（サンクトペテルブルク、ロシア）",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "ラファエロが10代後半に描いた初期の聖母子像。ペルージャのコネスタービレ伯爵家旧蔵品。1871年にアレクサンドル2世が妻への贈り物としてエルミタージュのために購入した。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Raffaello_Madonna_Connestabile.jpg",
+    "level": 2
+  },
+  {
+    "title": "果物を持つ女（ゴーギャン）",
+    "artist": "ポール・ゴーギャン",
+    "year": "1893年",
+    "museum": "エルミタージュ美術館（サンクトペテルブルク、ロシア）",
+    "themes": [
+      "ポスト印象派"
+    ],
+    "summary": "ゴーギャンが最初のタヒチ滞在中に描いた傑作のひとつ。現地の女性が果物（マンゴー）を掲げ持つ姿を描き、南の楽園の生命力を凝縮した一枚。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Gauguin%2C_Paul_-_Woman_Holding_a_Fruit_(Eu_haere_ia_oe).jpg",
+    "level": 2
+  },
+  {
+    "title": "放蕩息子の帰還",
+    "artist": "レンブラント・ファン・レイン",
+    "year": "1666-1669年頃",
+    "museum": "エルミタージュ美術館（サンクトペテルブルク、ロシア）",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "レンブラントの晩年の大傑作。ルカ伝15章のたとえ話を題材に、放蕩の末に帰還した息子を老いた父が静かに抱きしめる瞬間を描く。エルミタージュ美術館を代表する至宝。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/93/Rembrandt_Harmensz_van_Rijn_-_Return_of_the_Prodigal_Son_-_Google_Art_Project.jpg",
+    "level": 2
+  },
+  {
+    "title": "リッタの聖母",
+    "artist": "レオナルド・ダ・ヴィンチ",
+    "year": "1490-1491年頃",
+    "museum": "エルミタージュ美術館（サンクトペテルブルク、ロシア）",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "授乳する聖母マリアと幼いキリストを描いたレオナルドの名作。ミラノのリッタ公爵家が所蔵したことから命名。現在は一部をレオナルドの弟子ジョヴァン・アンブロージョ・デ・プレーディスの作とする説もある。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Leonardo_da_Vinci_attributed_-_Madonna_Litta.jpg",
+    "level": 2
+  },
+  {
+    "title": "ダナエ（レンブラント）",
+    "artist": "レンブラント・ファン・レイン",
+    "year": "1636年（後に加筆修正）",
+    "museum": "エルミタージュ美術館（サンクトペテルブルク、ロシア）",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "ギリシャ神話のダナエを描いたレンブラントの傑作。1985年に来館者が硫酸と刃物で作品を損傷させたが、12年の修復作業を経て現在も展示されている。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/88/Rembrandt_Harmensz._van_Rijn_026.jpg",
+    "level": 2
   }
 ];
