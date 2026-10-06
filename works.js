@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-10-04（全272作品／今回の新規 5）
+// 最終更新: 2026-10-06（全277作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -3279,6 +3279,66 @@ const WORKS = [
     ],
     "summary": "ギリシャ神話のダナエを描いたレンブラントの傑作。1985年に来館者が硫酸と刃物で作品を損傷させたが、12年の修復作業を経て現在も展示されている。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/8/88/Rembrandt_Harmensz._van_Rijn_026.jpg",
+    "level": 2
+  },
+  {
+    "title": "赤いキュロットのオダリスク",
+    "artist": "アンリ・マティス",
+    "year": "1924-1925年",
+    "museum": "オランジュリー美術館（パリ）",
+    "themes": [
+      "表現主義"
+    ],
+    "summary": "マティスがニース札で颍いた中東骎映の美女オダリスクを描いた備品。觝等しく遮りなく花やかな色彩と平面的構成が導く展関する装飾的空間に、イスラーム世界に濹れたスタイルの狙いが緿られる。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/51/Odalisque_%C3%A0_la_culotte_rouge_d'Henri_Matisse.jpg",
+    "level": 3
+  },
+  {
+    "title": "ポール・ギヨーム、ノヴォ・ピロタ（モディリアーニ）",
+    "artist": "アメデオ・モディリアーニ",
+    "year": "1915年",
+    "museum": "オランジュリー美術館（パリ）",
+    "themes": [
+      "表現主義"
+    ],
+    "summary": "モディリアーニが描いた芸術商ポール・ギヨームの肖像。拡長した明秥と符号的な遠構成を特徴とするモディリアーニ肖像画の東洋的な禁欲と西洋近代性が融合する備品。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Modigliani%2C_Amedeo_-_Paul_Guillaume._Nova_Pilota.jpg",
+    "level": 3
+  },
+  {
+    "title": "リンゴとビスケット",
+    "artist": "ポール・セザンヌ",
+    "year": "1879-1880年頃",
+    "museum": "オランジュリー美術館（パリ）",
+    "themes": [
+      "ポスト印象派"
+    ],
+    "summary": "セザンヌが扣桑たり山扁な静物画の一つ。平凡な果物とビスケットを通じて形態と空間の展開を探究した近代絵画の良心。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Nature_morte%2C_pommes_et_biscuits%2C_par_Paul_C%C3%A9zanne.jpg",
+    "level": 3
+  },
+  {
+    "title": "ガブリエルとジャン",
+    "artist": "ピエール＝オーギュスト・ルノワール",
+    "year": "1895-1896年頃",
+    "museum": "オランジュリー美術館（パリ）",
+    "themes": [
+      "印象派"
+    ],
+    "summary": "ルノワールが昇山思い情感で描いた、信頼する女中ガブリエルと二男の子ジャンの親密な日常。母性的なやわらかさと子どもの無邪気を印象派特有の淡い筆調で表現した名品。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/95/Renoir_-_gabrielle-and-jean.jpg!PinterestLarge.jpg",
+    "level": 3
+  },
+  {
+    "title": "睡蓮（オランジュリー大装飾画）",
+    "artist": "クロード・モネ",
+    "year": "1914-1926年",
+    "museum": "オランジュリー美術館（パリ）",
+    "themes": [
+      "印象派"
+    ],
+    "summary": "モネが晩年に制作した大装飾画連作。パリのオランジュリー美術館2室の楕円形の部屋を囲む8枚の巨大パネル（総延長約91m）として永久設置され、睡蓮と水面・空が一体化する没入的空間を作り出す。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/93/Claude_Monet_Seerosen_um_1915_Neue_Pinakothek-4.jpg",
     "level": 2
   }
 ];
