@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-10-06（全277作品／今回の新規 5）
+// 最終更新: 2026-10-06（全282作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -3340,5 +3340,65 @@ const WORKS = [
     "summary": "モネが晩年に制作した大装飾画連作。パリのオランジュリー美術館2室の楕円形の部屋を囲む8枚の巨大パネル（総延長約91m）として永久設置され、睡蓮と水面・空が一体化する没入的空間を作り出す。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/9/93/Claude_Monet_Seerosen_um_1915_Neue_Pinakothek-4.jpg",
     "level": 2
+  },
+  {
+    "title": "黄色い椅子のセザンヌ夫人",
+    "artist": "ポール・セザンヌ",
+    "year": "1888-1890年",
+    "museum": "シカゴ美術館",
+    "themes": [
+      "ポスト印象派"
+    ],
+    "summary": "セザンヌが妻オルタンスを描いた約45点の肖像シリーズの代表作。黄色い椅子と青い衣装の色彩対比と、崩れかけた構造感覚がキュビスムの扉を開いた記念碑的画面。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/08/Paul_C%C3%A9zanne_-_Madame_C%C3%A9zanne_in_a_Yellow_Chair_-_1948.54_-_Art_Institute_of_Chicago.jpg",
+    "level": 3
+  },
+  {
+    "title": "フェルナンド劇場の曲芸師たち",
+    "artist": "ピエール＝オーギュスト・ルノワール",
+    "year": "1879年",
+    "museum": "シカゴ美術館",
+    "themes": [
+      "印象派"
+    ],
+    "summary": "モンマルトルのサーカス小屋で演じる二人の少女曲芸師が客席からオレンジを受け取る場面。ルノワール独特の柔らかい筆致で大衆娯楽の生き生きとした愛らしさを描いた。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Pierre-Auguste_Renoir_-_Acrobats_at_the_Cirque_Fernando_(Francisca_and_Angelina_Wartenberg)_-_Google_Art_Project.jpg",
+    "level": 3
+  },
+  {
+    "title": "黄金の鎖をつけた老人",
+    "artist": "レンブラント・ファン・レイン",
+    "year": "1631年頃",
+    "museum": "シカゴ美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "25歳のレンブラントが黄金の鎖を纏った老人を描いた初期バロック作品。緻密な光の表現と翁の風格が示す、天才の早熟な画力。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Rembrandt_Harmensz._van_Rijn_-_Old_Man_with_a_Gold_Chain_-_Google_Art_Project.jpg",
+    "level": 3
+  },
+  {
+    "title": "自画像（1887年、シカゴ）",
+    "artist": "フィンセント・ファン・ゴッホ",
+    "year": "1887年",
+    "museum": "シカゴ美術館",
+    "themes": [
+      "ポスト印象派"
+    ],
+    "summary": "ゴッホがパリ時代に描いた自画像のひとつ。スーラの点描技法の影響が明確に現れており、色彩理論を学んだパリの2年間がゴッホを変えた証言として重要。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/37/Vincent_van_Gogh_-_Self-Portrait_-_1954.326_-_Art_Institute_of_Chicago.jpg",
+    "level": 3
+  },
+  {
+    "title": "帽子屋",
+    "artist": "エドガー・ドガ",
+    "year": "1879-1886年頃",
+    "museum": "シカゴ美術館",
+    "themes": [
+      "印象派"
+    ],
+    "summary": "エドガー・ドガが帽子店の女性労働者たちを描いた、近代パリの労働と消費文化を鋭く切り取った傑作。帽子を吟味する客と無心に作業する職人の対比が絶妙。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Edgar_Degas_-_The_Millinery_Shop_-_Google_Art_Project.jpg",
+    "level": 3
   }
 ];
