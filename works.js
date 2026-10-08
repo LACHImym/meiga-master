@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-10-06（全282作品／今回の新規 5）
+// 最終更新: 2026-10-08（全287作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -3399,6 +3399,66 @@ const WORKS = [
     ],
     "summary": "エドガー・ドガが帽子店の女性労働者たちを描いた、近代パリの労働と消費文化を鋭く切り取った傑作。帽子を吟味する客と無心に作業する職人の対比が絶妙。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Edgar_Degas_-_The_Millinery_Shop_-_Google_Art_Project.jpg",
+    "level": 3
+  },
+  {
+    "title": "ムーラン・ルージュにて",
+    "artist": "アンリ・ド・トゥールーズ＝ロートレック",
+    "year": "1892-1895年",
+    "museum": "シカゴ美術館",
+    "themes": [
+      "ポスト印象派"
+    ],
+    "summary": "モンマルトルの歓楽街ムーラン・ルージュの内部を描いた大作。緑色の人工照明に照らされた人物たちの歪んだ表情が、頽廃と享楽の夜の空気を生々しく伝える。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/10/Henri_de_Toulouse-Lautrec_-_At_the_Moulin_Rouge_-_1928.610_-_Art_Institute_of_Chicago.jpg",
+    "level": 2
+  },
+  {
+    "title": "ひばりの歌",
+    "artist": "ジュール・ブルトン",
+    "year": "1884年",
+    "museum": "シカゴ美術館",
+    "themes": [
+      "写実主義"
+    ],
+    "summary": "夜明けの麦畑に立つ農村の娘が天高く飛ぶひばりの声に耳を澄ます一瞬。フランス写実主義の感傷と農村礼賛が結晶した名作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Jules_Breton%2C_le_chant_de_l'alouette.1884.jpg",
+    "level": 3
+  },
+  {
+    "title": "ブノワの聖母",
+    "artist": "レオナルド・ダ・ヴィンチ",
+    "year": "1478-1480年頃",
+    "museum": "エルミタージュ美術館（サンクトペテルブルク、ロシア）",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "レオナルドがフィレンツェ時代に描いた初期の聖母子像。ロシアの建築家ブノワ家の所蔵品として知られ、1914年にエルミタージュが購入。世界に15点前後しかない真作のひとつ。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/78/Leonardo%2C_Madonna_Benois.JPG",
+    "level": 2
+  },
+  {
+    "title": "ダビデとゴリアテの首",
+    "artist": "ミケランジェロ・メリージ・ダ・カラヴァッジョ",
+    "year": "1606-1607年頃",
+    "museum": "ウィーン美術史美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "勝利に昂揚せず、深い怜愁を帯びたダビデが印象的。木板に描かれた籁羅な技法による、逃亡期前夜のカラヴァッジョ作品。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2d/David_with_the_Head_of_Goliath-Caravaggio_(c.1606-7).jpg",
+    "level": 3
+  },
+  {
+    "title": "大きな自画像（レンブラント）",
+    "artist": "レンブラント・ファン・レイン",
+    "year": "1652年",
+    "museum": "ウィーン美術史美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "腰に両手を当てた正面からの堵々たる構図で描かれたレンブラント50歳前後の自画像。財政破綻が始まった年ながら、内面の威厳を揺るぎなく示す晩年への転換点となる僕作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Rembrandt_Harmenszoon_van_Rijn_-_Large_Self-Portrait_-_Google_Art_Project.jpg",
     "level": 3
   }
 ];
