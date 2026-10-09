@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-10-08（全287作品／今回の新規 5）
+// 最終更新: 2026-10-09（全292作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -3460,5 +3460,65 @@ const WORKS = [
     "summary": "腰に両手を当てた正面からの堵々たる構図で描かれたレンブラント50歳前後の自画像。財政破綻が始まった年ながら、内面の威厳を揺るぎなく示す晩年への転換点となる僕作。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Rembrandt_Harmenszoon_van_Rijn_-_Large_Self-Portrait_-_Google_Art_Project.jpg",
     "level": 3
+  },
+  {
+    "title": "凸面鏡の自画像",
+    "artist": "パルミジャニーノ（フランチェスコ・マッツォーラ）",
+    "year": "1524年頃",
+    "museum": "ウィーン美術史美術館",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "凸面鏡に映った自影を、実際に丸く割った木製パネルに描いた奇商な自画像。近景に大きく描かれた右手が据わる遠近法が独特。23歳の若きパルミジャニーノが技巧の限りを尽くした記念碑的作品。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Parmigianino_Selfportrait.jpg",
+    "level": 3
+  },
+  {
+    "title": "ユピテルとイオ",
+    "artist": "アントニオ・ダ・コレッジョ",
+    "year": "1530-1532年頃",
+    "museum": "ウィーン美術史美術館",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "高163.5cmの縦長画面に、靂に姿を変えたユピテルがニンフのイオを誘惑する場面を描いたコレッジョの傑作。同館の「ガニュメデスの誘拘」と対のオウィディウス連作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Antonio_Allegri%2C_called_Correggio_-_Jupiter_and_Io_-_Google_Art_Project.jpg",
+    "level": 2
+  },
+  {
+    "title": "ジプシーの聖母",
+    "artist": "ティツィアーノ・ヴェチェッリオ",
+    "year": "1510-1511年頃",
+    "museum": "ウィーン美術史美術館",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "褐色がかった肌と濃い目元を持つ聖母が「ジプシー」の異名をもつ初期ティツィアーノの傑作。ジョルジョーネ様式との融合がみえる転換点の一作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Tiziano_Vecellio%2C_called_Titian_-_Gipsy_Madonna_-_Google_Art_Project.jpg",
+    "level": 3
+  },
+  {
+    "title": "毛皮のエレーヌ・フールマン（ダス・ペルツヒェン）",
+    "artist": "ペーテル・パウル・ルーベンス",
+    "year": "1636-1638年頃",
+    "museum": "ウィーン美術史美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "ルーベンス晩年の愛妻エレーヌ・フールマンを毛皮のみをまとった姿で描いた私的な傑作。没後の遺言で手放さないよう指示されたとも伝わる。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Peter_Paul_Rubens_019.jpg",
+    "level": 3
+  },
+  {
+    "title": "子どもの遊戯",
+    "artist": "ピーテル・ブリューゲル（父）",
+    "year": "1560年",
+    "museum": "ウィーン美術史美術館",
+    "themes": [
+      "北方ルネサンス"
+    ],
+    "summary": "250人以上の子どもたちが90種を超える遊びを繰り広げる大パノラマ。ブリューゲルが構想した「人間の営み」シリーズの一点とされる。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Pieter_Bruegel_the_Elder_-_Children%E2%80%99s_Games_-_Google_Art_Project.jpg",
+    "level": 2
   }
 ];
