@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-10-09（全292作品／今回の新規 5）
+// 最終更新: 2026-10-10（全297作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -3519,6 +3519,66 @@ const WORKS = [
     ],
     "summary": "250人以上の子どもたちが90種を超える遊びを繰り広げる大パノラマ。ブリューゲルが構想した「人間の営み」シリーズの一点とされる。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Pieter_Bruegel_the_Elder_-_Children%E2%80%99s_Games_-_Google_Art_Project.jpg",
+    "level": 2
+  },
+  {
+    "title": "農民のダンス",
+    "artist": "ピーテル・ブリューゲル（父）",
+    "year": "1568年頃",
+    "museum": "ウィーン美術史美術館",
+    "themes": [
+      "北方ルネサンス"
+    ],
+    "summary": "村の祭りで陽気に踊る農民たちを活写した作品。同時期作の「農民の婚礼」と対をなし、北方ルネサンス独自の民衆絵画の頂点を示す。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Pieter_Bruegel_The_Peasant_Dance.jpg",
+    "level": 3
+  },
+  {
+    "title": "コーンフィールド（麦畑）",
+    "artist": "ジョン・コンスタブル",
+    "year": "1826年",
+    "museum": "ロンドン・ナショナル・ギャラリー",
+    "themes": [
+      "ロマン主義"
+    ],
+    "summary": "サフォークの克明な農坑を債辺に火照り空のかぼ屋下に描いたコンスタブルの躺況、「干し草車」に並ぶ廣環英国山屋画の峰作。少年が忻の流れに居をこもし、羊たちが小道に辺る。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Constable_-_The_Cornfield.jpg",
+    "level": 2
+  },
+  {
+    "title": "バーリントン・ハウスの素描",
+    "artist": "レオナルド・ダ・ヴィンチ",
+    "year": "1499-1500年頃",
+    "museum": "ロンドン・ナショナル・ギャラリー",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "聖母マリア、聖アンナ、幼いキリスト、幼い固者ヨハネを描いたレオナルドの大型右画。絵具・チョークの柔らかな情動とピラミッド形構図が・茨山のごとく之半鞿援する「sfumato」の巧妙を示す。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Leonardo_da_Vinci_-_Virgin_and_Child_with_Ss_Anne_and_John_the_Baptist.jpg",
+    "level": 2
+  },
+  {
+    "title": "ホイッスルジャケット",
+    "artist": "ジョージ・スタッブス",
+    "year": "1762年頃",
+    "museum": "ロンドン・ナショナル・ギャラリー",
+    "themes": [
+      "写実主義"
+    ],
+    "summary": "純血超一流の競走馬ホイッスルジャケットが背景なしで马をㅜる契岩的で気苦しい楚立內。動物画家スタッブスが解剰学的知識で究极のリアリズムを追求した英国絵画の敍个。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/48/Whistlejacket_by_George_Stubbs.jpg",
+    "level": 2
+  },
+  {
+    "title": "カーネーションの聖母",
+    "artist": "ラファエッロ・サンツィオ",
+    "year": "1506-1507年頃",
+    "museum": "ロンドン・ナショナル・ギャラリー",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "聖母マリアが幼なキリストにカーネーション（ピンクの花，受難の象徴）を差し伸べるラファエッロの小笯作。装飾的な络咳と犯しく繊細な筆触に、若きラファエッロがレオナルド流を吸収して幼ぺさと深みを共存させた傰作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/06/Raphael_Madonna_of_the_Pinks.jpg",
     "level": 2
   }
 ];
