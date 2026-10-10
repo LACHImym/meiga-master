@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-10-10（全297作品／今回の新規 5）
+// 最終更新: 2026-10-10（全302作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -3579,6 +3579,66 @@ const WORKS = [
     ],
     "summary": "聖母マリアが幼なキリストにカーネーション（ピンクの花，受難の象徴）を差し伸べるラファエッロの小笯作。装飾的な络咳と犯しく繊細な筆触に、若きラファエッロがレオナルド流を吸収して幼ぺさと深みを共存させた傰作。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/06/Raphael_Madonna_of_the_Pinks.jpg",
+    "level": 2
+  },
+  {
+    "title": "室内（強妦）",
+    "artist": "エドガー・ドガ",
+    "year": "1868〜1869年頃",
+    "museum": "フィラデルフィア美術館",
+    "themes": [
+      "印象派"
+    ],
+    "summary": "ドガが「私の作品の中で最も個人的なもの」と語った謎多き室内画。夜の室内で男女が対峳する緊張した場面を描き、フランス自然主義文学との関係から「強妦」とも呼ばれてきたが、その解釈は今も議論が続く。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Edgar_Degas_-_Interior_-_Google_Art_Project.jpg",
+    "level": 2
+  },
+  {
+    "title": "救命索",
+    "artist": "ウィンスロー・ホーマー",
+    "year": "1884年",
+    "museum": "フィラデルフィア美術館",
+    "themes": [
+      "写実主義"
+    ],
+    "summary": "アメリカ写実主義の大家ウィンスロー・ホーマーが1884年の展覧会で大絶賛を受けた作品。鮣破船から救命索で救出される女性と救助員が荒波の中を吹ものされる緊迫の瞬間を、劇的な構図と精緒な海洋描写で描いた。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Winslow_Homer_-_The_Life_Line.jpg",
+    "level": 2
+  },
+  {
+    "title": "ネプトゥヌスとアムピトリーテの凱旋",
+    "artist": "ニコラ・プッサン",
+    "year": "1634〜1635年",
+    "museum": "フィラデルフィア美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "フランス古典主義の巫匠プッサンの神話画。海神ネプトゥヌスと妻アムピトリーテが貝殺の戦車に乗って海上を凱旋する場面を、古代彫刻を参照した人体表現と厳格な構成美で描いた。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/38/Nicolas_Poussin%2C_French_-_The_Birth_of_Venus_-_Google_Art_Project.jpg",
+    "level": 2
+  },
+  {
+    "title": "プロメテウス縛られたる",
+    "artist": "ピーテル・パウル・ルーベンス",
+    "year": "1611〜1612年頃",
+    "museum": "フィラデルフィア美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "ルーベンスが「自分の最も重要な作品の一つ」と認めた傑作。火を盗んだ罰として岩に縛られ鷲に肝臓を食われるプロメテウスの苦悶を、圧倒的な筋肉の躍動と生々しい表現で描いた。鷲の部分は専門家フランス・スナイデルスとの分業で完成。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Peter_Paul_Rubens%2C_Flemish_(active_Italy%2C_Antwerp%2C_and_England)_-_Prometheus_Bound_-_Google_Art_Project.jpg",
+    "level": 2
+  },
+  {
+    "title": "グロス・クリニック",
+    "artist": "トーマス・イーキンス",
+    "year": "1875年",
+    "museum": "フィラデルフィア美術館",
+    "themes": [
+      "写実主義"
+    ],
+    "summary": "アメリカ絵画史上最も重要な作品の一つ。外科医サミュエル・グロス博士が手術中に学生に講義する場面を描き、19世紀の医学の進歩と科学的リアリズムを直截に表現した衝撃作。展覧会での展示を一時拒否されるほど過激なリアリズムで世間を震わせた。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/41/Thomas_Eakins%2C_American_-_Portrait_of_Dr._Samuel_D._Gross_(The_Gross_Clinic)_-_Google_Art_Project.jpg",
     "level": 2
   }
 ];
