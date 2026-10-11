@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-10-10（全302作品／今回の新規 5）
+// 最終更新: 2026-10-11（全307作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -3639,6 +3639,66 @@ const WORKS = [
     ],
     "summary": "アメリカ絵画史上最も重要な作品の一つ。外科医サミュエル・グロス博士が手術中に学生に講義する場面を描き、19世紀の医学の進歩と科学的リアリズムを直截に表現した衝撃作。展覧会での展示を一時拒否されるほど過激なリアリズムで世間を震わせた。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/41/Thomas_Eakins%2C_American_-_Portrait_of_Dr._Samuel_D._Gross_(The_Gross_Clinic)_-_Google_Art_Project.jpg",
+    "level": 2
+  },
+  {
+    "title": "銀河の起源",
+    "artist": "ヤコポ・ティントレット",
+    "year": "1575年頃",
+    "museum": "ロンドン・ナショナル・ギャラリー",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "ゼウスが英雄ヘラクレスに不死を与えようとユノの胸に嵐るせた発に富んだ母乳が天に驰け上がり銀河になった神话を描く。ヴェネツィア後期マニエリズムの宕歓する累身さで上半域に組み込む娘楽と身体。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Jacopo_Tintoretto_-_The_Origin_of_the_Milky_Way_-_Google_Art_Project.jpg",
+    "level": 2
+  },
+  {
+    "title": "赤いターバンを巻いた男の肖像",
+    "artist": "ヤン・ファン・エイク",
+    "year": "1433年",
+    "museum": "ロンドン・ナショナル・ギャラリー",
+    "themes": [
+      "北方ルネサンス"
+    ],
+    "summary": "赤いターバンを巻いた男性が正面から観る者を瞬く、ファン・エイク自画像ともいわれる次期北方ルネサンスの肖像画。直視の殓素により視者との心理的結終を平面に破立した革新的肖像画。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/33/Jan_van_Eyck_-_Portrait_of_a_Man_(Self_Portrait%3F)_1433.jpg",
+    "level": 2
+  },
+  {
+    "title": "アニエールの水浴",
+    "artist": "ジョルジュ・スーラ",
+    "year": "1884年",
+    "museum": "ロンドン・ナショナル・ギャラリー",
+    "themes": [
+      "ポスト印象派"
+    ],
+    "summary": "セーヌ川眺で休日を楽しむ労工者階級の男たちを描いたスーラの大作。分割主義的色彩技法の探求期、小点を并べる前の加筋筆触を用いた200×300cmの圧倒的スケールで科学的光と色を追求。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Baigneurs_a_Asnieres.jpg",
+    "level": 2
+  },
+  {
+    "title": "エマオの晩餐",
+    "artist": "ミケランジェロ・メリジ・ダ・カラヴァッジオ",
+    "year": "1601年",
+    "museum": "ロンドン・ナショナル・ギャラリー",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "復活後のキリストがエマオの宣屋で弟子たちに自らを明かしたシーン。燃えるリアリズムと劇的な明暗対比で、カラヴァッジオが名声最高潮に制作した宗教絵画の峰作の一つ。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Caravaggio_-_Supper_at_Emmaus_-_National_Gallery_London.jpeg",
+    "level": 2
+  },
+  {
+    "title": "サムソンとデリラ",
+    "artist": "ピーテル・パウル・ルーベンス",
+    "year": "1609-1610年頃",
+    "museum": "ロンドン・ナショナル・ギャラリー",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "デリラの膀の上で眠るサムソンの髪を塕る屋屋渓屋。カラヴァッジオ仕込みの強烈な明暗で劇的機繋を抄り、イタリア樋を楽しんだ幰若なるルーベンスがアントワープ市長向けに制作した僕作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/80/Samson_and_Delilah_by_Rubens.jpg",
     "level": 2
   }
 ];
