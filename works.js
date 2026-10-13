@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-10-13（全312作品／今回の新規 5）
+// 最終更新: 2026-10-13（全317作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -3760,5 +3760,65 @@ const WORKS = [
     "summary": "ハドソン・リバー派の巨匠ビアスタットが描いた西部開拓時代の壮大なロッキー山脈。縦1.8m×横3mを超える大画面に、ネイティブ・アメリカンの野営地と神秘的な山岳風景が広がり、19世紀アメリカの「西への夢」を体現した記念碑的作品。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/6/61/1863_-_bierstadt_landers_peak.jpg",
     "level": 3
+  },
+  {
+    "title": "イア・オラナ・マリア",
+    "artist": "ポール・ゴーギャン",
+    "year": "1891年",
+    "museum": "メトロポリタン美術館",
+    "themes": [
+      "ポスト印象派"
+    ],
+    "summary": "タヒチに渡ったゴーギャンが描いた最初期の傑作。聖母マリアとキリストをタヒチの女性と子供として描き、ポリネシアの色彩と原始性の中にキリスト教的図像を融合させた、文明批判と美の革命を告げる一枚。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Paul_Gauguin_Ia_Orana_Maria_(Hail_Mary)_The_Metropolitan_Museum_of_Art1.jpg",
+    "level": 3
+  },
+  {
+    "title": "レベッカの略奪",
+    "artist": "ウジェーヌ・ドラクロワ",
+    "year": "1846年",
+    "museum": "メトロポリタン美術館",
+    "themes": [
+      "ロマン主義"
+    ],
+    "summary": "ウォルター・スコットの小説『アイヴァンホー』の一場面を描いたロマン主義の傑作。燃え上がる城塞を背景に馬上の騎士がユダヤ人女性レベッカを強奪する瞬間の激動を、ドラクロワ独自の渦巻く色彩と動勢で描き切った。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/40/Delacroix%2C_Eug%C3%A8ne_-_The_Abduction_of_Rebecca_-_1846.jpg",
+    "level": 3
+  },
+  {
+    "title": "ガルフ・ストリーム",
+    "artist": "ウィンスロー・ホーマー",
+    "year": "1899年",
+    "museum": "メトロポリタン美術館",
+    "themes": [
+      "写実主義"
+    ],
+    "summary": "嵐の海に漂う小舟の上、一人の黒人男性がサメに囲まれながら横たわっている。ホーマーが繰り返し描いた海と人間の闘いに、南北戦争後のアメリカにおける人種問題が凝縮された19世紀アメリカ絵画の代表作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Winslow_Homer_-_The_Gulf_Stream_-_Metropolitan_Museum_of_Art.jpg",
+    "level": 3
+  },
+  {
+    "title": "騎士のいる川の風景",
+    "artist": "アルベルト・カイプ",
+    "year": "1655年頃",
+    "museum": "アムステルダム国立美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "睎やかな黄金色の黄昏光の中、马に乗った人物と牧草地に滯れる徹が展素樹れた川袋の風景。カイプ独特のくすんだ暖色調がオランダ曲帯黄金時代の平和な陰影を凝縮する。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Rivierlandschap_met_ruiters_Rijksmuseum_SK-A-4118.jpeg",
+    "level": 2
+  },
+  {
+    "title": "ヘレングラハトとハーレムマースロイスのあるアムステルダムの眺め",
+    "artist": "ヤン・ファン・デル・ハイデン",
+    "year": "1670年頃",
+    "museum": "アムステルダム国立美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "アムステルダムの高級住宅街ヘレングラハトと旧ハーレムマースロイス水門を組み合わせた都市景観画。光と建物の質感の精密な描嵩が当時のアムステルダムの繁栄を伝える。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Amsterdams_stadsgezicht_met_huizen_aan_de_Herengracht_en_de_oude_Haarlemmersluis_Rijksmuseum_SK-A-154.jpeg",
+    "level": 2
   }
 ];
