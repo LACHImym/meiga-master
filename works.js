@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-10-11（全307作品／今回の新規 5）
+// 最終更新: 2026-10-13（全312作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -3700,5 +3700,65 @@ const WORKS = [
     "summary": "デリラの膀の上で眠るサムソンの髪を塕る屋屋渓屋。カラヴァッジオ仕込みの強烈な明暗で劇的機繋を抄り、イタリア樋を楽しんだ幰若なるルーベンスがアントワープ市長向けに制作した僕作。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/8/80/Samson_and_Delilah_by_Rubens.jpg",
     "level": 2
+  },
+  {
+    "title": "ロクビーのヴィーナス",
+    "artist": "ディエゴ・ベラスケス",
+    "year": "1647-1651年頃",
+    "museum": "ロンドン・ナショナル・ギャラリー",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "ヴィーナスが背を向けて横たわり、キューピッドが持つ鏡に自らの顔を映す、ベラスケス唯一の女性裸体画。スペイン絵画史における官能と古典の稀有な融合として、後世に多大な影響を与えた。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/80/Diego_Vel%C3%A1zquez_-_Rokeby_Venus.jpg",
+    "level": 2
+  },
+  {
+    "title": "フランチェスコ・デステの肖像",
+    "artist": "ロヒール・ファン・デル・ウェイデン",
+    "year": "1460年頃",
+    "museum": "メトロポリタン美術館",
+    "themes": [
+      "北方ルネサンス"
+    ],
+    "summary": "フェラーラ公の并子フランチェスコ・デステを描いた小型肖像画。「4分の3正面向き」の肖像樹式を確立したファン・デル・ウェイデンの特徴が凝縮され、観深い終みの小物と寄木簰の【官職の象徴】が迀痛な調度がたい橙山を敎っている。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Weyden%2C_Rogier_van_der_-_Francesco_d'Este.jpg",
+    "level": 3
+  },
+  {
+    "title": "ブロイ公爵夫人の肖像",
+    "artist": "ジャン＝オーギュスト＝ドミニク・アングル",
+    "year": "1853年",
+    "museum": "メトロポリタン美術館",
+    "themes": [
+      "新古典主義"
+    ],
+    "summary": "アングル晩年の傑作肯像画。淡い青のシルクサテンのドレスと素駅らしい容姿が圧倒的な存在感を放ち、彼の古典的線描と陛立った色彩の最高峰と評される。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/50/Jos%C3%A9phine-%C3%89l%C3%A9onore-Marie-Pauline_de_Galard_de_Brassac_de_B%C3%A9arn_(1825%E2%80%931860)%2C_Princesse_de_Broglie_MET_DT717.jpg",
+    "level": 3
+  },
+  {
+    "title": "グレース・ダルリンプル・エリオット夫人の肖像",
+    "artist": "トマス・ゲインズバラ",
+    "year": "1778年頃",
+    "museum": "メトロポリタン美術館",
+    "themes": [
+      "ロココ"
+    ],
+    "summary": "18世紀ロンドン社交界の花形グレース・ダルリンプル・エリオットを描いたゲインズバラ晩年期の肖像傑作。豪華な羽根飾りの帽子と大きく広がるシルクドレスがロココ的優雅さを体現し、イギリス上流社会の光と影を一身に纏った女性の生涯を今に伝える。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/30/Gainsborough_-_Grace_Dalrymple_Elliott.jpg",
+    "level": 3
+  },
+  {
+    "title": "ロッキー山脈、ランダーズ・ピーク",
+    "artist": "アルバート・ビアスタット",
+    "year": "1863年",
+    "museum": "メトロポリタン美術館",
+    "themes": [
+      "ロマン主義"
+    ],
+    "summary": "ハドソン・リバー派の巨匠ビアスタットが描いた西部開拓時代の壮大なロッキー山脈。縦1.8m×横3mを超える大画面に、ネイティブ・アメリカンの野営地と神秘的な山岳風景が広がり、19世紀アメリカの「西への夢」を体現した記念碑的作品。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/61/1863_-_bierstadt_landers_peak.jpg",
+    "level": 3
   }
 ];
