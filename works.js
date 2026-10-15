@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-10-13（全317作品／今回の新規 5）
+// 最終更新: 2026-10-15（全322作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -3819,6 +3819,66 @@ const WORKS = [
     ],
     "summary": "アムステルダムの高級住宅街ヘレングラハトと旧ハーレムマースロイス水門を組み合わせた都市景観画。光と建物の質感の精密な描嵩が当時のアムステルダムの繁栄を伝える。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Amsterdams_stadsgezicht_met_huizen_aan_de_Herengracht_en_de_oude_Haarlemmersluis_Rijksmuseum_SK-A-154.jpeg",
+    "level": 2
+  },
+  {
+    "title": "老いた者が歌えば若い者も歌う",
+    "artist": "ヤン・ステーン",
+    "year": "1668年頃",
+    "museum": "マウリッツハイス美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "飲み食いに興じる大人たちを見た子供たちが同じ行動を真似ている宴会の場面。オランダの格言「老いた者が歌えば若い者もそれに倣う」を視覚化した道徳的諷刺画。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Jan_Steen_-_'As_the_Old_Sing%2C_So_Pipe_the_Young'_-_742_-_Mauritshuis.jpg",
+    "level": 3
+  },
+  {
+    "title": "病気の子供",
+    "artist": "ガブリエル・メツー",
+    "year": "1664〜1666年頃",
+    "museum": "アムステルダム国立美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "母親が病気の幼子を膝に抱き、ともに祝るように見える静謐な室内画。オランダ黄金時代の情感豊かな人物描写の頂点を示す名品。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/19/Gabri%C3%ABl_Metsu_-_Het_zieke_kind_-_Google_Art_Project.jpg",
+    "level": 2
+  },
+  {
+    "title": "修道士姿のタイトゥス",
+    "artist": "レンブラント・ファン・レイン",
+    "year": "1660年",
+    "museum": "アムステルダム国立美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "レンブラントが1660年に描いた息子タイトゥスの肖像。フランシスコ会修道士の粗いローブをまとい、うつむく表情に父の深い愛情と晩年の哲学的省察が滲む傑作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/87/Rembrandt_Harmensz._van_Rijn_103.jpg",
+    "level": 2
+  },
+  {
+    "title": "青いドレスのマルガリータ王女",
+    "artist": "ディエゴ・ベラスケス",
+    "year": "1659年",
+    "museum": "ウィーン美術史美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "ウィーンに嫁ぐ前の8歳のマルガリータ王女を据えた外交肢像画。銀と青の豪華なドレスと子供の無邪気が共存する、切なさを持つ偉作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/70/Diego_Rodriguez_de_Silva_y_Vel%C3%A1zquez_-_Infanta_Margarita_Teresa_in_a_Blue_Dress_-_Google_Art_Project.jpg",
+    "level": 3
+  },
+  {
+    "title": "絵画の寓意",
+    "artist": "ヨハネス・フェルメール",
+    "year": "1666-1668年頃",
+    "museum": "ウィーン美術史美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "フェルメールが生涯手放さなかった最大の作品。カメラ・オブスクラを活用した緻密な光の表現と寓意的構成が際立つバロック絵画の傑作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Jan_Vermeer_-_The_Art_of_Painting_-_Google_Art_Project.jpg",
     "level": 2
   }
 ];
