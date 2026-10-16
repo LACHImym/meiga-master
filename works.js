@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-10-15（全322作品／今回の新規 5）
+// 最終更新: 2026-10-16（全327作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -3879,6 +3879,66 @@ const WORKS = [
     ],
     "summary": "フェルメールが生涯手放さなかった最大の作品。カメラ・オブスクラを活用した緻密な光の表現と寓意的構成が際立つバロック絵画の傑作。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Jan_Vermeer_-_The_Art_of_Painting_-_Google_Art_Project.jpg",
+    "level": 2
+  },
+  {
+    "title": "陽気な飲み手",
+    "artist": "フランス・ハルス",
+    "year": "1628〜1630年頃",
+    "museum": "アムステルダム国立美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "杯を掲げる陽気な男の一瞬を大胆な筆致で捉えたフランス・ハルスの代表作。瞬間的な表情と躍動する光の表現は当時の肖像画の常識を覆し、後の印象派にも影響を与えた。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/95/Frans_Hals_002.jpg",
+    "level": 2
+  },
+  {
+    "title": "デュルステーデの風車",
+    "artist": "ヤーコプ・ファン・ロイスダール",
+    "year": "1668〜1670年頃",
+    "museum": "アムステルダム国立美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "ワイク・バイ・デュルステーデの風車と曇り空を壮大なスケールで描いたロイスダールの最高傑作。自然の力強さと人間の営みを対比させた17世紀オランダ風景画の金字塔。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2a/De_molen_bij_Wijk_bij_Duurstede_Rijksmuseum_SK-C-211.jpeg",
+    "level": 2
+  },
+  {
+    "title": "ユダヤの花嫁",
+    "artist": "レンブラント・ファン・レイン",
+    "year": "1665〜1669年頃",
+    "museum": "アムステルダム国立美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "レンブラント晩年の傑作で、男性が女性の胸に手を置く親密な動作を公式肖像画に初めて持ち込んだ革新的作品。二人の正体は未詳だが、イサクとリベカとも解釈される。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Rembrandt_Harmensz._van_Rijn_-_Portret_van_een_paar_als_oudtestamentische_figuren%2C_genaamd_'Het_Joodse_bruidje'_-_Google_Art_Project.jpg",
+    "level": 2
+  },
+  {
+    "title": "使徒パウロとしての自画像",
+    "artist": "レンブラント・ファン・レイン",
+    "year": "1661年",
+    "museum": "アムステルダム国立美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "61歳のレンブラントが使徒パウロに扮して描いた晩年の傑作。聖書と剣を携えた内向きの眼差しに、老いと孤独・信仰・芸術家としての使命感が渾然一体となって刻まれている。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Rembrandt_Harmensz._van_Rijn_-_Zelfportret_als_de_apostel_Paulus_-_Google_Art_Project.jpg",
+    "level": 2
+  },
+  {
+    "title": "七つの大罪のテーブル",
+    "artist": "ヒエロニムス・ボス",
+    "year": "c.1500-1510",
+    "museum": "プラド美術館",
+    "themes": [
+      "北方ルネサンス"
+    ],
+    "summary": "テーブル天板に七つの大罪の場面を扇形に並べ、中央にキリストの眼を据えた独特な図像。「神は見ている（Cave cave Deus videt）」という警句と共にプラドに所蔵される。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/03/Hieronymus_Bosch-_The_Seven_Deadly_Sins_and_the_Four_Last_Things.JPG",
     "level": 2
   }
 ];
