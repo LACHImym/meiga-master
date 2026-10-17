@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-10-16（全327作品／今回の新規 5）
+// 最終更新: 2026-10-17（全332作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -3939,6 +3939,66 @@ const WORKS = [
     ],
     "summary": "テーブル天板に七つの大罪の場面を扇形に並べ、中央にキリストの眼を据えた独特な図像。「神は見ている（Cave cave Deus videt）」という警句と共にプラドに所蔵される。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/03/Hieronymus_Bosch-_The_Seven_Deadly_Sins_and_the_Four_Last_Things.JPG",
+    "level": 2
+  },
+  {
+    "title": "ヤコブの夢",
+    "artist": "ホセ・デ・リベーラ",
+    "year": "1639",
+    "museum": "プラド美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "荒野に眠るヤコブの頭上に天使が静かに降りてくる。カラヴァッジョ由来の明暗ではなく柔らかく広がる光を使ったリベーラ晩年の傑作で、天と地を繋ぐ慈愛が胸を打つ。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/85/El_sue%C3%B1o_de_Jacob%2C_by_Jos%C3%A9_de_Ribera%2C_from_Prado_in_Google_Earth.jpg",
+    "level": 2
+  },
+  {
+    "title": "糸を紡ぐ女たち",
+    "artist": "ディエゴ・ベラスケス",
+    "year": "c.1657",
+    "museum": "プラド美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "タピスリー工房の情景に見えて実はアテナとアラクネの神話を重層的に描いた謎めいた傑作。ベラスケス晩年の複雑な絵画思考を示す。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Velazquez-las_hilanderas.jpg",
+    "level": 2
+  },
+  {
+    "title": "枢機卿の肖像",
+    "artist": "ラファエロ・サンティ",
+    "year": "c.1510-1511",
+    "museum": "プラド美術館",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "赤衣を纏った謎の枢機卿を描いた肖像画。誰が描かれたかは今も不明だが、ルネサンス最高水準の心理的表現を持つラファエロの代表的肖像作品。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Rafael_-_Retrato_de_um_Cardeal.jpg",
+    "level": 2
+  },
+  {
+    "title": "干し草車の三連祭壇画",
+    "artist": "ヒエロニムス・ボス",
+    "year": "1510〜1516年頃",
+    "museum": "プラド美術館",
+    "themes": [
+      "北方ルネサンス"
+    ],
+    "summary": "ボスの三連祭壇画。「世界は干し草、人は欲しいままに掴む」というネーデルランドのことわざを視覚化し、強欲に群がる人類の堕落を描く。快楽の園と並ぶプラド所蔵のボス二大作品。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Jheronimus_Bosch_-_De_hooiwagen_(c.1516%2C_Prado).jpg",
+    "level": 2
+  },
+  {
+    "title": "1808年5月2日",
+    "artist": "フランシスコ・デ・ゴヤ",
+    "year": "1814年",
+    "museum": "プラド美術館",
+    "themes": [
+      "ロマン主義"
+    ],
+    "summary": "「1808年5月3日」と対をなすゴヤの反戦二部作の一枚。マドリードのプエルタ・デル・ソル広場でナポレオン軍のマムルーク騎兵隊に徒手空拳で挑む市民の混乱と血の迫力を描く。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/76/El_dos_de_mayo_de_1808_en_Madrid.jpg",
     "level": 2
   }
 ];
