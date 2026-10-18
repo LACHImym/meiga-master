@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-10-17（全332作品／今回の新規 5）
+// 最終更新: 2026-10-18（全337作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -4000,5 +4000,59 @@ const WORKS = [
     "summary": "「1808年5月3日」と対をなすゴヤの反戦二部作の一枚。マドリードのプエルタ・デル・ソル広場でナポレオン軍のマムルーク騎兵隊に徒手空拳で挑む市民の混乱と血の迫力を描く。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/7/76/El_dos_de_mayo_de_1808_en_Madrid.jpg",
     "level": 2
+  },
+  {
+    "title": "教会に行く巡礼者",
+    "artist": "ジョージ・ヘンリー・ボートン",
+    "year": "1867",
+    "museum": "New York Historical／S-117（Commons記載）",
+    "themes": [],
+    "summary": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f1/George-Henry-Boughton-Pilgrims-Going-To-Church.jpg",
+    "level": 2
+  },
+  {
+    "title": "陽を浴びるポプラ並木",
+    "artist": "クロード・モネ",
+    "year": "1891",
+    "museum": "国立西洋美術館（東京）／P.1959-0152",
+    "themes": [],
+    "summary": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Monet_Poplars_in_the_Sun.jpg",
+    "level": 2
+  },
+  {
+    "title": "積みわら（日没、雪の効果）〈シカゴ美術館 1922.431〉",
+    "artist": "クロード・モネ",
+    "year": "1891",
+    "museum": "シカゴ美術館／1922.431",
+    "themes": [],
+    "summary": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/40/Claude_Monet_-_Stacks_of_Wheat_(Sunset%2C_Snow_Effect)_-_1922.431_-_Art_Institute_of_Chicago.jpg",
+    "level": 2
+  },
+  {
+    "title": "サトゥルヌスの我が子を喰らう図",
+    "artist": "フランシスコ・デ・ゴヤ",
+    "year": "1819〜1823年",
+    "museum": "プラド美術館",
+    "themes": [
+      "ロマン主義"
+    ],
+    "summary": "ゴヤが晩年、自邸「耳の聞こえぬ人の家」の壁面に描いた「黒い絵」のひとつ。時間神サトゥルヌスが我が子を頭から丸呑みにする狂気の場面は西洋美術史上最も衝撃的な権力批判の図像。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/82/Francisco_de_Goya%2C_Saturno_devorando_a_su_hijo_(1819-1823).jpg",
+    "level": 2
+  },
+  {
+    "title": "快楽の園",
+    "artist": "ヒエロニムス・ボス",
+    "year": "1490〜1510年頃",
+    "museum": "プラド美術館",
+    "themes": [
+      "北方ルネサンス"
+    ],
+    "summary": "ヒエロニムス・ボスの三連祭壇画。左翼に楽園、中央に快楽の園、右翼に地獄が広がるプラド美術館最大の至宝。中世末期の罪と救済の神学を超現実主義的表現で描く。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/62/The_Garden_of_Earthly_Delights_by_Bosch_High_Resolution_2.jpg",
+    "level": 1
   }
 ];
