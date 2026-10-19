@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-10-18（全337作品／今回の新規 5）
+// 最終更新: 2026-10-19（全342作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -4054,5 +4054,65 @@ const WORKS = [
     "summary": "ヒエロニムス・ボスの三連祭壇画。左翼に楽園、中央に快楽の園、右翼に地獄が広がるプラド美術館最大の至宝。中世末期の罪と救済の神学を超現実主義的表現で描く。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/6/62/The_Garden_of_Earthly_Delights_by_Bosch_High_Resolution_2.jpg",
     "level": 1
+  },
+  {
+    "title": "バッカスの勝利",
+    "artist": "ディエゴ・ベラスケス",
+    "year": "1628〜1629年",
+    "museum": "プラド美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "ベラスケスが宮廷画家任命後初めて描いた神話画。酒神バッカスを普通のスペイン農民たちと同じ次元に描き、神話の脱権威化というバロック自然主義の到達点を示す。通称「酔っ払いたち（ロス・ボラーチョス）」。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Vel%C3%A1zquez_-_El_Triunfo_de_Baco_o_Los_Borrachos_(Museo_del_Prado%2C_1628-29).jpg",
+    "level": 2
+  },
+  {
+    "title": "フローラ（ティツィアーノ）",
+    "artist": "ティツィアーノ・ヴェチェッリオ",
+    "year": "1515-1517年頃",
+    "museum": "ウフィツィ美術館",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "花の女神フローラが白い衣を半身に絒い、花捿を手にするヴェネツィア派の傑作。豊かな色彩表現と官能的な美の象徴として、ルーベンスやレンブラントなど後世の画家に多大な影響を与えた。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tiziano_-_Flora_-_Google_Art_Project.jpg",
+    "level": 2
+  },
+  {
+    "title": "サンタ・トリニタの聖母",
+    "artist": "チマブーエ（チェンニ・ディ・ペッポ）",
+    "year": "1290-1300年頃",
+    "museum": "ウフィツィ美術館",
+    "themes": [
+      "古代・中世"
+    ],
+    "summary": "ビザンティン絵画の最後の巨人チマブーエが描いた高さ約385cmの大型板絵。黄金の背景と平面的表現を残しながら人間的感情への萩缽を見せる転換期の傑作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Cimabue_-_Maest%C3%A0_di_Santa_Trinita_-_Google_Art_Project.jpg",
+    "level": 2
+  },
+  {
+    "title": "石榴の聖母",
+    "artist": "サンドロ・ボッティチェリ",
+    "year": "1487年頃",
+    "museum": "ウフィツィ美術館",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "直径143.5cmの大型トンドに描かれた聖母子像。6人の天使が周囲を囲み、幼子イエスが石榴（受難と復活の象徴）を手に持つ。ボッティチェリ最大のトンド作品。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/75/Sandro_Botticelli_-_Madonna_della_melagrana_1487.jpg",
+    "level": 2
+  },
+  {
+    "title": "パラスとケンタウロス",
+    "artist": "サンドロ・ボッティチェリ",
+    "year": "1482年頃",
+    "museum": "ウフィツィ美術館",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "知恵の女神パラスがケンタウロスの髪を掴む寓意画。メディチ家のシンボルが衣に描かれ、知恵が野蛮に勝ることを示すネオプラトン主義的傑作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Pallade_col_Centauro%2C_Sandro_Botticelli_(1482).jpg",
+    "level": 2
   }
 ];
