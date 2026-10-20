@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-10-19（全342作品／今回の新規 5）
+// 最終更新: 2026-10-20（全347作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -4113,6 +4113,66 @@ const WORKS = [
     ],
     "summary": "知恵の女神パラスがケンタウロスの髪を掴む寓意画。メディチ家のシンボルが衣に描かれ、知恵が野蛮に勝ることを示すネオプラトン主義的傑作。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Pallade_col_Centauro%2C_Sandro_Botticelli_(1482).jpg",
+    "level": 2
+  },
+  {
+    "title": "ひわの聖母",
+    "artist": "ラファエロ・サンティ",
+    "year": "1506年頃",
+    "museum": "ウフィツィ美術館",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "幼子イエスと洗礼者ヨハネが仲良くひわ（ゴールドフィンチ）を撫でる愛らしい場面に、磔刑の予表が込められたラファエロのフィレンツェ期代表作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/07/Raphael%2C_Madonna_del_Cardellino%2C_1507%2C_Uffizi.jpg",
+    "level": 2
+  },
+  {
+    "title": "自画像（ラファエロ）",
+    "artist": "ラファエロ・サンティ",
+    "year": "1506年頃",
+    "museum": "ウフィツィ美術館",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "フィレンツェ滞在期（23歳頃）のラファエロが描いた自画像。暗い背景から浮かび上がる繊細な面差しと憂いを帯びた眼差しが印象的。天才画家の出発点を示す一枚。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Raffaello_Sanzio.jpg",
+    "level": 2
+  },
+  {
+    "title": "マニフィカトの聖母",
+    "artist": "サンドロ・ボッティチェリ",
+    "year": "1483-1485年頃",
+    "museum": "ウフィツィ美術館",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "直径118cmのトンド（円形絵画）に描かれた聖母子像。マリアが「マニフィカト」の言葉を書き、幼子イエスが手を添える。鏡のような構図と黄金の冠が印象的な傑作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Sandro_Botticelli_-_Madonna_del_Magnificat_C.jpg",
+    "level": 2
+  },
+  {
+    "title": "デンマーク公女クリスティーナ",
+    "artist": "ハンス・ホルバイン（子）",
+    "year": "1538年",
+    "museum": "ロンドン・ナショナル・ギャラリー",
+    "themes": [
+      "北方ルネサンス"
+    ],
+    "summary": "ヘンリー8世の結婚候補として調査を受けた16歳のデンマーク公女クリスティーナ。ホルバインが3時間の面談で描いたスケッチをもとに完成した全身肖像。「首が2つあれば英国王に差し上げられたのに」と答えた彼女の知性と諦観を黒い喪服が語る。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Hans_the_Younger_Holbein_-_Christina_of_Denmark%2C_Duchess_of_Milan_-_Google_Art_Project.jpg",
+    "level": 3
+  },
+  {
+    "title": "アンサデイの聖母",
+    "artist": "ラファエッロ・サンツィオ",
+    "year": "1505年頃",
+    "museum": "ロンドン・ナショナル・ギャラリー",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "ラファエッロがペルージャ時代に描いた荘厳な祭壇画。聖母子を中央に洗礼者ヨハネと聖ニコラウスが侍る構図は、師ペルジーノの端正さとラファエッロ独自の優雅さが融合した初期の傑作。1884年に当時最高額7万ポンドで購入。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1c/PalaAnsidei.jpg",
     "level": 2
   }
 ];
