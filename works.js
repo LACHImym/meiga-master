@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-10-20（全347作品／今回の新規 5）
+// 最終更新: 2026-10-21（全352作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -4173,6 +4173,66 @@ const WORKS = [
     ],
     "summary": "ラファエッロがペルージャ時代に描いた荘厳な祭壇画。聖母子を中央に洗礼者ヨハネと聖ニコラウスが侍る構図は、師ペルジーノの端正さとラファエッロ独自の優雅さが融合した初期の傑作。1884年に当時最高額7万ポンドで購入。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/1c/PalaAnsidei.jpg",
+    "level": 2
+  },
+  {
+    "title": "黄金の仔牛への礼拝",
+    "artist": "ニコラ・プッサン",
+    "year": "1633年-1634年頃",
+    "museum": "ロンドン・ナショナル・ギャラリー",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "フランス・バロック絵画の巨匠プッサンが旧約聖書「出エジプト記」の場面を描いた大作。古典的構図と劇的な人物表現が融合し、「理性の画家」と呼ばれるプッサンの様式を体現する。18世紀フランスアカデミーの規範となった作品。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Nicolas_poussin%2C_adorazione_del_vitello_d'oro%2C_1633-34FXD.jpg",
+    "level": 3
+  },
+  {
+    "title": "ダリウスの家族とアレクサンダー大王",
+    "artist": "パオロ・ヴェロネーゼ",
+    "year": "1565年-1567年頃",
+    "museum": "ロンドン・ナショナル・ギャラリー",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "ヴェロネーゼがイッソスの戦い後の場面を壮麗な色彩で描いた大作（幅約474cm）。ダリウス3世の家族がアレクサンダーに跪く歴史場面に、ヴェネツィア貴族の豪華な生活様式が重ねられる。「器の大きさ」を示す名場面。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2f/The_Family_of_Darius_before_Alexander_by_Paolo_Veronese_1570.jpg",
+    "level": 3
+  },
+  {
+    "title": "受胎告知（聖エミディウスを伴う）",
+    "artist": "カルロ・クリヴェッリ",
+    "year": "1486年",
+    "museum": "ロンドン・ナショナル・ギャラリー",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "クリヴェッリが1486年にアスコリ・ピチェーノのために制作した祭壇画。中世装飾とルネサンス遠近法が驚異的に融合した、絵画史上最も装飾的な受胎告知作品のひとつ。果物・野菜・孔雀が精密に描き込まれた細部の宝庫。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Crivelli_Carlo%2C_Annunciation.jpg",
+    "level": 2
+  },
+  {
+    "title": "キリストの洗礼（ピエロ・デッラ・フランチェスカ）",
+    "artist": "ピエロ・デッラ・フランチェスカ",
+    "year": "1448年頃-1450年",
+    "museum": "ロンドン・ナショナル・ギャラリー",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "ピエロ・デッラ・フランチェスカが故郷サンセポルクロの修道院のために描いた祭壇画。数学的な構図と透明感のある色彩で、ルネサンス理性の極致を体現する。画家であり数学者でもあったピエロの知性が凝縮された一枚。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/92/Piero_della_Francesca_-_Battesimo_di_Cristo_(National_Gallery%2C_London).jpg",
+    "level": 2
+  },
+  {
+    "title": "ヴァージナルの前に立つ女性",
+    "artist": "ヨハネス・フェルメール",
+    "year": "1670年-1672年頃",
+    "museum": "ロンドン・ナショナル・ギャラリー",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "フェルメールが晩年に描いた室内画。ヴァージナル（小型鍵盤楽器）の前に立つ女性を通じて音楽と愛の寓意を語る作品で、オランダ黄金時代の市民文化と精緻な光の表現が凝縮されている。同館所蔵の「座る女性版」と合わせて2点でフェルメールを堪能できる。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Jan_Vermeer_van_Delft_-_Jonge_vrouw_staande_bij_een_virginaal_(ca._1670-72).jpg",
     "level": 2
   }
 ];
