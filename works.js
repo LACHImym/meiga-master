@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-10-21（全352作品／今回の新規 5）
+// 最終更新: 2026-10-22（全357作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -4233,6 +4233,66 @@ const WORKS = [
     ],
     "summary": "フェルメールが晩年に描いた室内画。ヴァージナル（小型鍵盤楽器）の前に立つ女性を通じて音楽と愛の寓意を語る作品で、オランダ黄金時代の市民文化と精緻な光の表現が凝縮されている。同館所蔵の「座る女性版」と合わせて2点でフェルメールを堪能できる。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Jan_Vermeer_van_Delft_-_Jonge_vrouw_staande_bij_een_virginaal_(ca._1670-72).jpg",
+    "level": 2
+  },
+  {
+    "title": "アンドリュース夫妻",
+    "artist": "トーマス・ゲインズバラ",
+    "year": "1750年頃",
+    "museum": "ロンドン・ナショナル・ギャラリー",
+    "themes": [
+      "ロココ"
+    ],
+    "summary": "ゲインズバラが若手時代に描いた英国風景画の傑作。ロバート・アンドリュースとその妻フランシスが自らの所領を背景に描かれ、土地所有者の誇りと18世紀英国の階級社会を率直に映し出す。妻の膝部分が未完成で残る謎の傑作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Thomas_Gainsborough_-_Mr._und_Mrs._Andrews_(c._1750).jpg",
+    "level": 2
+  },
+  {
+    "title": "中傷（アペレスの訹謗）",
+    "artist": "サンドロ・ボッティチェッリ",
+    "year": "1494-1495年頃",
+    "museum": "ウフィツィ美術館",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "古代ギリシャの画家アペレスが不当に中傷された逸話をもとにボッティチェッリが描いた寓意画。「無知」「中傷」「悔惟」「真実」を体現する人物たちが、芸術家への不当な批難への怒りを内包する。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/13/Sandro_Botticelli_La_calumnia_de_Apeles.jpg",
+    "level": 2
+  },
+  {
+    "title": "イサクの犠牲",
+    "artist": "カラヴァッジョ",
+    "year": "1598-1599年",
+    "museum": "ウフィツィ美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "アブラハムが息子イサクを神に捧げようとする旧約聖書の場面を描いたカラヴァッジョ作品。イサクの恐怖の叫び声が聞こえてくるような瞌間的表現と、劇的な光の演出が圧巻。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/60/Sacrifice_of_Isaac-Caravaggio_(Uffizi).jpg",
+    "level": 3
+  },
+  {
+    "title": "東方三博士の礼拝",
+    "artist": "レオナルド・ダ・ヴィンチ",
+    "year": "1481-1482年（未完）",
+    "museum": "ウフィツィ美術館",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "サン・ドナートの修道院から依頼されながら未完のまま放棄されたレオナルドの野心作。茶褐色の下絵のみだが、キリストを中心に渦巻く群像と馬の動的表現は従来の祭壇画概念を覆した革命的傑作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Leonardo_da_Vinci%2C_Adoration%2C_c1481%2C_Uffizi.jpg",
+    "level": 2
+  },
+  {
+    "title": "レオ10世と二人の枢機卿",
+    "artist": "ラファエロ・サンツィオ",
+    "year": "1518-1519年",
+    "museum": "ウフィツィ美術館",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "メディチ家出身の教皇レオ10世と二人の枢機卿を描いた群像肖像画。テーブルに置かれた写本の質感や椅子の球形飾りに映り込む部屋など、テクスチャー表現の精緻さは肖像画史上の金字塔。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Portrait_of_Pope_Leo_X_and_his_cousins%2C_cardinals_Giulio_de'_Medici_and_Luigi_de'_Rossi_(by_Raphael).jpg",
     "level": 2
   }
 ];
