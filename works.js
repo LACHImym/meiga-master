@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-10-22（全357作品／今回の新規 5）
+// 最終更新: 2026-10-23（全362作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -4293,6 +4293,66 @@ const WORKS = [
     ],
     "summary": "メディチ家出身の教皇レオ10世と二人の枢機卿を描いた群像肖像画。テーブルに置かれた写本の質感や椅子の球形飾りに映り込む部屋など、テクスチャー表現の精緻さは肖像画史上の金字塔。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Portrait_of_Pope_Leo_X_and_his_cousins%2C_cardinals_Giulio_de'_Medici_and_Luigi_de'_Rossi_(by_Raphael).jpg",
+    "level": 2
+  },
+  {
+    "title": "受胎告知",
+    "artist": "レオナルド・ダ・ヴィンチ",
+    "year": "1472-1475年頃",
+    "museum": "ウフィツィ美術館",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "ウフィツィ美術館が誇る初期レオナルドの傑作。大天使ガブリエルが聖母マリアに受胎を告げる場面を描き、左手のガブリエルが持つ百合と背景の霞む山並みにレオナルドの自然観察の眼が光る。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Annunciation_(Leonardo)_(cropped).jpg",
+    "level": 2
+  },
+  {
+    "title": "聖ゲオルギウスと龍",
+    "artist": "パオロ・ウッチェッロ",
+    "year": "1470年頃",
+    "museum": "ロンドン・ナショナル・ギャラリー",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "ウッチェッロ晩年の小品。一点透視法を試みつつも独特の平面性が残り、奇妙な造形美が魅力。竜の翼の渦巻き模様が印象的。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Paolo_Uccello_Heiliger_Georg_und_der_Drachen_1_470.jpg",
+    "level": 2
+  },
+  {
+    "title": "干し草車",
+    "artist": "ジョン・コンスタブル",
+    "year": "1821年",
+    "museum": "ロンドン・ナショナル・ギャラリー",
+    "themes": [
+      "ロマン主義"
+    ],
+    "summary": "1824年のパリ・サロンに出品しドラクロワら仏ロマン主義画家に衝撃を与えた英国風景画の傑作。サフォークのストア川沿いの農村風景を描く。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5e/John_Constable_-_The_Hay_Wain_(1821).jpg",
+    "level": 2
+  },
+  {
+    "title": "川で水浴する女",
+    "artist": "レンブラント・ファン・レイン",
+    "year": "1654年",
+    "museum": "ロンドン・ナショナル・ギャラリー",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "レンブラントの内縁の妻ヘンドリッキェ・ストッフェルスをモデルにしたとされる小品。荒々しい速筆の筆致と温かみのある光の表現が印象的。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/50/Rembrandt_Harmensz._van_Rijn_060.jpg",
+    "level": 2
+  },
+  {
+    "title": "ヴィーナスとマルス",
+    "artist": "サンドロ・ボッティチェッリ",
+    "year": "1483年頃",
+    "museum": "ロンドン・ナショナル・ギャラリー",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "眠るマルス（戦の神）をヴィーナス（愛の女神）が静かに見守る横長の神話画。甲冑で遊ぶ子サテュロスたちの愉快な様子と右下の蜂の巣が「愛は戦に勝る」かつ「甘さの中に潜む危険」を同時に暗示するボッティチェッリ独特の寓意表現。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Venus_and_Mars.jpg",
     "level": 2
   }
 ];
