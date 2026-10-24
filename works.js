@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-10-23（全362作品／今回の新規 5）
+// 最終更新: 2026-10-24（全367作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -4353,6 +4353,66 @@ const WORKS = [
     ],
     "summary": "眠るマルス（戦の神）をヴィーナス（愛の女神）が静かに見守る横長の神話画。甲冑で遊ぶ子サテュロスたちの愉快な様子と右下の蜂の巣が「愛は戦に勝る」かつ「甘さの中に潜む危険」を同時に暗示するボッティチェッリ独特の寓意表現。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Venus_and_Mars.jpg",
+    "level": 2
+  },
+  {
+    "title": "大使たち",
+    "artist": "ハンス・ホルバイン（子）",
+    "year": "1533年",
+    "museum": "ロンドン・ナショナル・ギャラリー",
+    "themes": [
+      "北方ルネサンス"
+    ],
+    "summary": "フランス大使ジャン・ド・ダントヴィルとラヴォール司教ジョルジュ・ド・セルヴの二人肖像画。画面中央下部に歪んだ骸骨のアナモルフォーシス（歪像画法）が隠されており、バニタスの象徴として世界的に名高い北方ルネサンスの最高傑作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/88/Hans_Holbein_the_Younger_-_The_Ambassadors_-_Google_Art_Project.jpg",
+    "level": 2
+  },
+  {
+    "title": "傘（レ・パラプリュイ）",
+    "artist": "ピエール＝オーギュスト・ルノワール",
+    "year": "1881-1886年",
+    "museum": "ロンドン・ナショナル・ギャラリー",
+    "themes": [
+      "印象派"
+    ],
+    "summary": "雨降りのパリ街路を描いたルノワールの傑作で、制作途中で画風が変わったため画面の右半分が印象派タッチ、左半分が輪郭線のはっきりした後期様式という二つのスタイルが共存する稀有な作品。ルノワールの様式的転換点を一枚で体験できる。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Pierre-Auguste_Renoir%2C_The_Umbrellas%2C_ca._1881-86.jpg",
+    "level": 2
+  },
+  {
+    "title": "雨・蒸気・スピード",
+    "artist": "J.M.W.ターナー",
+    "year": "1844年",
+    "museum": "ロンドン・ナショナル・ギャラリー",
+    "themes": [
+      "ロマン主義"
+    ],
+    "summary": "グレート・ウェスタン鉄道のマイデンヘッド橋を疾走する蒸気機関車を嵐の光と気流の渦の中に溶け込ませたターナー晩年の傑作。光と大気を解体する表現手法はのちの印象派に直接的影響を与えた近代絵画史の重要作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/96/Turner_-_Rain%2C_Steam_and_Speed_-_National_Gallery_file.jpg",
+    "level": 2
+  },
+  {
+    "title": "バッカスとアリアドネ",
+    "artist": "ティツィアーノ・ヴェチェッリオ",
+    "year": "1520-1523年",
+    "museum": "ロンドン・ナショナル・ギャラリー",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "フェラーラ公アルフォンソ1世の依頼でティツィアーノが描いた大型神話画。ナクソス島で置き去りにされたアリアドネとバッカスの劇的な出会いを、輝くラピスラズリの青空と躍動感ある色彩で表現したヴェネツィア絵画の最高傑作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Titian_Bacchus_and_Ariadne.jpg",
+    "level": 2
+  },
+  {
+    "title": "キオス島の虐殺",
+    "artist": "ウジェーヌ・ドラクロワ",
+    "year": "1824年",
+    "museum": "ルーヴル美術館（パリ）",
+    "themes": [
+      "ロマン主義"
+    ],
+    "summary": "1822年のギリシャ独立戦争中にオスマン帝国軍がキオス島で行った住民薙殺を描いた衝撃作。絶望と苦悩の人々の表情とロマン主義特有の強烈な色彩で「絵画の薙殺」と批評された革命的傑作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Sc%C3%A8ne_des_massacres_de_Scio%2C_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_INV_3823_%3B_C3.jpg",
     "level": 2
   }
 ];
