@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-10-24（全367作品／今回の新規 5）
+// 最終更新: 2026-10-25（全372作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -4413,6 +4413,66 @@ const WORKS = [
     ],
     "summary": "1822年のギリシャ独立戦争中にオスマン帝国軍がキオス島で行った住民薙殺を描いた衝撃作。絶望と苦悩の人々の表情とロマン主義特有の強烈な色彩で「絵画の薙殺」と批評された革命的傑作。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Sc%C3%A8ne_des_massacres_de_Scio%2C_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_INV_3823_%3B_C3.jpg",
+    "level": 2
+  },
+  {
+    "title": "民衆を率いる自由の女神",
+    "artist": "ウジェーヌ・ドラクロワ",
+    "year": "1830年",
+    "museum": "ルーヴル美術館（パリ）",
+    "themes": [
+      "ロマン主義"
+    ],
+    "summary": "1830年のフランス七月革命を描いたロマン主義の傑作。胸をあらわにした自由の女神が三色旗を掲げ、市民・学生・労働者を率いてバリケードを越えていく場面は、革命の記憶を生々しく伝え、フランス共和国の象徴的イメージとなった。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/02/La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg",
+    "level": 1
+  },
+  {
+    "title": "ナポレオンの戴冠式",
+    "artist": "ジャック＝ルイ・ダヴィッド",
+    "year": "1806〜1807年",
+    "museum": "ルーヴル美術館（パリ）",
+    "themes": [
+      "新古典主義"
+    ],
+    "summary": "1804年にノートルダム大聖堂で行われたナポレオンの戴冠式を描いた縦6m×横9mを超える大作。ナポレオンが皇后ジョゼフィーヌに王冠を授けるクライマックスを選び、200名以上の人物を精密に描いた新古典主義の歴史画の頂点。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Le_Sacre_de_Napol%C3%A9on_-_Jacques-Louis_David_-_Mus%C3%A9e_du_Louvre_Peintures_INV_3699_%3B_MR_1437.jpg",
+    "level": 2
+  },
+  {
+    "title": "出現（サロメ）",
+    "artist": "ギュスターヴ・モロー",
+    "year": "1876年",
+    "museum": "オルセー美術館",
+    "themes": [
+      "象徴主義"
+    ],
+    "summary": "サロメの前に洗礼者ヨハネの幻影が光を放って出現する瞬間を描いた象徴主義の名作。1876年サロン出品作。オスカー・ワイルドやユイスマンスなど世紀末文学にも多大な影響を与えた。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/23/Gustave_Moreau_-_The_Apparition_-_Google_Art_Project.jpg",
+    "level": 3
+  },
+  {
+    "title": "洗濯婦",
+    "artist": "オノレ・ドーミエ",
+    "year": "1861-1863年頃",
+    "museum": "オルセー美術館",
+    "themes": [
+      "写実主義"
+    ],
+    "summary": "重い洗濯物を背負い石段を上る母と子供を描いたドーミエ写実主義の傑作。力強い輪郭と重厚な量感表現で、労働者の生活を尊厳をもって描いた社会的リアリズムの代表作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Honor%C3%A9_Daumier_016.jpg",
+    "level": 3
+  },
+  {
+    "title": "アレアレア（喜び）",
+    "artist": "ポール・ゴーガン",
+    "year": "1892年",
+    "museum": "オルセー美術館",
+    "themes": [
+      "ポスト印象派"
+    ],
+    "summary": "タヒチで描かれた、現地女性と赤い犬が登場する楽園の情景。鮮やかな色彩とプリミティヴな表現によるゴーガンのタヒチ連作を代表する傑作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Paul_Gauguin_-_Arearea_-_Google_Art_Project.jpg",
     "level": 2
   }
 ];
