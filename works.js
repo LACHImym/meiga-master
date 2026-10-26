@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-10-25（全372作品／今回の新規 5）
+// 最終更新: 2026-10-26（全377作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -4474,5 +4474,65 @@ const WORKS = [
     "summary": "タヒチで描かれた、現地女性と赤い犬が登場する楽園の情景。鮮やかな色彩とプリミティヴな表現によるゴーガンのタヒチ連作を代表する傑作。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Paul_Gauguin_-_Arearea_-_Google_Art_Project.jpg",
     "level": 2
+  },
+  {
+    "title": "赤い屋根（冬の効果、モンフーコー）",
+    "artist": "カミーユ・ピサロ",
+    "year": "1877年",
+    "museum": "オルセー美術館",
+    "themes": [
+      "印象派"
+    ],
+    "summary": "「印象派の父」ピサロが冬の農村の木立越しに描いた赤い屋根。枯れ木の白い幹と赤茶色の屋根が織りなすモザイク状の色彩は、印象派的な光の探求の極致。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Camille_Pissarro_011.jpg",
+    "level": 2
+  },
+  {
+    "title": "ヴィーナスとリュートを弾く音楽家",
+    "artist": "ティツィアーノ・ヴェチェッリオ",
+    "year": "1565-1570年頃",
+    "museum": "メトロポリタン美術館",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "横たわるヴィーナスの傍らでリュートを弾く音楽家を描いたティツィアーノ晩年の傑作。五感（視覚と聴覚）の寓意とも解釈され、愛と美の女神を謻える詩的な情景。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/Tiziano_Vecellio_e_bottega_-_Venere_e_il_Suonatore_di_liuto_(MET-Museum).jpg",
+    "level": 3
+  },
+  {
+    "title": "占い師",
+    "artist": "ジョルジュ・ド・ラ・トゥール",
+    "year": "1630年代頃",
+    "museum": "メトロポリタン美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "老婆の占い師を中心に、若い男性の財布をすり取ろうとする女性たちを描いた風俗画。登場人物が観客に向けるそれぞれの視線が緊張感を生み出し、道徳的教訓を宿したバロック期風俗画の傑作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Georges_de_La_Tour_016.jpg",
+    "level": 3
+  },
+  {
+    "title": "シャルパンティエ夫人と子供たち",
+    "artist": "ピエール＝オーギュスト・ルノワール",
+    "year": "1878年",
+    "museum": "メトロポリタン美術館",
+    "themes": [
+      "印象派"
+    ],
+    "summary": "出版社経営者の妻マルグリット・シャルパンティエと担の子供2人を描いた印象派の大作。1879年サロンで大成功を収め、ルノワールの名声を不動のものにした記念碑的作品。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Pierre-Auguste_Renoir_094.jpg",
+    "level": 3
+  },
+  {
+    "title": "マヌエル・オソリオ・マンリーケ・デ・スニガ",
+    "artist": "フランシスコ・デ・ゴヤ",
+    "year": "1787-1788年",
+    "museum": "メトロポリタン美術館",
+    "themes": [
+      "ロマン主義"
+    ],
+    "summary": "ゴヤが描いた赤いスーツを纏う幼い貴族の少年の肖像。3羽のカラスが狙う猫と鳥かごが無邪気さと死の予感を対比させ、スペイン美術史上最も感動的な子供の肖像画の一つ。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/83/Don_Manuel_Osorio_Manrique_de_Z%C3%BA%C3%B1iga.jpg",
+    "level": 3
   }
 ];
