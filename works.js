@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-10-26（全377作品／今回の新規 5）
+// 最終更新: 2026-10-27（全382作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -4533,6 +4533,66 @@ const WORKS = [
     ],
     "summary": "ゴヤが描いた赤いスーツを纏う幼い貴族の少年の肖像。3羽のカラスが狙う猫と鳥かごが無邪気さと死の予感を対比させ、スペイン美術史上最も感動的な子供の肖像画の一つ。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/8/83/Don_Manuel_Osorio_Manrique_de_Z%C3%BA%C3%B1iga.jpg",
+    "level": 3
+  },
+  {
+    "title": "シャボン玉",
+    "artist": "ジャン＝バティスト＝シメオン・シャルダン",
+    "year": "1733-1734年頃",
+    "museum": "メトロポリタン美術館",
+    "themes": [
+      "ロココ"
+    ],
+    "summary": "青年がストローでシャボン玉を吹く様子を精緻に描いた風俗画。「人生の儚さ（ヴァニタス）」のテーマを日常的な場面で表現し、シャルダンの卓越した光の描写が光る傑作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/93/Soap_Bubbles_MET_DP356133.jpg",
+    "level": 3
+  },
+  {
+    "title": "盲目のオリオン、夜明けを求めて",
+    "artist": "ニコラ・プッサン",
+    "year": "1658年",
+    "museum": "メトロポリタン美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "ギリシャ神話の巨人猟師オリオンが視力を取り戻すべく夜明けの太陽へ歩む場面。プッサン晩年の集大成ともいえる神話画で、壮大な自然と神話的人物の融合が圧巻。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/40/Poussin%2C_Nicolas_-_Paysage_avec_Orion_aveugle_cherchant_le_soleil_-_1658.jpg",
+    "level": 3
+  },
+  {
+    "title": "貧しい漁師",
+    "artist": "ピエール・ピュヴィ・ド・シャヴァンヌ",
+    "year": "1881年",
+    "museum": "オルセー美術館",
+    "themes": [
+      "象徴主義"
+    ],
+    "summary": "水辺に舟を浮かべ虚空を見つめる痩せた漁師と眠る幼子・野花を摘む少女。霞んだ色彩と沈黙の重さが象徴主義の詩学を体現。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/62/Pierre_Puvis_de_Chavannes_-_The_Poor_Fisherman_-_Google_Art_Project.jpg",
+    "level": 3
+  },
+  {
+    "title": "ヴァイルマティ",
+    "artist": "ポール・ゴーガン",
+    "year": "1897年",
+    "museum": "オルセー美術館",
+    "themes": [
+      "ポスト印象派"
+    ],
+    "summary": "タヒチ神話の美女ヴァイルマティを描いた神話的作品。1897年、自殺未遂直前に「我々はどこから来たのか」とほぼ同時期に制作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Paul_Gauguin_135.jpg",
+    "level": 3
+  },
+  {
+    "title": "オルフェウス",
+    "artist": "ギュスターヴ・モロー",
+    "year": "1865年",
+    "museum": "オルセー美術館",
+    "themes": [
+      "象徴主義"
+    ],
+    "summary": "少女が岩の上でオルフェウスの首と竪琴を静かに見つめるモロー象徴主義の代表作。1865年サロンで国家が購入。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/93/Gustave_Moreau_-_Orpheus_-_Google_Art_Project.jpg",
     "level": 3
   }
 ];
