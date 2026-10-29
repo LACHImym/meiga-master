@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-10-27（全382作品／今回の新規 5）
+// 最終更新: 2026-10-29（全387作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -4594,5 +4594,66 @@ const WORKS = [
     "summary": "少女が岩の上でオルフェウスの首と竪琴を静かに見つめるモロー象徴主義の代表作。1865年サロンで国家が購入。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/9/93/Gustave_Moreau_-_Orpheus_-_Google_Art_Project.jpg",
     "level": 3
+  },
+  {
+    "title": "ピアノを弾く少女たち",
+    "artist": "ピエール＝オーギュスト・ルノワール",
+    "year": "1892年",
+    "museum": "オルセー美術館",
+    "themes": [
+      "印象派"
+    ],
+    "summary": "1892年にルノワールが国家の依頼で制作した5バージョンのうちオルセー版。白と赤のドレスの少女2人が連弾する温かな室内場面。印象派の光と色彩を保ちながら古典的な構成美も併せ持つ。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/73/Auguste_Renoir_-_Young_Girls_at_the_Piano_-_Google_Art_Project.jpg",
+    "level": 2
+  },
+  {
+    "title": "オーヴェルの首吊りの家",
+    "artist": "ポール・セザンヌ",
+    "year": "1873年",
+    "museum": "オルセー美術館",
+    "themes": [
+      "ポスト印象派"
+    ],
+    "summary": "セザンヌが1874年の第1回印象派展に出品した初期の傑作。オーヴェル＝シュル＝オワーズの農村風景を重厚な構築性で描き、後の「物体の本質的な構造への眼差し」の出発点となった。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/La_Maison_du_pendu%2C_Auvers-sur-Oise%2C_par_Paul_C%C3%A9zanne%2C_FWN_81.jpg",
+    "level": 2
+  },
+  {
+    "title": "ヴィーナスの誕生（カバネル）",
+    "artist": "アレクサンドル・カバネル",
+    "year": "1863年",
+    "museum": "オルセー美術館",
+    "themes": [
+      "新古典主義"
+    ],
+    "summary": "1863年サロンで最大の評判を呼び、ナポレオン3世が即座に購入したアカデミー絵画の頂点。同年マネの「草上の昼食」「オランピア」と対照的な評価を受け、アカデミーと近代絵画の分岐を象徴する作品となった。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Alexandre_Cabanel_-_The_Birth_of_Venus_-_Google_Art_Project_2.jpg",
+    "level": 2
+  },
+  {
+    "title": "ヨーロッパ橋",
+    "artist": "ギュスターヴ・カイユボット",
+    "year": "1876年",
+    "museum": "オルセー美術館",
+    "themes": [
+      "写実主義"
+    ],
+    "summary": "オスマン改造後のパリに架かった鉄骨橋ヨーロッパ橋と行き交う人々を描く都市風景画。幾何学的な鉄骨構造と匿名的な群衆が、近代都市の冷気と孤独を静かに語る。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/fe/G._Caillebotte_-_Le_pont_de_l'Europe.jpg",
+    "level": 2
+  },
+  {
+    "title": "僭主殺害者像",
+    "artist": "クリティオス＆ネシオテス（前477年）のローマ時代模幹",
+    "year": "前477年頃（現存作：2世紀）",
+    "museum": "ナポリ国立考古学博物館（ナポリ、イタリア）",
+    "themes": [
+      "古代・中世",
+      "彫刻"
+    ],
+    "summary": "民主制アテネの英雄ハルモディオスとアリストゲイトンを斑えた彫刻群。前514年の専主暴君暗殺を記念しクリティオスとネシオテスが前477年に制作、現存はローマ時代の大理石模幹のみ。西洋美術史上最初の「政治的記念彫刻」として重要。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/09/National_Archaeological_Museum_of_Naples_-_Tyrannicide_group_-_Harmodius_and_Aristogeiton.jpg",
+    "level": 2
   }
 ];
