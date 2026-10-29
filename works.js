@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-10-29（全387作品／今回の新規 5）
+// 最終更新: 2026-10-29（全392作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -4654,6 +4654,66 @@ const WORKS = [
     ],
     "summary": "民主制アテネの英雄ハルモディオスとアリストゲイトンを斑えた彫刻群。前514年の専主暴君暗殺を記念しクリティオスとネシオテスが前477年に制作、現存はローマ時代の大理石模幹のみ。西洋美術史上最初の「政治的記念彫刻」として重要。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/09/National_Archaeological_Museum_of_Naples_-_Tyrannicide_group_-_Harmodius_and_Aristogeiton.jpg",
+    "level": 2
+  },
+  {
+    "title": "サーカスのパレード",
+    "artist": "ジョルジュ・スーラ",
+    "year": "1887-1888年",
+    "museum": "メトロポリタン美術館",
+    "themes": [
+      "ポスト印象派"
+    ],
+    "summary": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Georges_Seurat_066.jpg",
+    "level": 3
+  },
+  {
+    "title": "マダムX",
+    "artist": "ジョン・シンガー・サージェント",
+    "year": "1883-1884年",
+    "museum": "メトロポリタン美術館",
+    "themes": [
+      "写実主義"
+    ],
+    "summary": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/18/Sargent_MadameX.jpeg",
+    "level": 2
+  },
+  {
+    "title": "フアン・デ・パレーハの肖像",
+    "artist": "ディエゴ・ベラスケス",
+    "year": "1650年",
+    "museum": "メトロポリタン美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/06/Retrato_de_Juan_Pareja%2C_by_Diego_Vel%C3%A1zquez.jpg",
+    "level": 2
+  },
+  {
+    "title": "デラウェア川を渡るワシントン",
+    "artist": "エマヌエル・ロイツェ",
+    "year": "1851年",
+    "museum": "メトロポリタン美術館",
+    "themes": [
+      "ロマン主義"
+    ],
+    "summary": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/91/Washington_Crossing_the_Delaware_MET_DP215410.jpg",
+    "level": 2
+  },
+  {
+    "title": "ホメロスの胸像を前にしたアリストテレス",
+    "artist": "レンブラント",
+    "year": "1653年",
+    "museum": "メトロポリタン美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Rembrandt_-_Aristotle_with_a_Bust_of_Homer_-_WGA19232.jpg",
     "level": 2
   }
 ];
