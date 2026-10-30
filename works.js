@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-10-29（全392作品／今回の新規 5）
+// 最終更新: 2026-10-30（全397作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -4714,6 +4714,66 @@ const WORKS = [
     ],
     "summary": "",
     "image": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Rembrandt_-_Aristotle_with_a_Bust_of_Homer_-_WGA19232.jpg",
+    "level": 2
+  },
+  {
+    "title": "トレードの眺め",
+    "artist": "エル・グレコ",
+    "year": "1598-1600年頃",
+    "museum": "メトロポリタン美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/17/View_of_Toledo_MET_DP349564.jpg",
+    "level": 2
+  },
+  {
+    "title": "音楽家たち",
+    "artist": "カラヴァッジョ",
+    "year": "1595年頃",
+    "museum": "メトロポリタン美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/80/The_Musicians_MET_DP-687-001.jpg",
+    "level": 2
+  },
+  {
+    "title": "水差しを持つ女",
+    "artist": "ヨハネス・フェルメール",
+    "year": "1662年頃",
+    "museum": "メトロポリタン美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "窓辺で水差しを手に持つ若い女性を描いたフェルメールの代表作のひとつ。柔らかな北方の自然光が白いヘッドドレスと青いガウンに優しく降り注ぐ、静謐な美の極致。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/55/Jan_Vermeer_van_Delft_019.jpg",
+    "level": 2
+  },
+  {
+    "title": "バティニョールのアトリエ",
+    "artist": "アンリ・ファンタン＝ラトゥール",
+    "year": "1870年",
+    "museum": "オルセー美術館（パリ、フランス）",
+    "themes": [
+      "写実主義"
+    ],
+    "summary": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Henri_Fantin-Latour_-_A_Studio_at_Les_Batignolles_-_Google_Art_Project.jpg",
+    "level": 2
+  },
+  {
+    "title": "揺り籠",
+    "artist": "ベルト・モリゾ",
+    "year": "1872年",
+    "museum": "オルセー美術館（パリ、フランス）",
+    "themes": [
+      "印象派"
+    ],
+    "summary": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Berthe_Morisot_-_Le_berceau.jpg",
     "level": 2
   }
 ];
