@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-10-30（全397作品／今回の新規 5）
+// 最終更新: 2026-10-31（全402作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -4774,6 +4774,66 @@ const WORKS = [
     ],
     "summary": "",
     "image": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Berthe_Morisot_-_Le_berceau.jpg",
+    "level": 2
+  },
+  {
+    "title": "都会のダンス",
+    "artist": "ピエール＝オーギュスト・ルノワール",
+    "year": "1883年",
+    "museum": "オルセー美術館（パリ、フランス）",
+    "themes": [
+      "印象派"
+    ],
+    "summary": "《田舎のダンス》と対をなす連作の一枚。温室のような室内を背景に正装した男女が静謐なワルツを踊る。都会の礼儀の中に潜む距離感を描く。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Danse_%C3%A0_la_ville_(Pierre-Auguste_Renoir)-WUS07474_(cropped).jpg",
+    "level": 2
+  },
+  {
+    "title": "ブランコ",
+    "artist": "ピエール＝オーギュスト・ルノワール",
+    "year": "1876年",
+    "museum": "オルセー美術館（パリ、フランス）",
+    "themes": [
+      "印象派"
+    ],
+    "summary": "ルノワールが1876年にモンマルトルの自邸の庭で描いた光の名作。木漏れ日の斑点が人物に降り注ぐ印象派の核心を体現した傑作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/26/Swing-Renoir.jpeg",
+    "level": 2
+  },
+  {
+    "title": "若い牡牛",
+    "artist": "ポール・ポッター",
+    "year": "1647年",
+    "museum": "マウリッツハイス美術館（ハーグ）",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "オランダの画家ポール・ポッターが1647年に描いた等身大の牡牛の肖像画。マウリッツハイス美術館所蔵。動物画の最高傑作として名高く、17世紀オランダ黄金時代の市民文化と農業的豊かさを体現する。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Paulus_Potter_-_The_Bull_-_136_-_Mauritshuis.jpg",
+    "level": 3
+  },
+  {
+    "title": "戦争の惨禍シリーズのうちいずれか",
+    "artist": "ジャック・カロ",
+    "year": "1633年",
+    "museum": "各地の美術館・版画コレクション",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "ロレーヌの版画家カロが1633年に制作した18枚組の連作銅版画。三十年戦争の残酷な実態を告発した、ヨーロッパ美術史上最初の「反戦芸術」とされる。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/61/Hanging_from_The_Miseries_and_Misfortunes_of_War_by_Jacques_Callot.jpg",
+    "level": 3
+  },
+  {
+    "title": "ヴォルガの船曳き",
+    "artist": "イリヤ・レーピン",
+    "year": "1870-73年",
+    "museum": "ロシア美術館",
+    "themes": [
+      "写実主義"
+    ],
+    "summary": "イリヤ・レーピンが1870〜73年に制作したロシア写実主義の最高傑作。ヴォルガ川で決船を引く11人の船曳き人夫たちの疲弊した姿を通じて帝政ロシア下の民衆の過酷な現実を告発し、ウィーン万博（1873年）でヨーロッパに大きな衆撃を与えた。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Ilya_Repin_-_Barge_Haulers_on_the_Volga_-_Google_Art_Project.jpg",
     "level": 2
   }
 ];
