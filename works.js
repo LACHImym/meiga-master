@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-10-31（全402作品／今回の新規 5）
+// 最終更新: 2026-11-01（全407作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -4835,5 +4835,66 @@ const WORKS = [
     "summary": "イリヤ・レーピンが1870〜73年に制作したロシア写実主義の最高傑作。ヴォルガ川で決船を引く11人の船曳き人夫たちの疲弊した姿を通じて帝政ロシア下の民衆の過酷な現実を告発し、ウィーン万博（1873年）でヨーロッパに大きな衆撃を与えた。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Ilya_Repin_-_Barge_Haulers_on_the_Volga_-_Google_Art_Project.jpg",
     "level": 2
+  },
+  {
+    "title": "フェリペ4世の騎馬像",
+    "artist": "ベラスケス（ディエゴ・ベラスケス）",
+    "year": "1634〜1635年頃",
+    "museum": "プラド美術館（マドリード）",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "ベラスケスが1634〜35年にブエン・レティーロ宮殿のために制作した、フェリペ4世の超大型騎馬肖像。動と静の絶妙なバランスでバロック宮廷絵画の頂点を示す。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Diego_Vel%C3%A1zquez_053.jpg",
+    "level": 3
+  },
+  {
+    "title": "絶望",
+    "artist": "エドヴァルド・ムンク",
+    "year": "1892年",
+    "museum": "ムンク美術館",
+    "themes": [
+      "表現主義"
+    ],
+    "summary": "エドヴァルド・ムンクが1892年に描いた「叫び」の前身作品。欄干にもたれかかり夕景を見つめる人物の後ろ姿が実在的な孤独を体現し、翌年1893年の「叫び」誕生に直結する同じ一夜の体験を記録した重要作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/35/Edvard_Munch_-_Despair_-_MM.M.00513_-_Munch_Museum.jpg",
+    "level": 3
+  },
+  {
+    "title": "ヴァニタスの静物",
+    "artist": "ピーテル・クラース",
+    "year": "1630年",
+    "museum": "マウリッツハイス美術館（ハーグ）",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "クラースが1630年に描いたオランダ・ヴァニタス画の傑作。骸骨・死滅したろうそく・消えかけたシャボン玉など「人生の儀なさ」を象徴するモチーフを精密な写実で描き、チューリップ・バブルで湤えたオランダ社会への道徳的警告を内包する。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Pieter_Claesz_-_Vanitas_Still_Life_-_943_-_Mauritshuis.jpg",
+    "level": 3
+  },
+  {
+    "title": "麦わら帽子を被った自画像",
+    "artist": "エリザベート＝ルイーズ・ヴィジェ＝ルブラン",
+    "year": "1782年頃",
+    "museum": "ロンドン・ナショナル・ギャラリー",
+    "themes": [
+      "ロココ",
+      "新古典主義"
+    ],
+    "summary": "フランスの女性画家ヴィジェ＝ルブランが1782年頃に描いた自画像。ブリュッセルで見たルーベンスの《シュザンヌ・フルマンの胖像》（通称「麦わら帽子の女」）に靶発され、屋外光の下での肉体の輝きを再現しようとした作品。パレットと筆を手にした「画家としての自分」と、豪奢な帽子・低胸のドレスをまとう「社交女性としての自分」を同一画面に重ねた宣言的な一枚。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/35/Self-portrait_in_a_Straw_Hat_by_Elisabeth-Louise_Vig%C3%A9e-Lebrun.jpg",
+    "level": 3
+  },
+  {
+    "title": "ペスト（ベックリン）",
+    "artist": "アルノルト・ベックリン",
+    "year": "1898年",
+    "museum": "バーゼル美術館",
+    "themes": [
+      "象徴主義"
+    ],
+    "summary": "スイスの画家ベックリンが1898年に描いた象徴主義の傑作。骨马にまたがる異形の生物がペストの擬人化として描かれ、中世ヨーロッパを襲った瞳病の恐怖を図像化した名作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Arnold_B%C3%B6cklin_-_Die_Pest.jpg",
+    "level": 3
   }
 ];
