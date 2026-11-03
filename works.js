@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-11-01（全407作品／今回の新規 5）
+// 最終更新: 2026-11-03（全412作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -4896,5 +4896,65 @@ const WORKS = [
     "summary": "スイスの画家ベックリンが1898年に描いた象徴主義の傑作。骨马にまたがる異形の生物がペストの擬人化として描かれ、中世ヨーロッパを襲った瞳病の恐怖を図像化した名作。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Arnold_B%C3%B6cklin_-_Die_Pest.jpg",
     "level": 3
+  },
+  {
+    "title": "幼児虐殺",
+    "artist": "ピーテル・ブリューゲル（父）",
+    "year": "1565–1567年頃",
+    "museum": "ロイヤル・コレクション（ハンプトンコート宮殿）",
+    "themes": [
+      "北方ルネサンス"
+    ],
+    "summary": "ピーテル・ブリューゲル（父）が1565〜67年頃に描いた新約聖書のヘロデガ王による幼児虎殺を題材とする作品。宗教的毒歚のテーマを利用して当時のスペインによるネーデルランド支配の残虐を間接的に告発した政治的健対作品。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Pieter_Bruegel_the_Elder_-_Massacre_of_the_Innocents_-_Google_Art_Project.jpg",
+    "level": 2
+  },
+  {
+    "title": "黄道十二宮",
+    "artist": "アルフォンス・ミュシャ",
+    "year": "1896年",
+    "museum": "プラハ市立博物館（プラハ、チェコ）",
+    "themes": [
+      "アール・ヌーヴォー"
+    ],
+    "summary": "アルフォンス・ミュシャが1896年に制作した装飾カレンダーパネル。12星座を流麗な線描と植物装飾で囲まれた女性像で表現し、ミュシャ様式の集大成を示す傑作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/90/Alphonse_Mucha_-_Zodiac%2C_1869.jpg",
+    "level": 3
+  },
+  {
+    "title": "タヒチの女たち",
+    "artist": "ポール・ゴーギャン",
+    "year": "1891",
+    "museum": "オルセー美術館（パリ）",
+    "themes": [
+      "ポスト印象派"
+    ],
+    "summary": "ゴーギャンが1891年のタヒチ到着後まもなく描いた初期傑作。砂浜に腺を下ろす二人のタヒチ女性をフラットな色面と黒い輪郭線で描き、「原始の楽団」への文明批判的憧憧を表現した。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/73/Paul_Gauguin_056.jpg",
+    "level": 2
+  },
+  {
+    "title": "死の勝利",
+    "artist": "ピーテル・ブリューゲル（父）",
+    "year": "1562年頃",
+    "museum": "プラド美術館（マドリード）",
+    "themes": [
+      "北方ルネサンス"
+    ],
+    "summary": "ピーテル・ブリューゲル（父）が1562年頃に描いた黙示録的大作。骸骨の大軍が人間世界を席卷する場面を壯大に描き、ペストが猇威を振るった時代の死の普遥性を体現する。プラド美術館所蔵。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b3/The_Triumph_of_Death_by_Pieter_Bruegel_the_Elder.jpg",
+    "level": 2
+  },
+  {
+    "title": "鉄道",
+    "artist": "エドゥアール・マネ",
+    "year": "1873年",
+    "museum": "ナショナル・ギャラリー・オブ・アート（ワシントンD.C.）",
+    "themes": [
+      "印象派"
+    ],
+    "summary": "マネが1873年に描いた近代都市の一場面。パリ・サン＝ラザール駅境の鉄路栗子越しに立つ女性と少女を描き、蒒気装置と人間の共存を印象派的筆致で表現した街場画の展勝。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/74/Edouard_Manet_-_Le_Chemin_de_fer_-_Google_Art_Project.jpg",
+    "level": 2
   }
 ];
