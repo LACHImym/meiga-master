@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-11-03（全412作品／今回の新規 5）
+// 最終更新: 2026-11-04（全417作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -4955,6 +4955,66 @@ const WORKS = [
     ],
     "summary": "マネが1873年に描いた近代都市の一場面。パリ・サン＝ラザール駅境の鉄路栗子越しに立つ女性と少女を描き、蒒気装置と人間の共存を印象派的筆致で表現した街場画の展勝。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/7/74/Edouard_Manet_-_Le_Chemin_de_fer_-_Google_Art_Project.jpg",
+    "level": 2
+  },
+  {
+    "title": "ヴィーナスの化粧",
+    "artist": "フランソワ・ブーシェ",
+    "year": "1751",
+    "museum": "メトロポリタン美術館（ニューヨーク，アメリカ）",
+    "themes": [
+      "ロココ"
+    ],
+    "summary": "ブーシェがポンパドゥール奈人の依頼で描いたロココ絵画の頂点。ウィーナスが化粧を施される場面を柔らかな色彩と流麗な筆致で描き、ルイ16世治世の宮廷文化を象徴する。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c5/The_Toilet_of_Venus%2C_by_Fran%C3%A7ois_Boucher.jpg",
+    "level": 3
+  },
+  {
+    "title": "ブレダの開城",
+    "artist": "ディエゴ・ベラスケス",
+    "year": "1634–1635年",
+    "museum": "プラド美術館",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "ベラスケスが1634〜35年に描いたスペイン・バロックの歴史画傑作。1625年のブレダ包囲戦でオランダ軍がスペイン軍に降伏する場面を描く。スピノラ将軍が敗者に敬意を示す人道的な姿勢が強調され、勝者の寛容さを称える政治的プロパガンダ作品として宮廷を飾った。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Velazquez-The_Surrender_of_Breda.jpg",
+    "level": 2
+  },
+  {
+    "title": "神の子羊",
+    "artist": "フランシスコ・デ・スルバラン",
+    "year": "1635ダ1640年頃",
+    "museum": "プラド美術館（マドリード）",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "スルバランが1635〜40年頃に描いた静箐な宗教画。縛られた純白の子羊を漆黒の背景に浮かび上がらせたシンプルな構図は「神の子羊」の概念を完空に体現し、スペイン・バロック絵画の精神的深みを示す「無言の傳道」。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Francisco_de_Zurbar%C3%A1n_006.jpg",
+    "level": 3
+  },
+  {
+    "title": "黄色いキリスト像を掲げた芸術家の肖像",
+    "artist": "ポール・ゴーギャン",
+    "year": "1890-91",
+    "museum": "オルセー美術館（パリ）",
+    "themes": [
+      "ポスト印象派"
+    ],
+    "summary": "ゴーギャンが1890〜91年に描いた自画像。背景に自作《黄色いキリスト》を配し、苦悩する芸術家を殉教者キリストと重ねた複層的な自己表現。タヒチへ旅立つ直前、文明との決別を宣言した作品。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Paul_Gauguin_-_Portrait_of_the_Artist_with_the_Yellow_Christ_(1890-91).jpg",
+    "level": 3
+  },
+  {
+    "title": "ヘントの祭壇画（内装下段中央）",
+    "artist": "ヤン・ファン・エイク（フーベルト・ファン・エイクと共同）",
+    "year": "1432年",
+    "museum": "聖バーフ大聖堂（ヘント、ベルギー）",
+    "themes": [
+      "北方ルネサンス"
+    ],
+    "summary": "ファン・エイク兄弟が1432年に完成させた北方ルネサンス最大の祭壇画。油彩技法の革新的な精縻さで描かれた12枚のパネルからなる大祭壇画で、中央下段「神の子羊への礼拜」が特に名高い。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/50/Ghent_Altarpiece_Google_Art_Project.jpg",
     "level": 2
   }
 ];
