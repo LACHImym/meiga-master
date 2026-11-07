@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-11-07（全432作品／今回の新規 5）
+// 最終更新: 2026-11-07（全437作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -5196,5 +5196,65 @@ const WORKS = [
     "summary": "モネが1899年に制作した「日本の橋」シリーズの代表作で、オルセー美術館所蔵。太鼓橋を中心に緑色の調和を強調し、静謐な光の世界を描いた。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Claude_Monet_-_Water_Lilies_and_Japanese_Bridge.jpg",
     "level": 3
+  },
+  {
+    "title": "睡蓮1914-17",
+    "artist": "クロード・モネ",
+    "year": "1914-1917年",
+    "museum": "オーストラリア国立美術館",
+    "themes": [
+      "印象派"
+    ],
+    "summary": "モネが1914〜17年に制作した大型の睡蓮作品で、オーストラリア国立美術館（キャンベラ）所蔵。第一次世界大戦中に制作された連作で、水面だけを捕えた抽象に近い大脹な構図が特徴。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/42/Nymph%C3%A9as_(1914-1917)_Claude_Monet_(W_1799).jpg",
+    "level": 3
+  },
+  {
+    "title": "雪のある風景",
+    "artist": "フィンセント・ファン・ゴッホ",
+    "year": "1888年2月",
+    "museum": "ソロモン・R・グッゲンハイム美術館（ニューヨーク）",
+    "themes": [
+      "ポスト印象派"
+    ],
+    "summary": "アルルに到着直後のゴッホが1888年2月に描いた雪景色で、アルル時代最初期の傑作のひとつ。ラ・クロー平野が白雪に覆われ、孤独な農夫と犬の姿が画面に深い静謐さをもたらしている。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Van_Gogh_-_Landschaft_im_Schnee.jpg",
+    "level": 3
+  },
+  {
+    "title": "エトルタの夕焼け",
+    "artist": "クロード・モネ",
+    "year": "1883",
+    "museum": "ナンシー美術館",
+    "themes": [
+      "印象派"
+    ],
+    "summary": "1883年1月、モネがノルマンディーのエトルタに滞在中に描いた夕景。黄金色に輝く空と岩の断崖が溶け合い、光の詩人モネの真骨頂が凝縮された一枚。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Claude_Monet-Soleil_couchant_%C3%A0_Etretat.jpg",
+    "level": 2
+  },
+  {
+    "title": "サン＝ポール＝ド＝モソルの教会の眺め",
+    "artist": "フィンセント・ファン・ゴッホ",
+    "year": "1889年10月",
+    "museum": "個人蔵（プライベートコレクション）",
+    "themes": [
+      "ポスト印象派"
+    ],
+    "summary": "ゴッホが入院中のサン＝ポール・ド・モソル瘢钒院の教会を描いた作品。1889年10月、サン＝レミで入院中のゴッホが描いた前期構図の風景画。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Vincent_Van_Gogh_-_Vue_de_l'asile_et_de_la_Chapelle_de_Saint-R%C3%A9my.jpg",
+    "level": 3
+  },
+  {
+    "title": "赤い葡萄畑",
+    "artist": "フィンセント・ファン・ゴッホ",
+    "year": "1888年11月",
+    "museum": "プーシキン美術館（モスクワ）",
+    "themes": [
+      "ポスト印象派"
+    ],
+    "summary": "フランス・アルルの葡萄の収穫を描いたゴッホの傑作で、ゴッホが生前に唯一売れた絵として知られる。夕暮れの赤い葡萄畑で農民たちが働く様子が灼熱のような色彩で表現されている。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/11/Vincent_van_Gogh_-_Red_Vineyard_at_Arles_(1888).jpg",
+    "level": 2
   }
 ];
