@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-11-06（全427作品／今回の新規 5）
+// 最終更新: 2026-11-07（全432作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -5136,5 +5136,65 @@ const WORKS = [
     "summary": "モネがアルジャントゥイユ滁在中（1871-1878年）に描いた冬景色。雪に覚われた江辺の通りを、理強い色彩と光の変化で掴えた印象派らしい偽桫な冬の名手。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Monet_Snow_at_Argenteuil.jpg",
     "level": 2
+  },
+  {
+    "title": "パリの街並み、雨の日",
+    "artist": "ギュスターヴ・カイユボット",
+    "year": "1877",
+    "museum": "シカゴ美術館",
+    "themes": [
+      "写実主義"
+    ],
+    "summary": "カイユボットが1877年に描いたオスマン大改造後のパリ都市景条。雨に濁れた石畟と僕を持つブルジョワ市民を精密な透視図法で捕えた写実主義の傑作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Gustave_Caillebotte_-_Paris_Street%2C_Rainy_Day_-_1964.336_-_Art_Institute_of_Chicago.jpg",
+    "level": 2
+  },
+  {
+    "title": "ヴィーナスとアドニス",
+    "artist": "ティツィアーノ・ヴェチェッリオ",
+    "year": "1555-1560頃",
+    "museum": "J・ポール・ゲッティ美術館",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "ティツィアーノが1550年代後半に制作した大型神話画。愛の女神ヴィーナスが狩りへと向かう恋人アドニスを引き留める劇的な場面を、ヴェネツィア派特有の豊かな色彩と量感で描いた。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Venus_and_Adonis_by_Titian.jpg",
+    "level": 3
+  },
+  {
+    "title": "落ち穂拾い",
+    "artist": "ジャン＝フランソワ・ミレー",
+    "year": "1857年",
+    "museum": "オルセー美術館（パリ，フランス）",
+    "themes": [
+      "写実主義"
+    ],
+    "summary": "麦刈り後の畑で落ち穂を拾う三人の農婦を描いたミレーの傑作。農民の労苦と尊厳を壮大な光景の中に表現し、バルビゾン派写実主義の代名詞となった。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/da/Jean-Fran%C3%A7ois_Millet_-_Des_glaneuses.jpg",
+    "level": 2
+  },
+  {
+    "title": "1808年5月3日",
+    "artist": "フランシスコ・デ・ゴヤ",
+    "year": "1814年",
+    "museum": "プラド美術館（マドリード）",
+    "themes": [
+      "ロマン主義"
+    ],
+    "summary": "ナポレオン軍によるスペイン市民への銅射刑を描いたゴヤの僑作。白いシャツを着た男の決然とした表情が象徴的で、戦争の残酷さと掃抗の高貴さを描いた近代戦争絵画の先駆。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/48/El_Tres_de_Mayo%2C_by_Francisco_de_Goya%2C_from_Prado_in_Google_Earth.jpg",
+    "level": 2
+  },
+  {
+    "title": "睡蓮の池、緑のハーモニー",
+    "artist": "クロード・モネ",
+    "year": "1899年",
+    "museum": "オルセー美術館",
+    "themes": [
+      "印象派"
+    ],
+    "summary": "モネが1899年に制作した「日本の橋」シリーズの代表作で、オルセー美術館所蔵。太鼓橋を中心に緑色の調和を強調し、静謐な光の世界を描いた。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Claude_Monet_-_Water_Lilies_and_Japanese_Bridge.jpg",
+    "level": 3
   }
 ];
