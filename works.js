@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-11-07（全437作品／今回の新規 5）
+// 最終更新: 2026-11-08（全442作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -5256,5 +5256,65 @@ const WORKS = [
     "summary": "フランス・アルルの葡萄の収穫を描いたゴッホの傑作で、ゴッホが生前に唯一売れた絵として知られる。夕暮れの赤い葡萄畑で農民たちが働く様子が灼熱のような色彩で表現されている。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/11/Vincent_van_Gogh_-_Red_Vineyard_at_Arles_(1888).jpg",
     "level": 2
+  },
+  {
+    "title": "ひまわり",
+    "artist": "フィンセント・ファン・ゴッホ",
+    "year": "1888年8’011月",
+    "museum": "",
+    "themes": [
+      "ポスト印象派"
+    ],
+    "summary": "ゴッホがゴーギャンを辺りにアルルに迎えるために1888年に複数描かれた「ひまわり」シリーズ。花瓶に挑された向日葵を黄色のグラデーションでこんまりと描き、目輪と葉、花瓶の形態が宇宙的な存在感を放つ。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Vincent_Willem_van_Gogh_128.jpg",
+    "level": 1
+  },
+  {
+    "title": "サント・アドレスの庭園",
+    "artist": "クロード・モネ",
+    "year": "1867年",
+    "museum": "メトロポリタン美術館（ニューヨーク）",
+    "themes": [
+      "印象派"
+    ],
+    "summary": "モネが1867年にノルマンディーの海辺で描いた日半びの中のテラス山潯画。日期の光の中、旗と花と帆船と人々が重なり合った構図は、浮世絵の影響を受けた「印象派前山」と呼ばれる僕作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Claude_Monet_-_Jardin_%C3%A0_Sainte-Adresse.jpg",
+    "level": 2
+  },
+  {
+    "title": "レストランの室内",
+    "artist": "フィンセント・ファン・ゴッホ",
+    "year": "1887年6-7月",
+    "museum": "クレラー＝ミュラー美術館（オッテルロー，オランダ）",
+    "themes": [
+      "ポスト印象派"
+    ],
+    "summary": "パリ時代に描かれたレストラン内部の光景。点描的筆触と補色の対比（赤と緑、黄と紫）を騆使し、テーブルに飾られた花社交が胎動く情景を楽しむパリ市民の生活を挿えた一枚。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/47/Van_Gogh_-_Interieur_eines_Restaurants_in_Arles.jpeg",
+    "level": 3
+  },
+  {
+    "title": "ラ・クローの収穫風景",
+    "artist": "フィンセント・ファン・ゴッホ",
+    "year": "1888年6月",
+    "museum": "ファン・ゴッホ美術館（アムステルダム）",
+    "themes": [
+      "ポスト印象派"
+    ],
+    "summary": "アルル南方の収穫期のラ・クロー平野と、背景に聳えるモンマジュールの修道院廃墟を描いた傑作。金色の麦畑と青空の対比がゴッホ的色彩の頂点を示す。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/59/Vincent_van_Gogh_-_De_oogst_-_Google_Art_Project.jpg",
+    "level": 3
+  },
+  {
+    "title": "アルル近くの小道",
+    "artist": "フィンセント・ファン・ゴッホ",
+    "year": "1888年5月",
+    "museum": "ポンメルン州立博物館（グライフスヴァルト）",
+    "themes": [
+      "ポスト印象派"
+    ],
+    "summary": "アルル郊外の並木道と黄色い家を描いた作品。浮世絵的な透視遠近法と南仏の強烈な光を捉え、ゴッホのアルル時代最盛期の熱量を示す。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/40/Van_Gogh_-_Allee_bei_Arles_mit_H%C3%A4usern.jpg",
+    "level": 3
   }
 ];
