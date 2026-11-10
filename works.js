@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-11-08（全442作品／今回の新規 5）
+// 最終更新: 2026-11-10（全447作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -5315,6 +5315,66 @@ const WORKS = [
     ],
     "summary": "アルル郊外の並木道と黄色い家を描いた作品。浮世絵的な透視遠近法と南仏の強烈な光を捉え、ゴッホのアルル時代最盛期の熱量を示す。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/40/Van_Gogh_-_Allee_bei_Arles_mit_H%C3%A4usern.jpg",
+    "level": 3
+  },
+  {
+    "title": "昼食",
+    "artist": "クロード・モネ",
+    "year": "1873年",
+    "museum": "オルセー美術館",
+    "themes": [
+      "印象派"
+    ],
+    "summary": "モネが1873年に制作した大型の装飾パネルで、オルセー美術館所蔵。アルジャントゥイユ時代の庭での食後のくつろぎを描き、光あふれる日常の一場面を印象派的に表現した作品。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Monet_Luncheon.jpg",
+    "level": 3
+  },
+  {
+    "title": "チューリップ畑",
+    "artist": "フィンセント・ファン・ゴッホ",
+    "year": "1883年4月",
+    "museum": "ナショナル・ギャラリー・オブ・アート（ワシントンD.C.）",
+    "themes": [
+      "ポスト印象派"
+    ],
+    "summary": "ハーグ時代のゴッホが1883年にオランダのチューリップ・球根花畑を描いた風景画。曇り空の下に広がる色とりどりの花畑が、後年の鮮烈な色彩表現への転換を予告している。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/78/Bulb_Fields.jpg",
+    "level": 3
+  },
+  {
+    "title": "オランダのチューリップ畑",
+    "artist": "クロード・モネ",
+    "year": "1886年",
+    "museum": "オルセー美術館（パリ、フランス）",
+    "themes": [
+      "印象派"
+    ],
+    "summary": "クロード・モネが1886年のオランダ滞在中に描いた65×81cmの油彩画。鮮やかなチューリップ畑を色の水平帯として捉え、遠景へと消える構図が印象派的な光と空気の表現を示す。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/58/Champs_de_Tulipes_de_Claude_Monet.jpg",
+    "level": 3
+  },
+  {
+    "title": "花咲くアーモンドの木",
+    "artist": "フィンセント・ファン・ゴッホ",
+    "year": "1890年",
+    "museum": "ゴッホ美術館（アムステルダム）",
+    "themes": [
+      "ポスト印象派"
+    ],
+    "summary": "ゴッホが1890年2月、サン＝レミの精神病院で療養中に描いた油彩画。弟テオの長男誕生を祝って制作され、青空に白い花を咏かせるアーモンドの枝が新しい命への祝福を象徴する。ジャポニスムの影響を色濃く示す幖面構成が特徴。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/80/Amandelbloesem_-_s0176V1962_-_Van_Gogh_Museum.jpg",
+    "level": 2
+  },
+  {
+    "title": "Max Liebermann / マックス・リーバーマン",
+    "artist": "マックス・リーバーマン",
+    "year": "1881-1882年",
+    "museum": "シュテーデル美術館（フランクフルト）",
+    "themes": [
+      "印象派"
+    ],
+    "summary": "ドイツ印象主義の先駆リーバーマンが1881-82年に描いた油彩画。アムステルダム立市孤児院の中庭で休憩する少女たちを写実主義と印象派的光彩を融合させた初期の代表作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5d/The_Courtyard_of_the_Orphanage_in_Amsterdam-_Free_Period_in_the_Amsterdam_Orphanage_(SM_1351).png",
     "level": 3
   }
 ];
