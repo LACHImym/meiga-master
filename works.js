@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-11-10（全447作品／今回の新規 5）
+// 最終更新: 2026-11-11（全452作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -5376,5 +5376,65 @@ const WORKS = [
     "summary": "ドイツ印象主義の先駆リーバーマンが1881-82年に描いた油彩画。アムステルダム立市孤児院の中庭で休憩する少女たちを写実主義と印象派的光彩を融合させた初期の代表作。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/5/5d/The_Courtyard_of_the_Orphanage_in_Amsterdam-_Free_Period_in_the_Amsterdam_Orphanage_(SM_1351).png",
     "level": 3
+  },
+  {
+    "title": "羊飼いの娘",
+    "artist": "ジャン＝フランソワ・ミレー",
+    "year": "1857〜1860年",
+    "museum": "ウォルターズ美術館（ボルティモア、アメリカ）",
+    "themes": [
+      "写実主義"
+    ],
+    "summary": "ジャン＝フランソワ・ミレーが1857〜60年に制作した月光下の羊囲い風景画。バルビゾン派の写実主義を代表する夜景作品で、羊飼いの少女と羊の群れを月明かりが幻想的に照らす静謐な農村の情景を描く。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Jean-Fran%C3%A7ois_Millet_-_The_Sheepfold%2C_Moonlight_-_Walters_3730.jpg",
+    "level": 3
+  },
+  {
+    "title": "画家のアトリエ",
+    "artist": "ギュスターヴ・クールベ",
+    "year": "1855年",
+    "museum": "オルセー美術館（パリ）",
+    "themes": [
+      "写実主義"
+    ],
+    "summary": "ギュスターヴ・クールベが1855年に描いた写実主義の集大成。画家自身を中心に、右に知識人・友人層、左に社会の断面を配置した寁意画で、写実主義を社会的宣言として打ち出した。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Courbet_LAtelier_du_peintre.jpg",
+    "level": 2
+  },
+  {
+    "title": "石割り人夫",
+    "artist": "ギュスターヴ・クールベ",
+    "year": "1849年",
+    "museum": "ドレスデン幕張美術館旧蔵（1945年空袭により焼失）",
+    "themes": [
+      "写実主義"
+    ],
+    "summary": "道路工事をする老人と少年を等身大で描いた写実主義の代表作。労働者の過酷な現実を歴史画の規模で描いたことで批評家に衝撃を与えたが、1945年の空袭で焼失し現存しない。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/93/Gustave_Courbet_018.jpg",
+    "level": 2
+  },
+  {
+    "title": "オルナンの埋葬",
+    "artist": "ギュスターヴ・クールベ",
+    "year": "1849〜1850年",
+    "museum": "オルセー美術館（パリ）",
+    "themes": [
+      "写実主義"
+    ],
+    "summary": "クールベが故郷オルナンの大叔父の葬儀を歴史画のスケール（315×668cm）で写実的に描いた代表作。普通の田舎の人々を歴史画の主役に据えたことで1851年のサロンに衝撃を与え、写実主義運動の宣言ともなった。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Ein_Begr%C3%A4bnis_in_Ornans.jpg",
+    "level": 3
+  },
+  {
+    "title": "世界の起源",
+    "artist": "ギュスターヴ・クールベ",
+    "year": "1866年",
+    "museum": "オルセー美術館（パリ）",
+    "themes": [
+      "写実主義"
+    ],
+    "summary": "クールベが1866年に描いた油彩画（46×55cm）。女性の裸体下半身を接写した極めてラディカルな作品で、100年以上秘蔵されたのち1995年にオルセー美術館が収蔵した。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Origin-of-the-World.jpg",
+    "level": 1
   }
 ];
