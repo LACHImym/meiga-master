@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-11-11（全452作品／今回の新規 5）
+// 最終更新: 2026-11-12（全457作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -5436,5 +5436,65 @@ const WORKS = [
     "summary": "クールベが1866年に描いた油彩画（46×55cm）。女性の裸体下半身を接写した極めてラディカルな作品で、100年以上秘蔵されたのち1995年にオルセー美術館が収蔵した。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Origin-of-the-World.jpg",
     "level": 1
+  },
+  {
+    "title": "ラ・グルヌイエールの水浴場",
+    "artist": "クロード・モネ",
+    "year": "1869年",
+    "museum": "ナショナル・ギャラリー（ロンドン）",
+    "themes": [
+      "印象派"
+    ],
+    "summary": "モネが1869年に制作した油彩画。セーヌ川畔の行楽地ラ・グルヌイエールで、同じ場面をルノワールとともに描いた印象派草創期の傑作で、ロンドン・ナショナル・ギャラリー所蔵。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/95/Monet_-_Bathers_at_La_Grenouill%C3%A8re.jpg",
+    "level": 3
+  },
+  {
+    "title": "メドゥーサ",
+    "artist": "カラヴァッジョ",
+    "year": "1597年頃",
+    "museum": "ウフィツィ美術館（フィレンツェ、イタリア）",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "カラヴァッジョが1597年頃に木製盾の表面に描いた油彩。ペルセウスに首を落とされたメドゥーサの断末魔を自らの顔をモデルにたけのリアルな口落と取り式で描寻したバロック絵画の傑作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/15/Caravaggio_-_Medusa_-_Google_Art_Project.jpg",
+    "level": 2
+  },
+  {
+    "title": "岩の聖母",
+    "artist": "レオナルド・ダ・ヴィンチ",
+    "year": "1483〜1486年",
+    "museum": "ルーヴル美術館（パリ）",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "レオナルド・ダ・ヴィンチが1483〜1486年に制作した祝堀画。幼い洗礼者ヨハネとイエスを聖母マリアと天使が岩窟で装う三角構図に、スフマート技法と大気遠近法が検山の神秘的な光を8き出す。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Leonardo_Da_Vinci_-_Vergine_delle_Rocce_(Louvre).jpg",
+    "level": 1
+  },
+  {
+    "title": "ウィトルウィウス的人体図",
+    "artist": "レオナルド・ダ・ヴィンチ",
+    "year": "1490年頃",
+    "museum": "アカデミア美術館（ヴェネツィア）",
+    "themes": [
+      "ルネサンス"
+    ],
+    "summary": "レオナルド・ダ・ヴィンチが1490年頃に描いた解剖学的ドローイングで、人体の比例と宇宙の秩序が一致するという思想を図示した盛期ルネサンスの象徴的作品。円（精神）と正方形（物質）に同時に収まる人体を二つの姿勢で描き、科学と芸術の統合を体現する。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/22/Da_Vinci_Vitruve_Luc_Viatour.jpg",
+    "level": 1
+  },
+  {
+    "title": "34歳の自画像",
+    "artist": "レンブラント・ファン・レイン",
+    "year": "1640年",
+    "museum": "ナショナル・ギャラリー（ロンドン）",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "レンブラントが1640年（34歳時）に描いた絶頂期の自画像。デューラーやティツィアーノへの敬意を込め、16世紀貴族の車装で自己を表現したルネサンスへの自己参照。ナショナル・ギャラリー（ロンドン）所蔵。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/10/Rembrandt%2C_Self_Portrait_at_the_Age_of_34.jpg",
+    "level": 2
   }
 ];
