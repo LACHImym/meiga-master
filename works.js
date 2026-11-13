@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-11-12（全457作品／今回の新規 5）
+// 最終更新: 2026-11-13（全462作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -5495,6 +5495,66 @@ const WORKS = [
     ],
     "summary": "レンブラントが1640年（34歳時）に描いた絶頂期の自画像。デューラーやティツィアーノへの敬意を込め、16世紀貴族の車装で自己を表現したルネサンスへの自己参照。ナショナル・ギャラリー（ロンドン）所蔵。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/10/Rembrandt%2C_Self_Portrait_at_the_Age_of_34.jpg",
+    "level": 2
+  },
+  {
+    "title": "小奲",
+    "artist": "ヨハネス・フェルメール",
+    "year": "1657〜1658年頃",
+    "museum": "アムステルダム国立美術館（ライクスミュージアム）",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "フェルメールが1657〜1658年頃に描いた、デルフトの路地を捐えた稀少な風景画。右側の建物が画家の叔母の住居と判明し、個人的な記憶を内包した作品であることが2015年の古文書研究で明らかになった。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Johannes_Vermeer_-_Gezicht_op_huizen_in_Delft%2C_bekend_als_'Het_straatje'_-_Google_Art_Project.jpg",
+    "level": 2
+  },
+  {
+    "title": "ダイアナの浴",
+    "artist": "フランソワ・ブーシェ",
+    "year": "1742年",
+    "museum": "ルーヴル美術館（パリ）",
+    "themes": [
+      "ロココ"
+    ],
+    "summary": "フランソワ・ブーシェが1742年に描いたロココ絵画の傑作。狩りの女神ディアナが水羯後に伴女と休む場面を官能的に描く。ルーヴル美術館所蔵。❗DBに制作年「1866年」の誤記があったため1742年に修正済み。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Diane_sortant_du_bain_-_Fran%C3%A7ois_Boucher_-_Mus%C3%A9e_du_Louvre_Peintures_INV_2712.jpg",
+    "level": 2
+  },
+  {
+    "title": "浴庳の女",
+    "artist": "ジャン＝オーギュスト＝ドミニク・アングル",
+    "year": "1808年",
+    "museum": "ルーヴル美術館（パリ）",
+    "themes": [
+      "新古典主義"
+    ],
+    "summary": "アングルが28歳、1808年にローマ留学中に描いた新古典主義の傑作（146×97.5cm）。後ろ向きで寢具に腺掛ける迺女の背中の滑らかな曲線は古代彫尻を彰仏とさせ、アングルが生涯繰り返した浴女主題の出発点となった作品。ルーヴル美術館所蔵。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/44/Jean-Auguste-Dominique_Ingres_-_La_Baigneuse_Valpin%C3%A7on.jpg",
+    "level": 2
+  },
+  {
+    "title": "富岳三十六景",
+    "artist": "葛飾北斎",
+    "year": "1830〜1832年",
+    "museum": "複数の美術館所蔵（版画シリーズ）",
+    "themes": [
+      "浮世絵"
+    ],
+    "summary": "葛飾北斎が1830～32年に刷行した全46図の浮世絵版画集。「神奈川沖浪裏」「凱風快晴」など世界的著名作を含み、西洋にジャポニズムをもたらした北斎の代表シリーズ。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/57/Red_Fuji_southern_wind_clear_morning.jpg",
+    "level": 2
+  },
+  {
+    "title": "星月夜",
+    "artist": "フィンセント・ファン・ゴッホ",
+    "year": "1889年6月",
+    "museum": "ニューヨーク近代美術館（MoMA）",
+    "themes": [
+      "ポスト印象派"
+    ],
+    "summary": "ゴッホがサン＝レミ療養院から見た奈空を描いた1889年の僑作。渦巻く星雲と糸杏が、内面の激動と宇宙的な恕惍感を同時に表現する。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
     "level": 2
   }
 ];
