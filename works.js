@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-11-14（全467作品／今回の新規 5）
+// 最終更新: 2026-11-14（全472作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -5616,5 +5616,66 @@ const WORKS = [
     "summary": "クリムトが1907〜08年に描いたウィーン分離派の代表作。金筏诅りの豪奨な装飾の中に抱き合う恋人たちを描き、愛と合一を象徴する。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/40/The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg",
     "level": 2
+  },
+  {
+    "title": "アデーレ・ブロッホ＝バウアーの肖像",
+    "artist": "グスタフ・クリムト",
+    "year": "1907年",
+    "museum": "ノイエ・ギャラリー（ニューヨーク）",
+    "themes": [
+      "アール・ヌーヴォー",
+      "象徴主義"
+    ],
+    "summary": "クリムトが1907年に完成させた「黄金の時代」の最高傑作。ウィーンのユダヤ系貴婦人アデーレを金箔と渦巻く装飾で包み込み、ナチスによる略奪と遺族への返還という劇的な歴史を持つ。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/18/Gustav_Klimt%2C_1907%2C_Adele_Bloch-Bauer_I%2C_Neue_Galerie_New_York.jpg",
+    "level": 2
+  },
+  {
+    "title": "コンポジション",
+    "artist": "ピエト・モンドリアン",
+    "year": "1921年",
+    "museum": "",
+    "themes": [
+      "デ・ステイル"
+    ],
+    "summary": "モンドリアンが1921年に描いたデ・ステイル運動の代表作。水平・垂直の線と三原色・無彩色のみで構成された純粋抽象絵画で、新造形主義（ネオプラスティシズム）の理念を体現する。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Composition_A_by_Piet_Mondrian_Galleria_Nazionale_d'Arte_Moderna_e_Contemporanea.jpg",
+    "level": 2
+  },
+  {
+    "title": "アールヌーヴォー様式の室内",
+    "artist": "アンリ・マティス",
+    "year": "1919〜1920年",
+    "museum": "シカゴ美術館（アート・インスティテュート・オブ・シカゴ）",
+    "themes": [
+      "表現主義"
+    ],
+    "summary": "マティスが1919〜1920年にニースで描いた室内画。地中海の光が差し込む開放的な構図と豊かな色彩が特徴で、ニース時代の明るく調和のとれた作風を示す。シカゴ美術館所蔵。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/18/Int%C3%A9rieur_%C3%A0_Nice%2C_par_Henri_Matisse_(1919-1920).jpg",
+    "level": 3
+  },
+  {
+    "title": "赤いアトリエ",
+    "artist": "アンリ・マティス",
+    "year": "1911年",
+    "museum": "ニューヨーク近代美術館（MoMA）",
+    "themes": [
+      "表現主義"
+    ],
+    "summary": "マティスが1911年秋に自身のアトリエを描いた作品。室内全体をヴェネツィアンレッド一色で覆い、自作絵画や陶器を配することで色彩の平面性と空間の融合を極めた。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ef/L'Atelier_rouge%2C_par_Henri_Matisse.jpg",
+    "level": 2
+  },
+  {
+    "title": "青い裸婦",
+    "artist": "アンリ・マティス",
+    "year": "1907年",
+    "museum": "ボルチモア美術館（アメリカ）",
+    "themes": [
+      "表現主義"
+    ],
+    "summary": "マティスが1907年に描いたフォーヴィスムの代表作。北アフリカ韓の記憑（ビスクラ）を醒起させ、青と緑で塑った肉体と歪んだ輪郭がサロンに衆撃を与えた。ボルチモア美術館所蔵。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Nu_bleu_(souvenir_de_Biskra)%2C_par_Henri_Matisse.jpg",
+    "level": 3
   }
 ];
