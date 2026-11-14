@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-11-13（全462作品／今回の新規 5）
+// 最終更新: 2026-11-14（全467作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -5555,6 +5555,66 @@ const WORKS = [
     ],
     "summary": "ゴッホがサン＝レミ療養院から見た奈空を描いた1889年の僑作。渦巻く星雲と糸杏が、内面の激動と宇宙的な恕惍感を同時に表現する。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
+    "level": 2
+  },
+  {
+    "title": "アルノルフィーニ夫妻の肖像",
+    "artist": "ヤン・ファン・エイク",
+    "year": "1434年",
+    "museum": "ナショナル・ギャラリー（ロンドン）",
+    "themes": [
+      "北方ルネサンス"
+    ],
+    "summary": "ヤン・ファン・エイクが1434年に描いたフランドル絵画の頂点。奥に掲げられた凸面鏡には画家自身と来客の姿が映り込み、「ヨハネス・デ・エイクはここにいた 1434」というサインが歴史を超えて語りかける傑作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/33/Van_Eyck_-_Arnolfini_Portrait.jpg",
+    "level": 2
+  },
+  {
+    "title": "テムズ川の上流、クリチ・アンド・ブラックフライアーズ",
+    "artist": "クロード・モネ",
+    "year": "1871〜1872年",
+    "museum": "ナショナル・ギャラリー（ロンドン、英国）",
+    "themes": [
+      "印象派"
+    ],
+    "summary": "クロード・モネが1871〜72年のロンドン滞在中に描いたテムズ川とウェストミンスター橋の光景。靴に煙る川面と橋の幻影的な描写が、ロンドンの大気を印象派的手法で捕えた先駆的作品。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/46/Monet_The_Thames_at_Westminster_1871_Westminster.jpg",
+    "level": 2
+  },
+  {
+    "title": "印象・日の出",
+    "artist": "クロード・モネ",
+    "year": "1872年",
+    "museum": "マルモッタン・モネ美術館（パリ）",
+    "themes": [
+      "印象派"
+    ],
+    "summary": "モネが1872年にル・アーブル港の朗景を描いた作品。1874年の第1回印象派展に出品され、「印象派」という派名の由来となった歴史的傑作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/59/Monet_-_Impression%2C_Sunrise.jpg",
+    "level": 2
+  },
+  {
+    "title": "アブサン",
+    "artist": "エドガー・ドガ",
+    "year": "1875〜1876年",
+    "museum": "オルセー美術館（パリ）",
+    "themes": [
+      "印象派"
+    ],
+    "summary": "ドガが1875〜76年に描いたカフェの情景。アブサンを前に虚ろな表情で座る男女が、新興パリの孤独と疏外感を写実的に捕えた近代絵画の傑作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Edgar_Degas_-_In_a_Caf%C3%A9_-_Google_Art_Project_2.jpg",
+    "level": 2
+  },
+  {
+    "title": "接吻",
+    "artist": "グスタフ・クリムト",
+    "year": "1907〜1908年",
+    "museum": "オーストリア国立美術館ベルヴェデーレ（ウィーン）",
+    "themes": [
+      "アール・ヌーヴォー"
+    ],
+    "summary": "クリムトが1907〜08年に描いたウィーン分離派の代表作。金筏诅りの豪奨な装飾の中に抱き合う恋人たちを描き、愛と合一を象徴する。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/40/The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg",
     "level": 2
   }
 ];
