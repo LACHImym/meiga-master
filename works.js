@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-11-14（全472作品／今回の新規 5）
+// 最終更新: 2026-11-15（全477作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -5677,5 +5677,65 @@ const WORKS = [
     "summary": "マティスが1907年に描いたフォーヴィスムの代表作。北アフリカ韓の記憑（ビスクラ）を醒起させ、青と緑で塑った肉体と歪んだ輪郭がサロンに衆撃を与えた。ボルチモア美術館所蔵。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Nu_bleu_(souvenir_de_Biskra)%2C_par_Henri_Matisse.jpg",
     "level": 3
+  },
+  {
+    "title": "アルルの跳ね橋",
+    "artist": "フィンセント・ファン・ゴッホ",
+    "year": "1888年3月",
+    "museum": "クレラー・ミュラー美術館（オッテルロー、オランダ）",
+    "themes": [
+      "ポスト印象派"
+    ],
+    "summary": "ゴッホが1888年3月にアルル時代に描いた跨ね橋連作の一点。浮世絵の影響を受けた平面的な構図と鮮烈な色彩が特徴。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Vincent_Van_Gogh_0014.jpg",
+    "level": 2
+  },
+  {
+    "title": "アルルの寝室",
+    "artist": "フィンセント・ファン・ゴッホ",
+    "year": "1888年（10月）",
+    "museum": "ファン・ゴッホ美術館（アムステルダム）",
+    "themes": [
+      "ポスト印象派"
+    ],
+    "summary": "ゴッホが1888年秋にアルルの「黄色い家」で描いた室内画。安らぎと休息を求める心情を、鮮やかな色彩と簡素な構図に込めた。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/76/Vincent_van_Gogh_-_De_slaapkamer_-_Google_Art_Project.jpg",
+    "level": 2
+  },
+  {
+    "title": "木の根",
+    "artist": "フィンセント・ファン・ゴッホ",
+    "year": "1890年",
+    "museum": "ファン・ゴッホ美術館（アムステルダム）",
+    "themes": [
+      "ポスト印象派"
+    ],
+    "summary": "ゴッホが死の直前、1890年7月にオーヴェル＝シュル＝オワーズで描いた最晩年作（50×100cm）。木の根と砂地が渦巻く構図は抽象絵画とドイツ表現主義を先取りしており、自然の生命力と内なる苦悩の両方を凝縮した。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Vincent_van_Gogh_-_Tree_Roots_and_Trunks_(F816).jpg",
+    "level": 2
+  },
+  {
+    "title": "ジャガイモ食い",
+    "artist": "フィンセント・ファン・ゴッホ",
+    "year": "1885年",
+    "museum": "ファン・ゴッホ美術館（アムステルダム）",
+    "themes": [
+      "写実主義"
+    ],
+    "summary": "ゴッホが1885年にオランダのニューネンで描いた初期の代表作。貧しい農民の家族がジャガイモを食べる場面を暗い色調で描き、労働の尊厳を真摯に表現した。ファン・ゴッホ美術館（アムステルダム）所蔵。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Van-willem-vincent-gogh-die-kartoffelesser-03850.jpg",
+    "level": 1
+  },
+  {
+    "title": "タンギー爺さんの肖像",
+    "artist": "フィンセント・ファン・ゴッホ",
+    "year": "1887年",
+    "museum": "ロダン美術館（パリ）",
+    "themes": [
+      "ポスト印象派"
+    ],
+    "summary": "ゴッホが1887年にパリで描いた絵具商タンギーの肢像画。背景を埋め尽くす浮世絵がジャポニスムへの傾倒を示し、印象派との出会いによる色彩変革を物語る一枚。ロダン美術館（パリ）所蔵。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Van_Gogh_-_Portrait_of_Pere_Tanguy_1887-8.JPG",
+    "level": 2
   }
 ];
