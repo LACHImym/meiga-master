@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-11-15（全477作品／今回の新規 5）
+// 最終更新: 2026-11-17（全482作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -5736,6 +5736,66 @@ const WORKS = [
     ],
     "summary": "ゴッホが1887年にパリで描いた絵具商タンギーの肢像画。背景を埋め尽くす浮世絵がジャポニスムへの傾倒を示し、印象派との出会いによる色彩変革を物語る一枚。ロダン美術館（パリ）所蔵。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Van_Gogh_-_Portrait_of_Pere_Tanguy_1887-8.JPG",
+    "level": 2
+  },
+  {
+    "title": "パルナッソス山へ（Ad Parnassum）",
+    "artist": "パウル・クレー",
+    "year": "1932年",
+    "museum": "ベルン美術館（スイス）",
+    "themes": [
+      "抽象・シュプレマティスム"
+    ],
+    "summary": "パウル・クレーが1932年に制作した代表作。点描法と幾何学的な形態で構成された作品で、パルナッソス山（芸術の聖地）を主題に、無数の色点と三角形シルエットが独自の光の空間を生み出す。現在はベルン美術館所蔵。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Ad_Parnassum_(originaler%2C_gefasster_Holzrahmen)%2C_Paul_Klee_(1932).jpg",
+    "level": 3
+  },
+  {
+    "title": "魚の魔術",
+    "artist": "パウル・クレー",
+    "year": "1925年",
+    "museum": "フィラデルフィア美術館",
+    "themes": [
+      "表現主義"
+    ],
+    "summary": "パウル・クレーが1925年に描いた幻想的な絵画で、魚・水中生物・月・花・時計・人物が暗く深い背景に浮遊する夢幻的構成。シュルレアリスムと共鳴する詩的宇宙観を、クレー独自の繊細な色彩と線で表現した傑作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/87/Fish_Magic%2C_1925_-_Paul_Klee.jpg",
+    "level": 3
+  },
+  {
+    "title": "セネカの死",
+    "artist": "ジャック＝ルイ・ダヴィッド",
+    "year": "1773年",
+    "museum": "プティ・パレ（パリ）",
+    "themes": [
+      "新古典主義"
+    ],
+    "summary": "ジャック＝ルイ・ダヴィッドが25歳のときに描いた初期の新古典主義作品。皇帝ネロの命で自決する哲学者セネカを英雄的に描いた歴史画。後の「ソクラテスの死」へ繫がる助走を示す作品。プティ・パレ（パリ）所蔵。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Jacques-Louis_David_-_The_Death_of_Seneca_-_WGA06041.jpg",
+    "level": 3
+  },
+  {
+    "title": "サビニの女たちの拉致",
+    "artist": "ジャック＝ルイ・ダヴィッド",
+    "year": "1799年",
+    "museum": "ルーヴル美術館（パリ）",
+    "themes": [
+      "新古典主義"
+    ],
+    "summary": "ローマ人とサビニ族の戦いに割って入るサビニの女たちを描いた新古典主義の大作。フランス革命後の混乱期に制作され、和解と平和への訴えが込められた政治的メッセージを持つ。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b1/The_Intervention_of_the_Sabine_Women_-_David_(Louvre_INV_3691).jpg",
+    "level": 2
+  },
+  {
+    "title": "メデューサ号の筏",
+    "artist": "テオドール・ジェリコー",
+    "year": "1818-1819年",
+    "museum": "ルーヴル美術館（パリ）",
+    "themes": [
+      "ロマン主義"
+    ],
+    "summary": "ジェリコーが1818-1819年に制作したロマン主義の傑作。1816年のメデューサ号難破事件を題材に、極限状況の人間の希望と絶望を描いた大作で、ルーヴル美術館所蔵。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/15/JEAN_LOUIS_TH%C3%89ODORE_G%C3%89RICAULT_-_La_Balsa_de_la_Medusa_(Museo_del_Louvre%2C_1818-19).jpg",
     "level": 2
   }
 ];
