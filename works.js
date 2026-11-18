@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-11-17（全482作品／今回の新規 5）
+// 最終更新: 2026-11-18（全487作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -5797,5 +5797,65 @@ const WORKS = [
     "summary": "ジェリコーが1818-1819年に制作したロマン主義の傑作。1816年のメデューサ号難破事件を題材に、極限状況の人間の希望と絶望を描いた大作で、ルーヴル美術館所蔵。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/15/JEAN_LOUIS_TH%C3%89ODORE_G%C3%89RICAULT_-_La_Balsa_de_la_Medusa_(Museo_del_Louvre%2C_1818-19).jpg",
     "level": 2
+  },
+  {
+    "title": "サルダナパールの死",
+    "artist": "ウジェーヌ・ドラクロワ",
+    "year": "1827年",
+    "museum": "ルーヴル美術館（パリ）",
+    "themes": [
+      "ロマン主義"
+    ],
+    "summary": "ウジェーヌ・ドラクロワが1827年に描いたロマン主義の大作。バイロンの詩劇に基づき、アッシリア王サルダナパールが最期に宝物・側室を焼き滅ぼす場面を渦巻く動勢と官能的な色彩で描いた。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d0/La_Mort_de_Sardanapale_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_2346.jpg",
+    "level": 2
+  },
+  {
+    "title": "アルジェの女たち",
+    "artist": "ウジェーヌ・ドラクロワ",
+    "year": "1834年",
+    "museum": "ルーヴル美術館（パリ）",
+    "themes": [
+      "ロマン主義"
+    ],
+    "summary": "ドラクロワが1832年の北アフリカ訪問体験を元に1834年に描いた油彩画（180×229cm）。アルジェのハーレムで目にした女性たちを豊かな色彩で再現したロマン主義の代表作。後にピカソが連作《アルジェの女たち》15点で応答した。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/74/Femmes_d'Alger_dans_leur_appartement%2C_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_INV_3824.jpg",
+    "level": 2
+  },
+  {
+    "title": "グランド・オダリスク",
+    "artist": "ジャン=オーギュスト=ドミニク・アングル",
+    "year": "1814年",
+    "museum": "ルーヴル美術館（パリ）",
+    "themes": [
+      "新古典主義"
+    ],
+    "summary": "ナポレオンの妹カロリーヌ・ボナパルトの依頼でアングルが1814年に描いた後ろ向き裸婦画。脊椎5本分長く描かれた意図的な解剖学的歪みが生む独特の優美さで当初酷評されたが、後に新古典主義とロマン主義を橋渡しする傑作と評価された。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/df/La_grande_odalisque_-_Jean-Auguste_Dominique_Ingres_-_Mus%C3%A9e_du_Louvre_Peintures_RF_1158.jpg",
+    "level": 2
+  },
+  {
+    "title": "氷海",
+    "artist": "カスパー・ダーヴィト・フリードリヒ",
+    "year": "1823〜1824年",
+    "museum": "ハンブルク美術館（ドイツ）",
+    "themes": [
+      "ロマン主義"
+    ],
+    "summary": "フリードリヒが1823〜1824年に制作した油彩画。北極探検船の受難にインスパイアされ、氷塊に押し潰される難破船を描いたロマン主義の傑作。ハンブルク美術館所蔵。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/77/Friedrich%2C_Caspar_David_-_Eismeer.jpg",
+    "level": 2
+  },
+  {
+    "title": "雲海の上の旅人",
+    "artist": "カスパー・ダーヴィト・フリードリヒ",
+    "year": "1818年頃",
+    "museum": "ハンブルク美術館（ハンブルク）",
+    "themes": [
+      "ロマン主義"
+    ],
+    "summary": "フリードリヒが1818年頃に制作したドイツ・ロマン主義の代表作。岩山の頂上に立つ旅人が背を向けて雲海を見渡す後ろ姿は、崇高な自然と対峙する人間の孤独と内省を体現する。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Friedrich%2C_Caspar_David_-_Wanderer_%C3%BCber_dem_Nebelmeer.jpg",
+    "level": 1
   }
 ];
