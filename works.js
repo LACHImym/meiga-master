@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-11-18（全487作品／今回の新規 5）
+// 最終更新: 2026-11-19（全492作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -5857,5 +5857,65 @@ const WORKS = [
     "summary": "フリードリヒが1818年頃に制作したドイツ・ロマン主義の代表作。岩山の頂上に立つ旅人が背を向けて雲海を見渡す後ろ姿は、崇高な自然と対峙する人間の孤独と内省を体現する。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Friedrich%2C_Caspar_David_-_Wanderer_%C3%BCber_dem_Nebelmeer.jpg",
     "level": 1
+  },
+  {
+    "title": "種まく人",
+    "artist": "ジャン＝フランソワ・ミレー",
+    "year": "1850年",
+    "museum": "ボストン美術館（パーカー・コレクション）",
+    "themes": [
+      "写実主義"
+    ],
+    "summary": "ミレー（1814-1875）が1850年のサロンに出品したバルビゾン派の代表作。夕暮れの山積を背けて大股で種を撒く農民を英雄的に割れた構図で描く。労働の尊厳を辺鄙な一点透視図法で捉え、ゴッホが二度たび同題で模写した延平技主中の名作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Jean-Fran%C3%A7ois_Millet_-_The_Sower_-_Google_Art_Project.jpg",
+    "level": 2
+  },
+  {
+    "title": "晩鐘",
+    "artist": "ジャン＝フランソワ・ミレー",
+    "year": "1857〜1859年",
+    "museum": "オルセー美術館（パリ）",
+    "themes": [
+      "写実主義"
+    ],
+    "summary": "ジャン＝フランソワ・ミレーが1857〜1859年に山平の農野で装われた写実主義の傑作。時請予の鐘に手を止め迗りを捨て祈る農大3人の姿が、労働の尊厳と信仰心を静諂に伝える。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/17/JEAN-FRAN%C3%87OIS_MILLET_-_El_%C3%81ngelus_(Museo_de_Orsay%2C_1857-1859._%C3%93leo_sobre_lienzo%2C_55.5_x_66_cm).jpg",
+    "level": 2
+  },
+  {
+    "title": "シテーラ島への巻礼（雅やかな宴）",
+    "artist": "アントワーヌ・ヴァトー",
+    "year": "1717年",
+    "museum": "ルーヴル美術館（パリ）",
+    "themes": [
+      "ロココ"
+    ],
+    "summary": "ヴァトーが1717年にフランス王立絵画彫刻アカデミーの入会作として制作したロココの傑作。「雅宴画（フェット・ギャラント）」という新ジャンルを確立した記念碑的作品。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/28/L'Embarquement_pour_Cyth%C3%A8re%2C_by_Antoine_Watteau%2C_from_C2RMF_retouched.jpg",
+    "level": 2
+  },
+  {
+    "title": "食前の祈り（ベネディシテ）",
+    "artist": "ジャン＝バティスト・シメオン・シャルダン",
+    "year": "1740年頃",
+    "museum": "ルーブル美術館（パリ）",
+    "themes": [
+      "ロココ"
+    ],
+    "summary": "シャルダンが1740年頃に描いた、食前の祈りを捧げる子どもたちの室内画。華やかなロココの時代に市民の日常を温かく誠実に捉え、後のセザンヌも敬愛した光と物質の詩的観察者の代表作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/Jean_Sim%C3%A9on_Chardin_-_The_Prayer_before_Meal_-_WGA04768.jpg",
+    "level": 3
+  },
+  {
+    "title": "アンデスの心臓",
+    "artist": "フレデリック・エドウィン・チャーチ",
+    "year": "1859年",
+    "museum": "メトロポリタン美術館（ニューヨーク）",
+    "themes": [
+      "ロマン主義"
+    ],
+    "summary": "フレデリック・エドウィン・チャーチが1859年に制作したハドソン・リバー派の大作。エクアドル調査旅行の写生から合成された南米アンデスの壮大な全地帯駄を描く。公開時に入場料を取るほどの大反響を呼んだ。メトロポリタン美術館所蔵。（❗DBのwikiリンクは別人物の誤記だったため修正）",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/78/Church_Heart_of_the_Andes.jpg",
+    "level": 2
   }
 ];
