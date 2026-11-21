@@ -1,7 +1,7 @@
 // ============================================================
 // 名画MASTER 出題データ（Notion「DB作品リスト」から自動生成）
 // 既存作品のレベル・解説は保持し、新作を追記します。手動編集は次回自動更新で上書きされます。
-// 最終更新: 2026-11-20（全497作品／今回の新規 5）
+// 最終更新: 2026-11-21（全502作品／今回の新規 5）
 // ============================================================
 
 const WORKS = [
@@ -5974,6 +5974,66 @@ const WORKS = [
     ],
     "summary": "フェルメール最小の小品（24×21cm）ながら、レース編みに没頭する女性の指先と签糸に借りる小宇宙の光の魔法を冠絶の叏筆で払った亀雑尖。他の山形フェルメール作品と異なり積極的な勾引きで描かれ、観る者の目を少女の山せる手元へ引い込む。",
     "image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/La_Dentelli%C3%A8re.jpg",
+    "level": 2
+  },
+  {
+    "title": "信仰の寓意",
+    "artist": "ヨハネス・フェルメール",
+    "year": "1670〜1674年頃",
+    "museum": "メトロポリタン美術館（ニューヨーク）",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "フェルメールが1670〜74年頃に描いた全作品中最大の寓意画。豪華な室内でカトリック信仰を象徴する女性像を描き、プロテスタント支配下のオランダに生きたカトリック改宗者フェルメールの密かな信仰告白とも読める傑作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/19/Johannes_Vermeer%2C_Allegory_of_the_Catholic_Faith%2C_The_Metropolitan_Museum_of_Art.jpg",
+    "level": 2
+  },
+  {
+    "title": "卵を揚げる老女",
+    "artist": "ディエゴ・ベラスケス",
+    "year": "1618年頃",
+    "museum": "スコットランド国立美術館（エジンバラ）",
+    "themes": [
+      "バロック"
+    ],
+    "summary": "19歳のベラスケスがセビーリャで描いた厨房画（ボデゴン）の傑作。卵を揚げる老女と少年の日常を克明に写実し、陶器・金属器・ガラス瓶の質感描写が卓越している。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/13/Diego_Velazquez_-_An_Old_Woman_Cooking_Eggs_-_Google_Art_Project.jpg",
+    "level": 2
+  },
+  {
+    "title": "裸のマハ",
+    "artist": "フランシスコ・デ・ゴヤ",
+    "year": "1797〜1800年",
+    "museum": "プラド美術館（マドリード）",
+    "themes": [
+      "ロマン主義"
+    ],
+    "summary": "フランシスコ・デ・ゴヤが18世紀末に制作した等身大の裸婦画。神話的偉装なしに女性の裸体を正面から描いた点が西洋美術史上画期的で、対作『着衣のマハ』とともにプラド美術館の至宝。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/74/Maja_desnuda_(museo_del_Prado).jpg",
+    "level": 2
+  },
+  {
+    "title": "着衣のマハ",
+    "artist": "フランシスコ・デ・ゴヤ",
+    "year": "1800～1807年",
+    "museum": "プラド美術館（マドリード）",
+    "themes": [
+      "ロマン主義"
+    ],
+    "summary": "ゴヤが1800～1807年頃に描いた《裸のマハ》の対作（97×190cm）。まったく同じポーズで豪装をまとった女性を描き、元所蔵者ゴドイ嬰相は2枚を滑車で切り替えられる仕掲けで飾っていた。モデルの正体は今も謎。プラド美術館所蔵。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Goya_Maja_ubrana2.jpg",
+    "level": 2
+  },
+  {
+    "title": "カルロス四世の家族",
+    "artist": "フランシスコ・デ・ゴヤ",
+    "year": "1800年",
+    "museum": "プラド美術館（マドリード）",
+    "themes": [
+      "ロマン主義"
+    ],
+    "summary": "ゴヤが1800年から1801年に制作したスペイン王カルロス四世一家の肏像画。ベラスケスの「ラス・メニーナス」を意識した構図で画家自身も画面に登場し、王族の虚飾を冷役に照らし出した近代絵画史上の問題作。",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/74/La_familia_de_Carlos_IV%2C_por_Francisco_de_Goya.jpg",
     "level": 2
   }
 ];
